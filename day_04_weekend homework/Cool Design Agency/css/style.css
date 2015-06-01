@@ -1,0 +1,123 @@
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: Helvetica;
+	color: black;
+}
+
+.header {
+	max-width: 1280px;
+	width: 100%;
+	height: 50px;
+	background: white;
+	position: fixed;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-left: 40px;
+	float: left;
+}
+
+li {
+	font-size: 10px;
+	display: inline;
+	margin-top: 20px;
+	margin-right: 40px;
+	float: right;
+}
+
+.main-photo {
+	height: 580px;
+	background: url("../images/main-photo.jpg");
+	background-size: cover;
+	margin-bottom: 60px;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.deathstar {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.stars {
+	border-radius: 100px;
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.han {
+	background: url("../images/han.jpg");
+} 
+
+.chewbacca {
+	background: url("../images/chewbacca.jpg");
+	margin-left: 240px;
+	margin-right: 240px;
+}
+
+.darth {
+	background: url("../images/darth.jpg");
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: bold;
+	width: 200px;
+	margin-top: 220px;
+	text-align: center;
+}
+
+p {
+	font-size: 11px;
+	text-align: center;
+}
+
+.squares {
+	width: 640px;
+	height: 500px;
+	margin-top: 250px;
+}
+
+.map { 
+	float: left;
+}
+
+.tan { 
+	background: #f2ede5;
+	float: right;
+}
+
+h4 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 180px;
+	margin-left: 130px;
+}
+
+.address {
+	font-size: 20px;
+	font-style: bold;
+	margin-top: 35px;
+	margin-left: 130px;
+	width: 400px;
+	text-align: left;
+}
+
+footer {
+	font-size: 20px;
+	margin: 55px 0px 55px 365px;
+	float: left;
+}
