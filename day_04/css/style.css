@@ -94,6 +94,10 @@ nav a {
 	text-decoration: none;
 }
 
+nav li {
+	display: inline-block;
+}
+
 /*
   ========================================
   Header
@@ -108,29 +112,36 @@ nav a {
 	/*position: absolute;*/
 }
 
-.logo {
-	width: 46px;
+.left-section {
 	float: left;
 	margin-left: 110px;
 	margin-top: 10px;
 }
 
+.logo {
+	width: 46px;
+	display: inline-block;
+	vertical-align: middle;
+
+}
+
 .search {
 	width: 26px;
-	margin-right: 110px;
-	float: right;
-	margin-top: 16px;
+	display: inline-block;
+	/*margin-top: 10px;*/
+	vertical-align: middle;
 }
 
 .title-left {
-	float: left;
-	margin-top: 23px;
+	display: inline-block;
+	vertical-align: middle;
 	margin-left: 10px;
 }
 
 nav {
 	float: right;
 	margin-top: 23px;
+	margin-right: 110px;
 }
 
 nav ul {
@@ -227,7 +238,7 @@ ul {
 
 li {
 	color: #a3b3bf;
-	display: inline;
+	display: inline-block;
 }
 
 li:nth-of-type(2) {
@@ -254,7 +265,7 @@ li:nth-of-type(2) {
 
 .side-copy {
 	font-size: 13px;
-	color: #a3b3bf;	
+	color: #a3b3bf;
 	line-height: 18px;
 }
 
