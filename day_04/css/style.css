@@ -1,13 +1,104 @@
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
 .container-main {
 	max-width: 1300px;
 	margin: 0 auto;
-	/*position: relative;*/
+	}
+
+section {
+	max-width: 610px;
+	margin-left: 160px;
+	float: left;
+	margin-top: 90px;
 }
+
+aside {
+	width: 280px;
+	margin-top: 90px;
+	margin-right: 160px;
+	float: right;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
 
 body {
 	font-family: Helvetica;
 	color: #083452;
 }
+
+/*
+  ========================================
+Typography
+  ========================================
+*/
+
+h1, h3 {
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 110px;
+	padding-top: 180px;
+}
+
+h2 {
+	color: #083452;
+	font-size: 35px;
+	line-height: 40px;
+	width: 595px;
+}
+
+h3 {
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+h4 {
+	color: #106db3;
+	font-size: 20px;
+	font-style: italic;
+	float: left;
+	margin: 16px 0 40px 20px;
+}
+
+h5 {
+	font-size: 46px;
+	text-align: center;
+	color: #083452;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/*
+  ========================================
+Links
+  ========================================
+*/
+
+a {
+	color: #a3b3bf;
+}
+
+nav a {
+	color: #083452;
+	text-decoration: none;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
 
 .main-photo {
 	width: 1300px;
@@ -42,52 +133,15 @@ nav {
 	margin-top: 23px;
 }
 
-nav a {
-	color: #083452;
-	text-decoration: none;
-}
-
 nav ul {
 	margin: 0;
 }
 
-.main-title {
-	width: 1080px;
-	margin: 0 auto;
-	padding-top: 50px;
-}
-
-h1, h3 {
-	color: white;
-	text-align: center;
-}
-
-h1 {
-	font-weight: bold;
-	font-size: 80px;
-	margin-top: 170px;
-}
-
-h3 {
-	font-size: 11px;
-	margin-top: 5px;
-}
-
-/*-----------left column-----------*/
-
-section {
-	max-width: 610px;
-	margin-left: 160px;
-	float: left;
-	margin-top: 90px;
-}
-
-h2 {
-	color: #083452;
-	font-size: 35px;
-	line-height: 40px;
-	width: 595px;
-}
+/*
+  ========================================
+Left Column/Section
+  ========================================
+*/
 
 .author {
 	height: 20px;
@@ -103,10 +157,6 @@ h2 {
 	margin-bottom: 30px;
 }
 
-a {
-	color: #a3b3bf;
-}
-
 .copy {
 	font-size: 15px;
 	line-height: 20px;
@@ -119,16 +169,6 @@ a {
 	margin-top: 25px;
 	margin-bottom: 25px;
 	margin-left: 5px;
-}
-
-.whoa {
-	color: #106db3;
-	font-size: 20px;
-	font-style: italic;
-	float: left;
-	margin-left: 20px;
-	margin-top: 16px;
-	margin-bottom: 40px;
 }
 
 .options {
@@ -167,17 +207,11 @@ a {
 	background-color: #083452;
 }
 
-/*-----------left column-----------*/
-
-/*-----------right column-----------*/
-
-aside {
-	width: 280px;
-	margin-top: 90px;
-	margin-right: 160px;
-	float: right;
-	/*background: red;*/
-}
+/*
+  ========================================
+Right Column/Aside
+  ========================================
+*/
 
 .authorR {
 	width: 84px;
@@ -224,23 +258,26 @@ li:nth-of-type(2) {
 	line-height: 18px;
 }
 
-/*-----------right column-----------*/
+/*
+  ========================================
+Clear Fix
+  ========================================
+*/
+
 .clear-fix {
 	clear: both;
 }
+
+/*
+  ========================================
+Bottom Section
+  ========================================
+*/
 
 .horizLine {
 	border-top: solid 1px #a3b3bf;
 	width: 100%;
 	margin-top: 70px;
-}
-
-h5 {
-	font-size: 46px;
-	text-align: center;
-	color: #083452;
-	margin-top: 50px;
-	margin-bottom: 50px;
 }
 
 .image {
@@ -276,6 +313,12 @@ h5 {
 .beer-text {
 	color: white;
 }
+
+/*
+  ========================================
+Footer
+  ========================================
+*/
 
 footer {
 	width: 1300px;
