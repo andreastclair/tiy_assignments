@@ -47,7 +47,7 @@
 .posts-col {
   width: 545px;
   margin-left: 77px;
-  margin-top: -86px;
+  margin-top: -83px;
   /*background-color: purple;*/
 }
 
@@ -92,6 +92,7 @@ h4 {
 
 h5 {
   font-size: 1.125em;
+  line-height: 1.4em;
 }
 
 h6 {
@@ -100,7 +101,7 @@ h6 {
 
 p {
   font-size: .875em;
-  line-height: 1.6em;
+  line-height: 1.4em;
 }
 
 .new {
@@ -111,7 +112,7 @@ p {
 
 .small {
   font-size: .75em;
-  margin-left: 10px;
+  /*margin-left: 10px;*/
   color: #0899d5;
 }
 
@@ -120,6 +121,25 @@ p {
   padding-top: 11px;
 }
 
+.blog-title {
+  font-size: 1.625em;
+  line-height: 1.2em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.black {
+  color: black;
+}
+
+.reply-small {
+  margin: 0;
+  font-size: .75em;
+  color: #0899d5;
+
+}
 
 /*
   ========================================
@@ -144,6 +164,11 @@ p {
 .icons {
   width: 20px;
   margin: 0 5px;
+  vertical-align: middle;
+}
+
+.reply-icon {
+  width: 20px;
   vertical-align: middle;
 }
 
@@ -187,6 +212,30 @@ p {
   border-radius: 5px;
   background-position: 0 -130px;
 }
+
+.tiny-photo {
+  width: 116px;
+  float: right;
+}
+
+.reply-icon {
+  padding-left: 25px;
+}
+
+.reply-icon:nth-of-type(1) {
+  padding-left: 0;
+}
+
+/*
+  ========================================
+  Clear-Fix
+  ========================================
+*/
+
+.clear-fix {
+  clear: both;
+}
+
 /*
   ========================================
   Links
@@ -201,8 +250,7 @@ a {
 
 span {
   color: #0899d5;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   /*background: green;*/
 }
 
@@ -242,8 +290,8 @@ header {
 
 .stats {
   margin-left: 490px;
-  margin-top: 18.5px;
-  margin-bottom: 18.5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .stat {
@@ -353,7 +401,7 @@ header {
   ========================================
 */
 .box {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   border-bottom: solid 1px #a3b3bf;
   border-right: solid 1px #a3b3bf;
   border-left: solid 1px #a3b3bf;
@@ -379,12 +427,31 @@ header {
   display: inline-block;
 }
 
-.blog {
+.blog-author {
   display: inline-block;
 }
 
+.blog-title-who {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.blog-content {
+  /*display: inline-block;*/
+  float: left;
+}
+
+.post {
+  /*display: inline-block;*/
+  float: left;
+  width: 380px;
+}
+
+
+
 .reply-info {
   display: inline-block;
+  margin-top: 10px;
 }
 
 
