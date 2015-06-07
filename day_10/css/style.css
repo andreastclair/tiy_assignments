@@ -24,22 +24,31 @@
 }
 
 .grid-1-3,
-.grid-2-3  {
+.grid-2-3,
+.posts-col  {
   display: inline-block;
   vertical-align: top;
 }
 
 .grid-1-3 {
   width: 310px;
-  margin-right: 10px;
-  background: red;
-  height: 800px;
+  margin-right: 9px;
+  /*background: red;*/
 }
 
 .grid-2-3 {
   width: 634px;
-  background: #caf5a4;
+  /*border: solid 1px #a3b3bf;*/
+  border-radius: 8px;
+  /*background: #caf5a4;*/
   height: 800px;
+}
+
+.posts-col {
+  width: 545px;
+  margin-left: 77px;
+  margin-top: -86px;
+  /*background-color: purple;*/
 }
 
 /*
@@ -51,6 +60,7 @@
 body {
 	font-family: Helvetica;
 	color: black;
+  /*line-height: 1.6em;*/
 }
 
 /*
@@ -62,6 +72,7 @@ body {
 h1 {
 	font-size: 1.375em;
   font-weight: bold;
+  margin: 0;
 }
 
 h2 {
@@ -72,6 +83,7 @@ h2 {
 
 h3 {
   font-size: 1em;
+  line-height: 1.6em;
 }
 
 h4 {
@@ -88,12 +100,13 @@ h6 {
 
 p {
   font-size: .875em;
+  line-height: 1.6em;
 }
 
-p .new {
+.new {
   font-size: 1.375em;
   margin-top: 5px;
-  margin-left: 5px;
+  margin-bottom: 10px;
 }
 
 .small {
@@ -101,6 +114,12 @@ p .new {
   margin-left: 10px;
   color: #0899d5;
 }
+
+.sign-up-box h3 {
+  margin-top: 13px;
+  padding-top: 11px;
+}
+
 
 /*
   ========================================
@@ -111,7 +130,6 @@ p .new {
 .logo-header {
 	width: 24px;
   margin: 13px 0 0 160px;
-  /*vertical-align: middle;*/
 }
 
 .profile-pic {
@@ -126,10 +144,49 @@ p .new {
 .icons {
   width: 20px;
   margin: 0 5px;
+  vertical-align: middle;
 }
 
+.pin {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  float: right;
+}
 
+.profile-small {
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 0;
+  border-radius: 5px;
+  /*background-color: blue;*/
+}
 
+.keep-calm {
+  background: url("../images/keep-calm.jpg");
+  background-size: cover;
+  width: 468px;
+  height: 270px;
+  border-radius: 5px;
+  background-position: -10px -30px;
+}
+
+.big-photo1 {
+  background: url("../images/big-photo1.jpg");
+  background-size: cover;
+  width: 543px;
+  height: 270px;
+  border-radius: 5px;
+  background-position: 0 -30px;
+}
+
+.big-photo2 {
+  background: url("../images/big-photo2.jpg");
+  background-size: cover;
+  width: 543px;
+  height: 270px;
+  border-radius: 5px;
+  background-position: 0 -130px;
+}
 /*
   ========================================
   Links
@@ -138,11 +195,30 @@ p .new {
 
 a {
   text-decoration: none;
+  color: black;
   /*color: #8596a4;*/
 }
 
 span {
   color: #0899d5;
+  margin-top: 0;
+  margin-bottom: 0;
+  /*background: green;*/
+}
+
+/*light grey*/
+.g {
+  color: #8899a6;
+}
+
+/*dark grey*/
+.gd {
+  color: #52636e;
+}
+
+/*blue*/
+.b {
+  color: #20a3d9;
 }
 
 /*
@@ -161,13 +237,25 @@ header {
   margin: 0 auto;
   background: url("../images/banner.jpg");
   background-size: cover;
-  background-position: -50px;
+  background-position: 0 -55px;
+}
+
+.stats {
+  margin-left: 490px;
+  margin-top: 18.5px;
+  margin-bottom: 18.5px;
+}
+
+.stat {
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 0;
 }
 
 .horizontal-line {
   border-top: solid 1px #a3b3bf;
   width: 100%;
-  margin-top: 65px;
 }
 
 /*
@@ -180,30 +268,126 @@ header {
   margin-top: 10px;
 }
 
-.thumbs {
-  display: inline-block;
+.thumb {
   width: 90px;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+.thumbs {
+  width: 310px;
+  margin-top: 5px;
 }
 
 .sign-up {
-  width: 310px;
+  margin-top: 20px;
   background: #e1e8ed;
   border-radius: 8px;
   padding: 10px;
 }
 
+.sign-up-box {
+  width: 275px;
+  height: 42px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #55acee;
+  text-align: center;
+  color: white;
+}
+
 .may-like {
-  width: 310px;
+  margin-top: 10px;
   background: white;
   border-radius: 8px;
   border: solid 1px #a3b3bf;
   padding: 10px;
 }
 
-.new-friends {
-  border-radius: 5px;
+.friend {
+  margin-bottom: -8px;
+  /*background: red;*/
 }
+
+.pic {
+  border-radius: 5px;
+  width: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.name {
+  display: inline-block;
+  margin-top: -10px;
+  /*background-color: red;*/
+}
+
+.trends {
+  border: solid 1px #a3b3bf;
+  border-radius: 8px;
+  padding: 10px;
+  background: white;
+  margin: 10px 0;
+}
+
+.entour {
+  display: inline-block;
+}
+
+/*
+  ========================================
+  Right Col 2-3
+  ========================================
+*/
+
+.filter {
+  border: solid 1px #a3b3bf;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/*
+  ========================================
+  Right Col 2-3-Boxes
+  ========================================
+*/
+.box {
+  padding-bottom: 20px;
+  border-bottom: solid 1px #a3b3bf;
+  border-right: solid 1px #a3b3bf;
+  border-left: solid 1px #a3b3bf;
+}
+
+.box-pics {
+  width: 66px;
+  display: inline-block;
+  /*background-color: red;*/
+}
+
+.tweet-title {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.tweet-type {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.title, .at {
+  display: inline-block;
+}
+
+.blog {
+  display: inline-block;
+}
+
+.reply-info {
+  display: inline-block;
+}
+
+
 
 
 
