@@ -14,13 +14,11 @@
 .container-main {
 	max-width: 1280px;
   margin: 0 auto;
-  /*background: black;*/
 }
 
 .container-sub {
   max-width: 960px;
   margin: 0 auto;
-  /*background: #f1c2f7;*/
 }
 
 .grid-1-3,
@@ -33,14 +31,11 @@
 .grid-1-3 {
   width: 310px;
   margin-right: 9px;
-  /*background: red;*/
 }
 
 .grid-2-3 {
   width: 634px;
-  /*border: solid 1px #a3b3bf;*/
   border-radius: 8px;
-  /*background: #caf5a4;*/
   height: 800px;
 }
 
@@ -48,7 +43,6 @@
   width: 545px;
   margin-left: 77px;
   margin-top: -83px;
-  /*background-color: purple;*/
 }
 
 /*
@@ -60,6 +54,7 @@
 body {
 	font-family: Helvetica;
 	color: black;
+  background: #f5f8fa;
   /*line-height: 1.6em;*/
 }
 
@@ -104,6 +99,10 @@ p {
   line-height: 1.4em;
 }
 
+.sub-info p {
+  margin-top: 10px;
+}
+
 .new {
   font-size: 1.375em;
   margin-top: 5px;
@@ -112,7 +111,6 @@ p {
 
 .small {
   font-size: .75em;
-  /*margin-left: 10px;*/
   color: #0899d5;
 }
 
@@ -124,6 +122,10 @@ p {
 .blog-title {
   font-size: 1.625em;
   line-height: 1.2em;
+}
+
+.blog-content .b {
+  padding-top: 8px;
 }
 
 .bold {
@@ -138,7 +140,10 @@ p {
   margin: 0;
   font-size: .75em;
   color: #0899d5;
+}
 
+.view {
+  float: right;
 }
 
 /*
@@ -149,7 +154,7 @@ p {
 
 .logo-header {
 	width: 24px;
-  margin: 13px 0 0 160px;
+  margin: 15px 0 0 160px;
 }
 
 .profile-pic {
@@ -163,7 +168,7 @@ p {
 
 .icons {
   width: 20px;
-  margin: 0 5px;
+  margin-right: 5px;
   vertical-align: middle;
 }
 
@@ -183,7 +188,6 @@ p {
   margin-left: 10px;
   margin-right: 0;
   border-radius: 5px;
-  /*background-color: blue;*/
 }
 
 .keep-calm {
@@ -193,6 +197,7 @@ p {
   height: 270px;
   border-radius: 5px;
   background-position: -10px -30px;
+  margin-top: 5px;
 }
 
 .big-photo1 {
@@ -202,6 +207,7 @@ p {
   height: 270px;
   border-radius: 5px;
   background-position: 0 -30px;
+  margin-top: 5px;
 }
 
 .big-photo2 {
@@ -211,6 +217,7 @@ p {
   height: 270px;
   border-radius: 5px;
   background-position: 0 -130px;
+  margin-top: 5px;
 }
 
 .tiny-photo {
@@ -224,6 +231,18 @@ p {
 
 .reply-icon:nth-of-type(1) {
   padding-left: 0;
+}
+
+.follow-icon {
+  width: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.tag-icon {
+  width: 12px;
+  margin-right: 5px;
 }
 
 /*
@@ -245,13 +264,11 @@ p {
 a {
   text-decoration: none;
   color: black;
-  /*color: #8596a4;*/
 }
 
 span {
   color: #0899d5;
   margin: 0;
-  /*background: green;*/
 }
 
 /*light grey*/
@@ -277,7 +294,29 @@ span {
 
 header {
 	height: 50px;
-	background: blue;
+	background: #fff;
+}
+
+.search-box {
+  background-color: #f5f8fa;
+  border-radius: 20px;
+  width: 221px;
+  padding: 5px 0 5px 10px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  vertical-align: middle;
+  border: solid 1px #a3b3bf;
+}
+
+.account {
+  float: right;
+  margin-right: 160px;
+  margin-top: 17px;
+}
+
+.search {
+  margin-left: 100px;
 }
 
 .main-photo {
@@ -289,16 +328,37 @@ header {
 }
 
 .stats {
-  margin-left: 490px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-left: 490px;
+  padding-top: 15px;
+  background-color: white;
 }
 
 .stat {
   display: inline-block;
   text-align: center;
-  margin-right: 20px;
-  margin-bottom: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.stat:nth-of-type(1) {
+  padding-bottom: 8px;
+  padding-left: 10px;
+  border-bottom: solid 4px #0095d4;
+}
+
+.follow-box {
+  width: 100px;
+  padding: 5px;
+  border: solid 1px #a3b3bf;
+  border-radius: 5px;
+  vertical-align: top;
+  margin-right: 0;
+  background-color: #f7f9fa;
+  margin-left: 115px;
+}
+
+.follow {
+  vertical-align: middle;
 }
 
 .horizontal-line {
@@ -323,14 +383,14 @@ header {
 
 .thumbs {
   width: 310px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .sign-up {
   margin-top: 20px;
   background: #e1e8ed;
   border-radius: 8px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .sign-up-box {
@@ -353,7 +413,6 @@ header {
 
 .friend {
   margin-bottom: -8px;
-  /*background: red;*/
 }
 
 .pic {
@@ -365,8 +424,6 @@ header {
 
 .name {
   display: inline-block;
-  margin-top: -10px;
-  /*background-color: red;*/
 }
 
 .trends {
@@ -393,6 +450,8 @@ header {
   border-top-right-radius: 5px;
   margin-top: 10px;
   padding: 10px;
+  background-color: #fff;
+
 }
 
 /*
@@ -405,12 +464,12 @@ header {
   border-bottom: solid 1px #a3b3bf;
   border-right: solid 1px #a3b3bf;
   border-left: solid 1px #a3b3bf;
+  background-color: white;
 }
 
 .box-pics {
   width: 66px;
   display: inline-block;
-  /*background-color: red;*/
 }
 
 .tweet-title {
@@ -437,21 +496,21 @@ header {
 }
 
 .blog-content {
-  /*display: inline-block;*/
   float: left;
 }
 
 .post {
-  /*display: inline-block;*/
   float: left;
   width: 380px;
 }
 
-
-
 .reply-info {
   display: inline-block;
   margin-top: 10px;
+}
+
+.tags {
+  display: inline-block;
 }
 
 
