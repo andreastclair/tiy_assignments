@@ -1,0 +1,183 @@
+@import 'reset';
+@import 'colors';
+
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/*
+  ========================================
+ Custom Styles
+  ========================================
+*/
+
+body {
+	font-family: Helvetica;
+	color: $black;
+}
+
+/*
+  ========================================
+  Global Typography
+  ========================================
+*/
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 20px;
+	margin: 15px 40px;
+	float: left;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+h3 {
+	font-size: 18px;
+	width: 200px;
+	margin-top: 220px;
+	text-align: center;
+}
+
+h4 {
+	font-size: 30px;
+	margin: 180px 0 0 130px;
+}
+
+p {
+	font-size: 11px;
+	text-align: center;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+header {
+	width: 1280px;
+	height: 50px;
+	background: white;
+	position: fixed;
+	li {
+		font-size: 10px;
+		display: inline;
+		margin: 20px 40px;
+		float: right;
+	 	a {
+			color: black;
+			text-decoration: none;}
+	}		
+}
+
+.main-photo {
+	height: 580px;
+	background: url("../images/main-photo.jpg");
+	background-size: cover;
+	margin-bottom: 60px;
+}
+
+/*
+  ========================================
+  Section
+  ========================================
+*/
+
+section {
+	max-width: 1080px;
+	margin: 0 auto;
+	.stars {
+		border-radius: 100px;
+		width: 200px;
+		height: 200px;
+		float: left;}		
+}
+
+.han {
+	background: url("../images/han.jpg");
+} 
+
+.chewbacca {
+	background: url("../images/chewbacca.jpg");
+	margin-left: 240px;
+	margin-right: 240px;
+}
+
+.darth {
+	background: url("../images/darth.jpg");
+}
+
+/*
+  ========================================
+  Map Section
+  ========================================
+*/
+
+img {
+	float: left;
+	width: 640px;
+	height: 500px;
+	margin-top: 250px;}
+.tan { 
+	background: #f2ede5;
+	float: right;
+	width: 640px;
+	height: 500px;
+	margin-top: 250px;
+	h3 {
+		margin: 35px 0 0 130px;
+		width: 400px;
+		text-align: left;}
+}
+
+/*
+  ========================================
+Footer
+  ========================================
+*/
+
+footer {
+	font-size: 20px;
+	margin: 55px 0px 55px 365px;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
