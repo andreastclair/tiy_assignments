@@ -19,7 +19,7 @@ Assignment: Map out the grids for 10 different websites. Be clean, but not _too_
 
 ![Grids for mashable.com](images/mashable.jpg "mashable.com")
 
-![Grids for penguinbooks.com](images/penguinbooks.jpg "penguinbooks.com")
+![Grids for penguinbooks.com](images/penguin.jpg "penguinbooks.com")
 
 ![Grids for thenewyorktimes.com](images/the_ny_times.jpg "thenewyorktimes.com")
 
@@ -35,5 +35,5 @@ Assignment: Map out the grids for 10 different websites. Be clean, but not _too_
 
 ![Grids for nest.com](images/nest.jpg "nest.com")
 
-![Grids for timemagazine.com](images/timemagazine.jpg "time.com")
+![Grids for timemagazine.com](images/time.jpg "time.com")
 
