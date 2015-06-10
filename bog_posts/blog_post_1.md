@@ -17,23 +17,23 @@ Goodnight World!
 ##Week Three update : Gettin' griddy with it 
 Assignment: Map out the grids for 10 different websites. Be clean, but not _too_ clean. 
 
-![Grids for mashable.com](images/mashable.jpg "mashable.com")
+![Grids for mashable.com](images/mashable.jpg)
 
-![Grids for penguinbooks.com](images/penguin.jpg "penguinbooks.com")
+![Grids for penguinbooks.com](images/penguin.jpg)
 
-![Grids for thenewyorktimes.com](images/the_ny_times.jpg "thenewyorktimes.com")
+![Grids for thenewyorktimes.com](images/the_ny_times.jpg)
 
-![Grids for medium.com](images/medium.jpg "medium.com")
+![Grids for medium.com](images/medium.jpg)
 
-![Grids for roomba at amazon.com](images/roomba.jpg "roomba at amazon.com")
+![Grids for roomba at amazon.com](images/roomba.jpg)
 
-![Grids for fuzzco.com](images/fuzzco.jpg "fuzzco.com - work page")
+![Grids for fuzzco.com](images/fuzzco.jpg)
 
-![Grids for art of the menu](images/art_of_the_menu.jpg "art of the menu")
+![Grids for art of the menu](images/art_of_the_menu.jpg)
 
-![Grids for github.com](images/github.jpg "github/andreastclair.com")
+![Grids for github.com](images/github.jpg)
 
-![Grids for nest.com](images/nest.jpg "nest.com")
+![Grids for nest.com](images/nest.jpg)
 
-![Grids for timemagazine.com](images/time.jpg "time.com")
+![Grids for timemagazine.com](images/time.jpg)
 
