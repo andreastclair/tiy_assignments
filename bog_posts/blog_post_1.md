@@ -17,23 +17,23 @@ Goodnight World!
 ##Week Three update : Gettin' griddy with it. 
 Assignment: Map out the grids for 10 different websites. Be clean, but not _too_ clean. 
 
-![Grid for mashable.com](images/mashable.jpg)
+![Grid for mashable.com](img/mashable.jpg)
 
-![Grid for penguin.com](images/penguin.jpg)
+![Grid for penguin.com](img/penguin.jpg)
 
-![Grid for nytimes.com](images/the_ny_times.jpg)
+![Grid for nytimes.com](img/the_ny_times.jpg)
 
-![Grid for medium.com](images/medium.jpg)
+![Grid for medium.com](img/medium.jpg)
 
-![Grid for amazon.com](images/roomba.jpg)
+![Grid for amazon.com](img/roomba.jpg)
 
-![Grid for fuzzco.com](images/fuzzco.jpg)
+![Grid for fuzzco.com](img/fuzzco.jpg)
 
-![Grid for artofthemenu.com](images/art_of_the_menu.jpg)
+![Grid for artofthemenu.com](img/art_of_the_menu.jpg)
 
-![Grid for github.com](images/github.jpg)
+![Grid for github.com](img/github.jpg)
 
-![Grid for nest.com](images/nest.jpg)
+![Grid for nest.com](img/nest.jpg)
 
-![Grid for time.com](images/time.jpg)
+![Grid for time.com](img/time.jpg)
 
