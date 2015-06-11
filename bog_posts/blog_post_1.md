@@ -38,9 +38,8 @@ Assignment: Map out the grids for 10 different websites. Be clean, but not _too_
 ![Grid for time.com](images/time.jpg)
 
 ##Week Three >> continued >> The Design Process
-###"Design is so simple, that's why it is so complicated."
-					   					   --Paul Rand
-					   					   
+###"Design is so simple, that's why it is so complicated." -Paul Rand
+
 Today we dipped our toes into brand systems and why it's important to set rules about the colors, fonts, and execution of your brand. All of these components should be consistent across all mediums to create a complete and reliable brand. Great design should look easy and be easy to digest.  It's a simple idea, but one that is precise and well thought out, with every little detail considered.  
 
 ##			 >>			  >> What I like about Sass 
