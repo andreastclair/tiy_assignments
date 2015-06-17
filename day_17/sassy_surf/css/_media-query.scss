@@ -1,0 +1,156 @@
+/*
+  ========================================
+  Media Query-500
+  ========================================
+*/
+
+@media screen and (min-width: 500px) {
+
+	header {
+	width: 1300px;
+	height: 523px;
+		div {
+			margin-left: 110px;
+			margin-top: 10px;
+			img {
+				width: 46px;
+				vertical-align: middle;}
+			p {
+				margin-left: 10px;
+				font-size: 1em;}		
+		}
+		nav {
+			margin-top: 23px;
+			margin-right: 110px;
+			font-size: 1em;
+			img {
+				width: 26px;
+				margin-left: 10px;}
+			li {font-size: 1rem;}
+		}		
+		h1 {
+			font-size: 110px;
+			padding-top: 200px;}
+		h3 {
+			font-size: 1em;}
+	}
+
+	section {
+	max-width: 610px;
+	margin-left: 160px;
+	float: left;
+	margin-top: 80px;
+		h2 {}
+		.author {
+			height: 22px;
+			margin-top: 16px;}
+		.time {
+			margin-left: 80px;
+			font-size: 14px;
+			color: $ltgrey;}
+		.verticalLine {}
+		.options {
+			img {}
+			.options-text {
+				font-size: 14px;}
+			.options-text span {
+				padding: 7px 11px 7px 11px;}
+		}
+		.mid-option {
+			margin-left: 10px;
+			margin-right: 10px;}
+		.options {
+			.shareicon {}
+			.last-option span {}
+		}
+	}
+
+	aside {
+	width: 280px;
+	margin-top: 90px;
+	margin-right: 160px;
+	float: right;
+		.authorR {
+			width: 84px;
+			height: 84px;
+			margin: 0 98px 30px 98px;}
+		ul {
+			// text-align: center;
+			margin-bottom: 50px;
+			li {
+				font-size: 0.875em;
+				a {}
+			}			
+			li:nth-of-type(2) {
+				margin: 0 20px;}
+		}			
+		.paddle {
+			margin-left: 0px;}
+		.ad {
+			font-size: 0.875em;
+			margin-top: 5px;
+			margin-right: 0px;}
+		.side-head {
+			font-size: 1.063em;
+			font-weight: bold;
+			color: $medblue;
+			margin: 73px 0 7px;}
+		.side-copy {
+			font-size: 0.875em;
+			color: $ltgrey;
+			line-height: 24px;}
+	}			
+
+	.horizLine {
+		margin-top: 64px;}
+	.image {
+		width: 325px;
+		height: 330px;
+		float: left;
+		margin: 0 auto;}
+	.text {
+		font-size: 1.75em;
+		float: left;
+		margin-top: 270px;
+		margin-left: 10px;}
+	.beer-text {
+		color: white;}
+	.z {
+		margin-top: 274px;
+		line-height: 1.4em;}	
+
+	.surfer {
+		background: url("../images/surfer.jpg");}
+
+	.beer {
+		background: url("../images/beer.jpg");}
+
+	.zack {
+		background: url("../images/zack.jpg");}
+
+	.booze {
+		background: url("../images/booze.jpg");}
+
+	footer {
+		width: 1300px;
+		margin-top: 0;
+		div {
+			width: 500px;
+			margin-top: 25px;
+			margin-left: 165px;
+			img {
+				float: left;
+				margin-right: 10px;}
+			.footer-details {}
+			.copyright {
+				float: left;
+				margin-top: 17px;}
+		}		
+	.title-right-bottom {
+		font-size: 1rem;
+		float: right;
+		margin-right: 165px;
+		margin-top: 40px;}
+	}
+}	
+
