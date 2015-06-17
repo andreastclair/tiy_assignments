@@ -17,6 +17,7 @@
 
 .container-main {
 	max-width: 1300px;
+	// width: 90%;
 	margin: 0 auto}
 
 /*
@@ -38,7 +39,7 @@ h2, h5 {
 
 h4 {
 	color: $medblue;
-	font-size: 1.8em;
+	font-size: 1.2em;
 	font-style: italic;
 	float: left;
 	margin: 16px 0 30px 20px;}
@@ -74,6 +75,13 @@ footer a {
 .posts {
 	text-decoration: none;}
 
+/*
+  ========================================
+  Images
+  ========================================
+*/
+	img {
+		max-width: 100%;}
 
 /*
   ========================================
@@ -82,16 +90,17 @@ footer a {
 */
 
 header {
-	width: 500px;
-	height: 323px;
-	background: url("../images/mainphoto.jpg");
+	width: 100%;
+	height: 180px;
+	background-image: url("../images/mainphoto.jpg");
 	background-size: 100%;
+	background-repeat: no-repeat;
 	div {
 		float: left;
-		margin-left: 20px;
+		margin-left: 5%;
 		margin-top: 10px;
 		img {
-			width: 20px;
+			width: 10%;
 			display: inline-block;
 			vertical-align: middle;}
 		p {
@@ -99,30 +108,30 @@ header {
 			vertical-align: middle;
 			margin-left: 2px;
 			color: $dkblue;
-			font-size: 0.875rem;}		
+			font-size: 0.5rem;}		
 	}
 	nav {
 		color: $dkblue;	
 		float: right;
-		margin-top: 14px;
-		margin-right: 20px;
+		margin-top: 8px;
+		margin-right: 0;
 		img {
-			width: 20px;
+			width: 20%;
 			display: inline-block;
 			vertical-align: middle;
 			margin-left: 2px;}
 		li {
 			display: inline-block;
-			margin-left: 15px;
-			font-size: 0.875rem;}
+			margin-left: 10px;
+			font-size: 0.5rem;}
 	}		
 	h1 {
 		font-weight: bold;
-		font-size: 4rem;
-		padding-top: 100px;}
+		font-size: 2.1rem;
+		padding-top: 60px;}
 	h3 {
-		font-size: 1rem;
-		padding-top: 5px;}
+		font-size: 0.875rem;
+		padding-top: 1%;}
 }
 
 /*
@@ -132,11 +141,11 @@ header {
 */
 
 section {
-	max-width: 400px;
-	margin-left: 50px;
-	margin-top: 30px;
+	max-width: 90%;
+	margin: 0 auto;
+	margin-top: 40px;
 	h2 {
-		font-size: 2em;
+		font-size: 1.875rem;
 		line-height: 1.1em;}
 	.author {
 		height: 40px;
@@ -157,8 +166,10 @@ section {
 		margin-bottom: 20px;
 		margin-left: 5px;}
 	.options {
-		float: left;
 		margin-top: 15px;
+		margin-bottom: 5px;
+		text-align: center;
+		width: 100%;
 		img {
 			width: 33px;
 			height: 30px;
@@ -168,15 +179,14 @@ section {
 			display: inline-block;
 			vertical-align: middle;
 			margin-left: -4.5px;
-			font-size: 0.625rem;}
+			font-size: 0.875rem;}
 		.options-text span {
-		color: white;
-		background-color: $ltgrey;
-		padding: 9px 11px 9px 11px;}
+			color: white;
+			background-color: $ltgrey;
+			padding: 7px 10px 7px 10px;}
 	}
-	.mid-option {
-		margin-left: 18px;
-		margin-right: 18px;}
+	.mid-option {}
+		// margin: 0 auto;}
 	.options {
 		.shareicon {
 			background-color: $dkblue;}
@@ -193,16 +203,17 @@ section {
 */
 
 aside {
-	width: 400px;
+	max-width: 90%;
 	margin: 0 auto;
 	.authorR {
 		width: 20%;
-		margin-top: 30px;
-		margin-bottom: 20px;
-		margin-left: 160px;}
+		max-width: 84px;
+		padding: 20px 0;
+		display: block;
+		margin: 0 auto;}
 	ul {
 		text-align: center;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 		li {
 			color: $ltgrey;
 			display: inline-block;
@@ -215,14 +226,14 @@ aside {
 			margin: 0 50px;}
 	}			
 	.paddle {
-		height: 300px;
-		width: 280px;
-		margin-left: 60px;}
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;}
 	.ad {
 		font-size: 0.5em;
 		float: right;
 		margin-top: 5px;
-		margin-right: 60px;}
+		margin-right: 11%;}
 	.side-head {
 		font-size: 1.063em;
 		font-weight: bold;
@@ -260,13 +271,12 @@ h5 {
 	width: 100%;
 	background-repeat: no-repeat; 
 	background-size: cover;
-	// background-position: 10px 0;
 	height: 60px;
 	text-align: center;
 	.text {
 		font-size: 1.75rem;
 		color: $dkblue;
-		padding: 2.5% 0;}
+		padding: 2% 0;}
 	.beer-text {
 		color: white;}
 	.z {}
@@ -293,7 +303,7 @@ h5 {
 */
 
 footer {
-	width: 500px;
+	width: 100%;
 	height: 100px;
 	margin-top: 50px;
 	background: $dkblue;
@@ -319,7 +329,8 @@ footer {
 }
 
 
-@import 'media-query'
+@import 'media-query';
+@import 'media-query-mid';
 
 
 

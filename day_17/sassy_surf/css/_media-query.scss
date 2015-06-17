@@ -1,156 +1,112 @@
 /*
   ========================================
-  Media Query-500
+  Media Query-600
   ========================================
 */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 
 	header {
-	width: 1300px;
-	height: 523px;
 		div {
-			margin-left: 110px;
-			margin-top: 10px;
 			img {
-				width: 46px;
-				vertical-align: middle;}
+				width: 15%;}
 			p {
-				margin-left: 10px;
-				font-size: 1em;}		
+				font-size: 0.875rem;}		
 		}
 		nav {
-			margin-top: 23px;
-			margin-right: 110px;
-			font-size: 1em;
+			margin-top: 12px;
+			margin-right: 5%;
 			img {
-				width: 26px;
-				margin-left: 10px;}
-			li {font-size: 1rem;}
+				width: 30%;
+				margin-left: 2px;}
+			li {
+				margin-left: 2px;
+				font-size: 0.875rem;}
 		}		
 		h1 {
-			font-size: 110px;
-			padding-top: 200px;}
+			font-size: 2.5rem;
+			padding-top: 70px;}
 		h3 {
-			font-size: 1em;}
+			font-size: 0.875rem;}
 	}
 
 	section {
-	max-width: 610px;
-	margin-left: 160px;
-	float: left;
-	margin-top: 80px;
-		h2 {}
-		.author {
-			height: 22px;
-			margin-top: 16px;}
-		.time {
-			margin-left: 80px;
-			font-size: 14px;
-			color: $ltgrey;}
-		.verticalLine {}
-		.options {
-			img {}
-			.options-text {
-				font-size: 14px;}
-			.options-text span {
-				padding: 7px 11px 7px 11px;}
-		}
-		.mid-option {
-			margin-left: 10px;
-			margin-right: 10px;}
-		.options {
+			h2 {}
+			.author {}
+			.time {
+				font-size: 1rem;}
+			.verticalLine {}
+			h4 {
+				font-size: 1.5em;
+				margin: 16px 0 30px 20px;}
+			.options {
+				margin-top: 20px;
+				img {}
+				.options-text {}
+				.options-text span {}
+			}
+			.mid-option {
+				margin-bottom: -10px;
+				margin-top: 0;}
+			.options {
 			.shareicon {}
 			.last-option span {}
-		}
+			}		
+	
 	}
 
 	aside {
-	width: 280px;
-	margin-top: 90px;
-	margin-right: 160px;
-	float: right;
+		max-width: 90%;
+		margin: 0 auto;
 		.authorR {
-			width: 84px;
-			height: 84px;
-			margin: 0 98px 30px 98px;}
+			max-width: 84px;}
 		ul {
-			// text-align: center;
-			margin-bottom: 50px;
 			li {
-				font-size: 0.875em;
 				a {}
-			}			
+				}			
 			li:nth-of-type(2) {
 				margin: 0 20px;}
 		}			
-		.paddle {
-			margin-left: 0px;}
+		.paddle {}
 		.ad {
-			font-size: 0.875em;
+			font-size: 0.5em;
+			// float: right;
 			margin-top: 5px;
-			margin-right: 0px;}
+			margin-right: 24%;}
 		.side-head {
 			font-size: 1.063em;
 			font-weight: bold;
 			color: $medblue;
 			margin: 73px 0 7px;}
-		.side-copy {
-			font-size: 0.875em;
-			color: $ltgrey;
-			line-height: 24px;}
+		.side-copy {}
 	}			
 
 	.horizLine {
 		margin-top: 64px;}
-	.image {
-		width: 325px;
-		height: 330px;
-		float: left;
-		margin: 0 auto;}
-	.text {
-		font-size: 1.75em;
-		float: left;
-		margin-top: 270px;
-		margin-left: 10px;}
-	.beer-text {
-		color: white;}
-	.z {
-		margin-top: 274px;
-		line-height: 1.4em;}	
+	.image {}
+	.text {}
+	.beer-text {}
+	.z {}	
 
 	.surfer {
-		background: url("../images/surfer.jpg");}
+		background-image: url("../images/surfer.jpg");}
 
 	.beer {
-		background: url("../images/beer.jpg");}
+		background-image: url("../images/beer.jpg");}
 
 	.zack {
-		background: url("../images/zack.jpg");}
+		background-image: url("../images/zack.jpg");}
 
 	.booze {
-		background: url("../images/booze.jpg");}
+		background-image: url("../images/booze.jpg");}
 
 	footer {
-		width: 1300px;
-		margin-top: 0;
 		div {
-			width: 500px;
-			margin-top: 25px;
-			margin-left: 165px;
-			img {
-				float: left;
-				margin-right: 10px;}
+			img {}
 			.footer-details {}
-			.copyright {
-				float: left;
-				margin-top: 17px;}
+			.copyright {}
 		}		
-	.title-right-bottom {
-		font-size: 1rem;
-		float: right;
-		margin-right: 165px;
-		margin-top: 40px;}
+	.title-right-bottom {}
 	}
 }	
 
