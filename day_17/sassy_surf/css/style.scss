@@ -165,34 +165,37 @@ section {
 		margin-top: 20px;
 		margin-bottom: 20px;
 		margin-left: 5px;}
-	.options {
-		margin-top: 15px;
-		margin-bottom: 5px;
-		text-align: center;
-		width: 100%;
-		img {
-			width: 33px;
-			height: 30px;
-			background-color: $dkgrey;
-			vertical-align: middle;}
-		.options-text {
-			display: inline-block;
-			vertical-align: middle;
-			margin-left: -4.5px;
-			font-size: 0.875rem;}
-		.options-text span {
-			color: white;
-			background-color: $ltgrey;
-			padding: 7px 10px 7px 10px;}
-	}
-	.mid-option {}
-		// margin: 0 auto;}
-	.options {
-		.shareicon {
-			background-color: $dkblue;}
-		.last-option span {
-			background-color: $medblue;}
-	}		
+	.all-options{
+			text-align: center;
+			width: 100%;
+			margin-top: 15px;
+		.options {
+			margin-top: 15px;
+			margin-bottom: 5px;
+			img {
+				width: 33px;
+				height: 30px;
+				background-color: $dkgrey;
+				vertical-align: middle;}
+			.options-text {
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: -4.5px;
+				font-size: 0.875rem;}
+			.options-text span {
+				color: white;
+				background-color: $ltgrey;
+				padding: 7px 10px 7px 10px;}
+		}
+		.mid-option {}
+			// margin: 0 auto;}
+		.options {
+			.shareicon {
+				background-color: $dkblue;}
+			.last-option span {
+				background-color: $medblue;}
+		}
+	}			
 	
 }
 
@@ -206,7 +209,7 @@ aside {
 	max-width: 90%;
 	margin: 0 auto;
 	.authorR {
-		width: 20%;
+		width: 100%;
 		max-width: 84px;
 		padding: 20px 0;
 		display: block;
@@ -267,19 +270,23 @@ aside {
 h5 {
 	font-size: 2.2rem;
 }
-.image {
-	width: 100%;
-	background-repeat: no-repeat; 
-	background-size: cover;
-	height: 60px;
-	text-align: center;
-	.text {
-		font-size: 1.75rem;
-		color: $dkblue;
-		padding: 2% 0;}
-	.beer-text {
-		color: white;}
-	.z {}
+.container-bottom {
+	// max-width: 100%;
+	// margin: 0 auto;
+	.image {
+		width: 100%;
+		background-repeat: no-repeat; 
+		background-size: cover;
+		height: 60px;
+		text-align: center;
+		.text {
+			font-size: 1.75rem;
+			color: $dkblue;
+			padding: 2% 0;}
+		.beer-text {
+			color: white;}
+		.z {}
+	}
 }
 
 
@@ -331,6 +338,7 @@ footer {
 
 @import 'media-query';
 @import 'media-query-mid';
+@import 'media-query-big';
 
 
 

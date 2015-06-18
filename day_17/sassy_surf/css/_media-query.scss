@@ -31,35 +31,39 @@
 	}
 
 	section {
-			h2 {}
-			.author {}
-			.time {
-				font-size: 1rem;}
-			.verticalLine {}
-			h4 {
-				font-size: 1.5em;
-				margin: 16px 0 30px 20px;}
+		h2 {}
+		.author {}
+		.time {
+			font-size: 1rem;}
+		.verticalLine {}
+		h4 {
+			font-size: 1.5em;
+			margin: 16px 0 30px 20px;}
+		.all-options {
+			width: 100%;
+			display: block;
+			margin: 0 auto;
 			.options {
-				margin-top: 20px;
+				display: inline-block;
 				img {}
 				.options-text {}
 				.options-text span {}
 			}
 			.mid-option {
-				margin-bottom: -10px;
-				margin-top: 0;}
+				margin-left: 9%;
+				margin-right: 9%;
+			}
 			.options {
 			.shareicon {}
 			.last-option span {}
-			}		
-	
+			}	
+		}			
 	}
 
 	aside {
 		max-width: 90%;
 		margin: 0 auto;
-		.authorR {
-			max-width: 84px;}
+		.authorR {}
 		ul {
 			li {
 				a {}
@@ -86,7 +90,8 @@
 	.image {}
 	.text {}
 	.beer-text {}
-	.z {}	
+	.z {}
+		
 
 	.surfer {
 		background-image: url("../images/surfer.jpg");}
