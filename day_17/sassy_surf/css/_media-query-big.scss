@@ -1,38 +1,21 @@
 @media screen and (min-width: 1220px) {
 
 header {
-	width: 1300px;
 	height: 523px;
-	background: url("../images/mainphoto.jpg");
-	background-size: cover;
 	div {
-		float: left;
-		margin-left: 110px;
-		margin-top: 10px;
-		img {
-			width: 46px;
-			display: inline-block;
-			vertical-align: middle;}
-		p {
-			display: inline-block;
-			vertical-align: middle;
-			margin-left: 10px;}		
+		img {}
+		p {}		
 	}
 	nav {
-		color: $dkblue;	
-		float: right;
-		margin-top: 23px;
-		margin-right: 110px;
+		margin-top: 16px;
 		img {
 			width: 26px;
 			display: inline-block;
 			vertical-align: middle;
 			margin-left: 10px;}
-		li {
-			display: inline-block;}
+		li {}
 	}		
 	h1 {
-		font-weight: bold;
 		font-size: 110px;
 		padding-top: 200px;}
 	h3 {
@@ -48,52 +31,23 @@ header {
 section {
 	max-width: 610px;
 	margin-left: 160px;
-	float: left;
 	margin-top: 80px;
 	h2 {
-		font-size: 3em;
-		line-height: 1.1em;}
-	.author {
-		height: 22px;
-		margin-top: 16px;}
+		font-size: 3em;}
+	.author {}
 	.time {
-		display: inline-block;
 		margin-left: 80px;
-		font-size: 14px;
-		color: $ltgrey;
-		margin-bottom: 30px;}
-	.verticalLine {
-		border-left: solid 1px $ltgrey;
-		height: 55px;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		margin-left: 5px;}
+		font-size: 0.875rem;}
+	.verticalLine {}
 	.options {
-		float: left;
-		margin-top: 15px;
-		img {
-			width: 33px;
-			height: 30px;
-			background-color: $dkgrey;
-			vertical-align: middle;}
-		.options-text {
-			display: inline-block;
-			vertical-align: middle;
-			margin-left: -4.5px;
-			font-size: 14px;}
-		.options-text span {
-		color: white;
-		background-color: $ltgrey;
-		padding: 7px 11px 7px 11px;}
+		img {}
+		.options-text {}
+		.options-text span {}
 	}
-	.mid-option {
-		margin-left: 10px;
-		margin-right: 10px;}
+	.mid-option {}
 	.options {
-		.shareicon {
-			background-color: $dkblue;}
+		.shareicon {}
 		.last-option span {
-			background-color: $medblue;
 		}
 	}
 }
@@ -106,42 +60,21 @@ section {
 
 aside {
 	width: 280px;
-	margin-top: 90px;
+	margin-top: 80px;
 	margin-right: 160px;
 	float: right;
-	.authorR {
-		width: 84px;
-		height: 84px;
-		margin: 0 98px 30px 98px;}
+	.authorR {}
 	ul {
-		text-align: center;
 		margin-bottom: 50px;
 		li {
-			color: $ltgrey;
-			display: inline-block;
-			font-size: 0.875em;
-			a {
-				text-decoration: none;}
+			a {}
 		}			
-		li:nth-of-type(2) {
-			margin: 0 20px;}
+		li:nth-of-type(2) {}
 	}			
-	.paddle {
-		height: 300px;
-		width: 280px;}
-	.ad {
-		font-size: 0.875em;
-		float: right;
-		margin-top: 5px;}
-	.side-head {
-		font-size: 1.063em;
-		font-weight: bold;
-		color: $medblue;
-		margin: 73px 0 7px;}
-	.side-copy {
-		font-size: 0.875em;
-		color: $ltgrey;
-		line-height: 24px;}
+	.paddle {}
+	.ad {}
+	.side-head {}
+	.side-copy {}
 }			
 
 /*
@@ -159,38 +92,34 @@ aside {
   ========================================
 */
 
-.horizLine {
-	border-top: solid 1px $ltgrey;
-	width: 100%;
-	margin-top: 64px;}
+.horizLine {}
 .image {
 	width: 325px;
 	height: 330px;
 	float: left;
 	.text {
 		font-size: 1.75em;
-		color: $dkblue;
 		float: left;
-		margin-top: 290px;
+		margin-top: 280px;
 		margin-left: 10px;}
 	.beer-text {
 		color: white;}
 	.z {
-		margin-top: 246px;
+		margin-top: 284px;
 		line-height: 1.4em;}	
 }
 
 .surfer {
-	background: url("../images/surfer.jpg");}
+	background-image: url("../images/surfer.jpg");}
 
 .beer {
-	background: url("../images/beer.jpg");}
+	background-image: url("../images/beer.jpg");}
 
 .zack {
-	background: url("../images/zack.jpg");}
+	background-image: url("../images/zack.jpg");}
 
 .booze {
-	background: url("../images/booze.jpg");}
+	background-image: url("../images/booze.jpg");}
 
 /*
   ========================================
@@ -199,31 +128,28 @@ aside {
 */
 
 footer {
-	width: 1300px;
-	height: 100px;
-	background: $dkblue;
 	div {
 		display: inline-block;
 		vertical-align: middle;
-		margin-top: 31.5px;
+		margin-top: 20px;
 		margin-left: 165px;
 		img {
 			float: left;
+			vertical-align: middle;
 			margin-right: 10px;}
 		.footer-details {
 			font-size: 14px;
 			color: $ltgrey;}
 	}
 	.copyright {
+		vertical-align: middle;
 		float: left;
-		margin-top: 12px;}
+		margin-top: 30px;}
 	.title-right-bottom {
-		color: $ltgrey;
+		vertical-align: middle;
 		float: right;
 		margin-right: 165px;
-		margin-top: 41.5px;}
+		margin-top: 0}
 }
-
-
 
 }

@@ -482,36 +482,15 @@ footer {
     background-image: url("../images/booze.jpg"); } }
 @media screen and (min-width: 1220px) {
   header {
-    width: 1300px;
-    height: 523px;
-    background: url("../images/mainphoto.jpg");
-    background-size: cover; }
-    header div {
-      float: left;
-      margin-left: 110px;
-      margin-top: 10px; }
-      header div img {
-        width: 46px;
-        display: inline-block;
-        vertical-align: middle; }
-      header div p {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 10px; }
+    height: 523px; }
     header nav {
-      color: #083452;
-      float: right;
-      margin-top: 23px;
-      margin-right: 110px; }
+      margin-top: 16px; }
       header nav img {
         width: 26px;
         display: inline-block;
         vertical-align: middle;
         margin-left: 10px; }
-      header nav li {
-        display: inline-block; }
     header h1 {
-      font-weight: bold;
       font-size: 110px;
       padding-top: 200px; }
     header h3 {
@@ -525,50 +504,12 @@ footer {
   section {
     max-width: 610px;
     margin-left: 160px;
-    float: left;
     margin-top: 80px; }
     section h2 {
-      font-size: 3em;
-      line-height: 1.1em; }
-    section .author {
-      height: 22px;
-      margin-top: 16px; }
+      font-size: 3em; }
     section .time {
-      display: inline-block;
       margin-left: 80px;
-      font-size: 14px;
-      color: #a3b3bf;
-      margin-bottom: 30px; }
-    section .verticalLine {
-      border-left: solid 1px #a3b3bf;
-      height: 55px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 5px; }
-    section .options {
-      float: left;
-      margin-top: 15px; }
-      section .options img {
-        width: 33px;
-        height: 30px;
-        background-color: #5e686f;
-        vertical-align: middle; }
-      section .options .options-text {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: -4.5px;
-        font-size: 14px; }
-      section .options .options-text span {
-        color: white;
-        background-color: #a3b3bf;
-        padding: 7px 11px 7px 11px; }
-    section .mid-option {
-      margin-left: 10px;
-      margin-right: 10px; }
-    section .options .shareicon {
-      background-color: #083452; }
-    section .options .last-option span {
-      background-color: #106db3; }
+      font-size: 0.875rem; }
 
   /*
     ========================================
@@ -577,40 +518,11 @@ footer {
   */
   aside {
     width: 280px;
-    margin-top: 90px;
+    margin-top: 80px;
     margin-right: 160px;
     float: right; }
-    aside .authorR {
-      width: 84px;
-      height: 84px;
-      margin: 0 98px 30px 98px; }
     aside ul {
-      text-align: center;
       margin-bottom: 50px; }
-      aside ul li {
-        color: #a3b3bf;
-        display: inline-block;
-        font-size: 0.875em; }
-        aside ul li a {
-          text-decoration: none; }
-      aside ul li:nth-of-type(2) {
-        margin: 0 20px; }
-    aside .paddle {
-      height: 300px;
-      width: 280px; }
-    aside .ad {
-      font-size: 0.875em;
-      float: right;
-      margin-top: 5px; }
-    aside .side-head {
-      font-size: 1.063em;
-      font-weight: bold;
-      color: #106db3;
-      margin: 73px 0 7px; }
-    aside .side-copy {
-      font-size: 0.875em;
-      color: #a3b3bf;
-      line-height: 24px; }
 
   /*
     ========================================
@@ -625,66 +537,58 @@ footer {
    Bottom Section
     ========================================
   */
-  .horizLine {
-    border-top: solid 1px #a3b3bf;
-    width: 100%;
-    margin-top: 64px; }
-
   .image {
     width: 325px;
     height: 330px;
     float: left; }
     .image .text {
       font-size: 1.75em;
-      color: #083452;
       float: left;
-      margin-top: 290px;
+      margin-top: 280px;
       margin-left: 10px; }
     .image .beer-text {
       color: white; }
     .image .z {
-      margin-top: 246px;
+      margin-top: 284px;
       line-height: 1.4em; }
 
   .surfer {
-    background: url("../images/surfer.jpg"); }
+    background-image: url("../images/surfer.jpg"); }
 
   .beer {
-    background: url("../images/beer.jpg"); }
+    background-image: url("../images/beer.jpg"); }
 
   .zack {
-    background: url("../images/zack.jpg"); }
+    background-image: url("../images/zack.jpg"); }
 
   .booze {
-    background: url("../images/booze.jpg"); }
+    background-image: url("../images/booze.jpg"); }
 
   /*
     ========================================
     Footer
     ========================================
   */
-  footer {
-    width: 1300px;
-    height: 100px;
-    background: #083452; }
-    footer div {
-      display: inline-block;
-      vertical-align: middle;
-      margin-top: 31.5px;
-      margin-left: 165px; }
-      footer div img {
-        float: left;
-        margin-right: 10px; }
-      footer div .footer-details {
-        font-size: 14px;
-        color: #a3b3bf; }
-    footer .copyright {
+  footer div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-left: 165px; }
+    footer div img {
       float: left;
-      margin-top: 12px; }
-    footer .title-right-bottom {
-      color: #a3b3bf;
-      float: right;
-      margin-right: 165px;
-      margin-top: 41.5px; } }
+      vertical-align: middle;
+      margin-right: 10px; }
+    footer div .footer-details {
+      font-size: 14px;
+      color: #a3b3bf; }
+  footer .copyright {
+    vertical-align: middle;
+    float: left;
+    margin-top: 30px; }
+  footer .title-right-bottom {
+    vertical-align: middle;
+    float: right;
+    margin-right: 165px;
+    margin-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */
