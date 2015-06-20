@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+.container {
+  max-width: 100%; }
+
+.grid-left {
+  width: 47%;
+  margin-left: 1.5%;
+  float: left;
+  margin-top: 20px; }
+
+.grid-right {
+  width: 47%;
+  margin-right: 1.5%;
+  float: right;
+  margin-top: 37px; }
+
+body {
+  background-color: #e2e4e5; }
+
+section {
+  max-width: 90%;
+  margin: 0 auto; }
+
+img {
+  max-width: 100%; }
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+h1 {
+  font-family: "museo-slab",serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #2c4e71;
+  font-size: 1rem; }
+
+li {
+  font-family: "lato",sans-serif;
+  color: #353432;
+  font-size: 0.875rem;
+  display: inline; }
+
+h2, .login-button, .button {
+  font-family: "lato",sans-serif;
+  color: #2c4e71;
+  font-weight: bold;
+  font-size: 0.8rem; }
+
+a {
+  text-decoration: none;
+  color: #353432; }
+
+span {
+  color: #fe7902; }
+
+span.project-txt {
+  font-family: "museo-slab",serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #2c4e71;
+  font-size: 0.875rem;
+  line-height: 0.5; }
+
+p {
+  font-family: "lato",sans-serif;
+  color: #353432;
+  font-weight: light;
+  font-size: 0.8rem;
+  line-height: 1.4; }
+
+	/*
+  ========================================
+  Clear Fix
+  ========================================
+*/
+.clear-fix {
+  clear: both; }
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+header {
+  max-width: 100%;
+  height: 100px;
+  background-color: #2e90ae; }
+  header .logo {
+    display: block;
+    text-align: center; }
+    header .logo img {
+      margin-top: 35px;
+      overflow: hidden; }
+
+nav {
+  margin-top: 50px;
+  text-align: center;
+  font-color: #353432; }
+
+	/*
+  ========================================
+  Home
+  ========================================
+*/
+section.index {
+  max-width: 100%; }
+
+.screenshot {
+  margin-top: 30px; }
+  .screenshot h2 {
+    margin-left: 20px;
+    margin-bottom: 2px; }
+
+/*
+  ========================================
+  Login/Sign Up/Submit Project/Submit Pitch
+  ========================================
+*/
+.grey-rectangle {
+  max-width: 80%;
+  background-color: #353432;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 30px 0; }
+  .grey-rectangle input {
+    background-color: #e2e4e5;
+    border-radius: 5px;
+    border: solid 3px #2e90ae;
+    text-align: center;
+    padding: 5px;
+    display: block;
+    margin: 20px auto; }
+  .grey-rectangle .buttons {
+    text-align: center;
+    max-width: 100%; }
+    .grey-rectangle .buttons .button {
+      background-color: #e2e4e5;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      text-align: center;
+      display: inline-block;
+      margin: 20px 10px; }
+    .grey-rectangle .buttons .sign-up, .grey-rectangle .buttons .submit {
+      color: #95b969;
+      border: solid 2px #95b969; }
+    .grey-rectangle .buttons .login {
+      color: #fe7902;
+      border: solid 2px #fe7902; }
+    .grey-rectangle .buttons .signup-text, .grey-rectangle .buttons .submit-text {
+      vertical-align: middle;
+      color: #95b969;
+      margin-top: 25px; }
+    .grey-rectangle .buttons .login-text {
+      vertical-align: middle;
+      margin-top: 25px;
+      color: #fe7902; }
+
+/*
+  ========================================
+  Project Page
+  ========================================
+*/
+section h1 {
+  margin-top: 30px; }
+section img {
+  display: block;
+  margin: 2px auto; }
+
+/*
+  ========================================
+  Success Page
+  ========================================
+*/
+section.success img {
+  margin-top: 15px; }
+section.success p {
+  color: #95b969;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px; }
+
+/*# sourceMappingURL=style.css.map */
