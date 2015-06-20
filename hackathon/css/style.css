@@ -80,7 +80,7 @@ img {
   Typography
   ========================================
 */
-h1 {
+h1, span.project-txt {
   font-family: "museo-slab",serif;
   font-style: normal;
   font-weight: 700;
@@ -107,10 +107,6 @@ span {
   color: #fe7902; }
 
 span.project-txt {
-  font-family: "museo-slab",serif;
-  font-style: normal;
-  font-weight: 700;
-  color: #2c4e71;
   font-size: 0.875rem;
   line-height: 0.5; }
 
@@ -201,7 +197,7 @@ section.index {
     .grey-rectangle .buttons .login {
       color: #fe7902;
       border: solid 2px #fe7902; }
-    .grey-rectangle .buttons .signup-text, .grey-rectangle .buttons .submit-text {
+    .grey-rectangle .buttons a .signup-text, .grey-rectangle .buttons .submit-text {
       vertical-align: middle;
       color: #95b969;
       margin-top: 25px; }
@@ -233,5 +229,20 @@ section.success p {
   text-align: center;
   font-size: 2rem;
   margin-top: 10px; }
+
+/*
+  ========================================
+  Pitch Page
+  ========================================
+*/
+section.pitch-page {
+  margin-top: 30px; }
+  section.pitch-page div {
+    margin-top: 10px;
+    padding: 3px; }
+    section.pitch-page div:nth-of-type(2n) {
+      background-color: #95b969; }
+  section.pitch-page h1 {
+    margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */
