@@ -265,6 +265,26 @@ section.pitch-page {
 
 /*
   ========================================
+  Footer
+  ========================================
+*/
+footer {
+  background-color: #353432;
+  width: 100%;
+  height: 50px;
+  margin-top: 50px; }
+  footer p {
+    color: #95b969;
+    text-align: center;
+    padding-top: 15px; }
+
+/*
+  ========================================
+  Woops
+  ========================================
+*/
+/*
+  ========================================
   Media Query-700
   ========================================
 */
@@ -310,8 +330,6 @@ section.pitch-page {
       line-height: 1.6; }
       section .comment-box p:nth-of-type(2n) {
         background-color: #e2e4e5; }
-  section p.project-text {
-    margin-top: 20px; }
   section .project-photo, section .project-comments {
     width: 47%;
     margin-left: 1.5%;
@@ -330,7 +348,7 @@ section.pitch-page {
   */
   section.pitch-page p {
     margin-top: 0; } }
-/*
+ /*
   ========================================
   Media Query-1024
   ========================================
@@ -347,6 +365,7 @@ section.pitch-page {
     .row .col6 {
       width: 26.69445%;
       margin-right: 1.5%;
+      margin-left: 1.5%;
       max-width: 100%; }
     .row .col6:nth-of-type(2n) {
       float: left; } }

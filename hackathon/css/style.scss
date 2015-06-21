@@ -32,6 +32,7 @@ section {
 img {
 	max-width: 100%;
 }
+
 /*
   ========================================
   Typography
@@ -76,10 +77,10 @@ span.project-txt {
 
 p {
 	font-family: "lato",sans-serif;
-  	color: $dkgrey;
-  	font-weight: light;
-  	font-size: 0.8rem;
-  	line-height: 1.4;
+	color: $dkgrey;
+	font-weight: light;
+	font-size: 0.8rem;
+	line-height: 1.4;
 }
 	/*
   ========================================
@@ -124,15 +125,15 @@ nav {
 
 .row {
 	width: 100%;
-  	margin: 0 auto;
-  	overflow: hidden;
+	margin: 0 auto;
+	overflow: hidden;
   .col6 {
-    box-sizing: border-box;
-    // display: inline-block;
-    float: left;
-    width: 100%;
-    font-family: sans-serif;
-    margin-bottom: 5px;
+	box-sizing: border-box;
+	// display: inline-block;
+	float: left;
+	width: 100%;
+	font-family: sans-serif;
+	margin-bottom: 5px;
 	margin-top: 30px;
 		img {
 		width: 100%;
@@ -161,11 +162,11 @@ nav {
 	input {
 		background-color: $ltgrey;
 		border-radius: 5px;
-	  	border: solid 3px $ltblue;
-	  	text-align: center;
-	  	padding: 5px;
-	  	display: block;
-	  	margin: 20px auto;
+		border: solid 3px $ltblue;
+		text-align: center;
+		padding: 5px;
+		display: block;
+		margin: 20px auto;
 	}
 	.buttons {
 		text-align: center;
@@ -180,11 +181,11 @@ nav {
 			margin: 20px 10px;}
 		.sign-up, .submit {
 			color: $green;
-	  		border: solid 2px $green;}
-  		.login {
-	  		color: $orange;
-	  		border: solid 2px $orange;}	
-  		a .signup-text, .submit-text {
+			border: solid 2px $green;}
+		.login {
+			color: $orange;
+			border: solid 2px $orange;}	
+		a .signup-text, .submit-text {
 			vertical-align: middle;
 			color: $green;
 			margin-top: 25px;} 	
@@ -204,7 +205,7 @@ nav {
 
 
 section {
- 	h1 {
+	h1 {
 		margin-top: 30px;}
 	img {
 		display: block;
@@ -231,14 +232,13 @@ section {
 }
 
 .project-info {
-		width: 80%;
-		// background-color: red;
-		margin-top: 10px;
-			p {
-				line-height: 1.8;
-				width: 100%;
-			}
-	}	
+	width: 80%;
+	margin-top: 10px;
+		p {
+			line-height: 1.8;
+			width: 100%;
+		}
+}	
 
 /*
   ========================================
@@ -277,6 +277,38 @@ section.pitch-page {
 	
 }
 
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer {
+	background-color: $dkgrey;
+	width: 100%;
+	height: 50px;
+	margin-top: 50px;
+	p {
+		color: $green;
+		text-align: center;
+		padding-top: 15px;
+
+	}
+}	
+
+/*
+  ========================================
+  Woops
+  ========================================
+*/
+
+// .404 {
+// 	margin: 0 auto
+// }
+// .woops {
+// 	display: block;
+// 	margin: 20px auto;
+// }
 
 
 @import 'mid-media';
