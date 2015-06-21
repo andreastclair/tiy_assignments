@@ -1,6 +1,13 @@
 @import 'reset';
 @import 'colors';
 
+@mixin grid ($col-num) {
+  width: ($col * $col-num)+($gut * (($col-num)-1));
+  margin-right: $gut;
+  max-width: 100%;
+} 
+$col: 4.138889%;
+$gut: 1.5%;
 
 /*
   ========================================
@@ -17,7 +24,7 @@ body {
 }
 
 section {
-	max-width: 90%;
+	max-width: 80%;
 	margin: 0 auto;
 }
 
@@ -63,7 +70,7 @@ span {
 
 span.project-txt {
 	font-size: 0.875rem;
-	line-height: 0.5;
+	line-height: 2;
 }
 
 p {
@@ -114,9 +121,16 @@ nav {
   ========================================
 */
 
-// section.index {
-// 	max-width: 100%;
-// }
+.row {
+  margin: 0 auto;
+  overflow: hidden;
+  .col6 {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    font-family: sans-serif;
+    margin-bottom: 5px;}
+}
 
 .screenshot {
 	margin-top: 30px;
@@ -184,19 +198,21 @@ nav {
   Project Page
   ========================================
 */
+
+
 section {
  	h1 {
 		margin-top: 30px;}
 	img {
 		display: block;
 		margin: 2px auto;}
-	.comments {
+	.comment-box {
 		padding: 5px;
-		width: 100%;
-		margin-top: 5px;
+		width: 97%;
 		background-color: #ffffff;
 		border-radius: 5px;
 		border: solid 1px $dkblue;
+		margin: 5px auto;
 			textarea {
 				border-radius: 5px;
 				width: 75%;
@@ -210,6 +226,16 @@ section {
 			}
 	}
 }
+
+.project-info {
+		width: 80%;
+		// background-color: red;
+		margin-top: 10px;
+			p {
+				line-height: 1.8;
+				width: 100%;
+			}
+	}	
 
 /*
   ========================================
@@ -251,6 +277,7 @@ section.pitch-page {
 
 
 @import 'mid-media';
+@import 'max-media';
 
 
 
