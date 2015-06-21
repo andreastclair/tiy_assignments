@@ -4,6 +4,7 @@
 @mixin grid ($col-num) {
   width: ($col * $col-num)+($gut * (($col-num)-1));
   margin-right: $gut;
+  margin-left: $gut;
   max-width: 100%;
 } 
 $col: 4.138889%;
@@ -122,25 +123,27 @@ nav {
 */
 
 .row {
-  margin: 0 auto;
-  overflow: hidden;
+	width: 100%;
+  	margin: 0 auto;
+  	overflow: hidden;
   .col6 {
     box-sizing: border-box;
+    // display: inline-block;
     float: left;
     width: 100%;
     font-family: sans-serif;
-    margin-bottom: 5px;}
-}
-
-.screenshot {
+    margin-bottom: 5px;
 	margin-top: 30px;
-	img {
+		img {
 		width: 100%;
-	}
-	h2 {
+		}
+		h2 {
 		margin-left: 20px;
 		margin-bottom: 2px;}
+	}
 }
+
+
 
 /*
   ========================================

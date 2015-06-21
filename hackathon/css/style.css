@@ -140,6 +140,7 @@ nav {
   ========================================
 */
 .row {
+  width: 100%;
   margin: 0 auto;
   overflow: hidden; }
   .row .col6 {
@@ -147,15 +148,13 @@ nav {
     float: left;
     width: 100%;
     font-family: sans-serif;
-    margin-bottom: 5px; }
-
-.screenshot {
-  margin-top: 30px; }
-  .screenshot img {
-    width: 100%; }
-  .screenshot h2 {
-    margin-left: 20px;
-    margin-bottom: 2px; }
+    margin-bottom: 5px;
+    margin-top: 30px; }
+    .row .col6 img {
+      width: 100%; }
+    .row .col6 h2 {
+      margin-left: 20px;
+      margin-bottom: 2px; }
 
 /*
   ========================================
@@ -275,10 +274,15 @@ section.pitch-page {
     Home
     ========================================
   */
-  .row .col6 {
-    width: 43.61111%;
-    margin-right: 1.5%;
-    max-width: 100%; }
+  .row {
+    width: 90%; }
+    .row .col6 {
+      width: 43.61111%;
+      margin-right: 1.5%;
+      margin-left: 1.5%;
+      max-width: 100%; }
+    .row .col6:nth-of-type(2n) {
+      float: right; }
 
   /*
     ========================================
@@ -337,9 +341,14 @@ section.pitch-page {
     Home
     ========================================
   */
-  .row .col6 {
-    width: 26.69445%;
-    margin-right: 1.5%;
-    max-width: 100%; } }
+  .row {
+    width: 90%;
+    padding-left: 120px; }
+    .row .col6 {
+      width: 26.69445%;
+      margin-right: 1.5%;
+      max-width: 100%; }
+    .row .col6:nth-of-type(2n) {
+      float: left; } }
 
 /*# sourceMappingURL=style.css.map */
