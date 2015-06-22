@@ -277,6 +277,8 @@ footer {
     color: #95b969;
     text-align: center;
     padding-top: 15px; }
+    footer p a {
+      color: #95b969; }
 
 /*
   ========================================
