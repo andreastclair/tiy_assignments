@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+.container {
+  max-width: 100%; }
+
+body {
+  background-color: #e2e4e5; }
+
+section {
+  max-width: 80%;
+  margin: 0 auto; }
+
+img {
+  max-width: 100%; }
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+h1, span.project-txt {
+  font-family: "museo-slab",serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #2c4e71;
+  font-size: 1rem; }
+
+li {
+  font-family: "lato",sans-serif;
+  color: #353432;
+  font-size: 0.875rem;
+  display: inline; }
+
+h2, .login-button, .button {
+  font-family: "lato",sans-serif;
+  color: #2c4e71;
+  font-weight: bold;
+  font-size: 0.8rem; }
+
+a {
+  text-decoration: none;
+  color: #353432; }
+
+span {
+  color: #fe7902; }
+
+span.project-txt {
+  font-size: 0.875rem;
+  line-height: 2; }
+
+p {
+  font-family: "lato",sans-serif;
+  color: #353432;
+  font-weight: light;
+  font-size: 0.8rem;
+  line-height: 1.4; }
+
+	/*
+  ========================================
+  Clear Fix
+  ========================================
+*/
+.clear-fix {
+  clear: both; }
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+header {
+  max-width: 100%;
+  height: 100px;
+  background-color: #2e90ae; }
+  header .logo {
+    display: block;
+    text-align: center; }
+    header .logo img {
+      margin-top: 35px;
+      overflow: hidden; }
+
+nav {
+  margin-top: 50px;
+  text-align: center;
+  font-color: #353432; }
+
+	/*
+  ========================================
+  Home
+  ========================================
+*/
+.row {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; }
+  .row .col6 {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    margin-top: 30px; }
+    .row .col6 img {
+      width: 100%; }
+    .row .col6 h2 {
+      margin-left: 20px;
+      margin-bottom: 2px; }
+
+/*
+  ========================================
+  Login/Sign Up/Submit Project/Submit Pitch
+  ========================================
+*/
+.grey-rectangle {
+  max-width: 80%;
+  background-color: #353432;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 30px 0; }
+  .grey-rectangle input {
+    background-color: #e2e4e5;
+    border-radius: 5px;
+    border: solid 3px #2e90ae;
+    text-align: center;
+    padding: 5px;
+    display: block;
+    margin: 20px auto; }
+  .grey-rectangle .buttons {
+    text-align: center;
+    max-width: 100%; }
+    .grey-rectangle .buttons .button {
+      background-color: #e2e4e5;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      text-align: center;
+      display: inline-block;
+      margin: 20px 10px; }
+    .grey-rectangle .buttons .sign-up, .grey-rectangle .buttons .submit {
+      color: #95b969;
+      border: solid 2px #95b969; }
+    .grey-rectangle .buttons .login {
+      color: #fe7902;
+      border: solid 2px #fe7902; }
+    .grey-rectangle .buttons a .signup-text, .grey-rectangle .buttons .submit-text {
+      vertical-align: middle;
+      color: #95b969;
+      margin-top: 25px; }
+    .grey-rectangle .buttons .login-text {
+      vertical-align: middle;
+      margin-top: 25px;
+      color: #fe7902; }
+
+/*
+  ========================================
+  Project Page
+  ========================================
+*/
+section h1 {
+  margin-top: 30px; }
+section img {
+  display: block;
+  margin: 2px auto; }
+section .comment-box {
+  padding: 5px;
+  width: 97%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #2c4e71;
+  margin: 5px auto; }
+  section .comment-box textarea {
+    border-radius: 5px;
+    width: 75%; }
+  section .comment-box p {
+    font-size: 0.875rem;
+    line-height: 1.6; }
+    section .comment-box p:nth-of-type(2n) {
+      background-color: #e2e4e5; }
+
+.project-info {
+  width: 80%;
+  margin-top: 10px; }
+  .project-info p {
+    line-height: 1.8;
+    width: 100%; }
+
+/*
+  ========================================
+  Success Page
+  ========================================
+*/
+section.success img {
+  margin-top: 15px; }
+section.success p {
+  color: #95b969;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px; }
+
+/*
+  ========================================
+  Pitch Page
+  ========================================
+*/
+section.pitch-page {
+  margin-top: 30px; }
+  section.pitch-page div {
+    margin-top: 10px;
+    padding: 3px; }
+    section.pitch-page div:nth-of-type(2n) {
+      background-color: #95b969; }
+  section.pitch-page h1 {
+    margin-top: 0; }
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer {
+  background-color: #353432;
+  width: 100%;
+  height: 50px;
+  margin-top: 50px; }
+  footer p {
+    color: #95b969;
+    text-align: center;
+    padding-top: 15px; }
+    footer p a {
+      color: #95b969; }
+
+/*
+  ========================================
+  Woops
+  ========================================
+*/
+/*
+  ========================================
+  Media Query-700
+  ========================================
+*/
+@media screen and (min-width: 700px) {
+  /*
+    ========================================
+    Home
+    ========================================
+  */
+  .row {
+    width: 90%; }
+    .row .col6 {
+      width: 43.61111%;
+      margin-right: 1.5%;
+      margin-left: 1.5%;
+      max-width: 100%; }
+    .row .col6:nth-of-type(2n) {
+      float: right; }
+
+  /*
+    ========================================
+    Project Page
+    ========================================
+  */
+  section h1 {
+    margin-top: 0; }
+  section img {
+    display: block;
+    margin: 2px auto; }
+  section .comment-box {
+    padding: 5px;
+    width: 96%;
+    margin-top: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: solid 1px #2c4e71; }
+    section .comment-box textarea {
+      border: solid 1px #2c4e71;
+      border-radius: 5px;
+      width: 75%; }
+    section .comment-box p {
+      font-size: 0.875rem;
+      line-height: 1.6; }
+      section .comment-box p:nth-of-type(2n) {
+        background-color: #e2e4e5; }
+  section .project-photo, section .project-comments {
+    width: 47%;
+    margin-left: 1.5%;
+    float: left;
+    margin-top: 20px; }
+  section .project-info {
+    width: 47%;
+    margin-right: 1.5%;
+    float: right;
+    margin-top: 30px; }
+
+  /*
+    ========================================
+    Pitch Page
+    ========================================
+  */
+  section.pitch-page p {
+    margin-top: 0; } }
+ /*
+  ========================================
+  Media Query-1024
+  ========================================
+*/
+@media screen and (min-width: 1024px) {
+  /*
+    ========================================
+    Home
+    ========================================
+  */
+  .row {
+    width: 90%;
+    padding-left: 120px; }
+    .row .col6 {
+      width: 26.69445%;
+      margin-right: 1.5%;
+      margin-left: 1.5%;
+      max-width: 100%; }
+    .row .col6:nth-of-type(2n) {
+      float: left; } }
+
+/*# sourceMappingURL=style.css.map */
