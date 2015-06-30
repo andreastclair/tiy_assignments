@@ -2,6 +2,10 @@
 @import 'responsive-nav';
 @import 'custom';
 
+// =============================
+// Mixin
+// =============================
+
 @mixin grid ($col-num) {
   width: ($col * $col-num)+($gut * (($col-num)-1));
   margin-right: $gut;
@@ -10,18 +14,41 @@
 
 $col: 3.5%;
 // $col: 4.138889%;
-$gut: 2.8%;
+$gut: 2.5%;
+
+// =============================
+// Grid
+// =============================
 
 .row {
   margin: 0 auto;
   overflow: hidden;
+}
+
   .col1, .col2, .col3, .col6 {
     box-sizing: border-box;
     float: left;
     width: 100%;
     font-family: sans-serif;
-    margin-bottom: 5px;}
 }
+
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+// =============================
+// Clear Fix
+// =============================
+	
+	.clear-fix {
+		clear: both;
+	}
+
+// =============================
+// Typography
+// =============================
 
 body {
 	// font-family: "franklin-gothic-urw",sans-serif;
@@ -29,35 +56,22 @@ body {
 	background: $ltgrey;
 }
 
-.container {
-	width: 90%;
-	margin: 0 auto;
-}
-
-// ===================
-// Clear Fix
-// ===================
-	
-	.clear-fix {
-		clear: both;
-	}
-
-// ===================
-// Typography
-// ===================
-
 h1 {
 	color: $red;
 	font-size: 4.5rem;
 	font-weight: bold;
 	text-shadow: 1px 1px 0 $yellow;
 	padding-left: 5%;
+	padding-top: 50px;
 }
 
 h2 {
-	color: $ltgrey;
+	color: $yellow;
 	font-size: 1rem;
 	padding-left: 5%;
+	background-color: rgba(55, 55, 55, 0.5);
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 h3 {
@@ -71,6 +85,7 @@ h3 {
 h4 {
 	color: $black;
 	font-size: 1rem;
+	font-family: "adelle",serif;
 	font-weight: bold;
 	line-height: 1.4;
 	margin-bottom: 5px;
@@ -115,9 +130,9 @@ span {
 
 }
 
-// ===================
+// =============================
 // Header
-// ===================
+// =============================
 
 header {
 	background: $red;
@@ -137,30 +152,34 @@ header {
 	border-bottom: 10px solid $yellow;
 }
 
-.red-border {
-	width: 100%;
-	height: 4px;
-	background-color: $red;
-	margin-top: 1px;
-	margin-bottom: 40px;
-}
-
-// ===================
+// =============================
 // Section
-// ===================
+// =============================
 
-.yellow-border {
-	width: 100%;
-	height: 10px;
-	background-color: $yellow;
-	margin-top: 40px;
+.borders {
+	.red-border {
+		width: 100%;
+		height: 4px;
+		background-color: $red;
+		margin-top: 1px;
+		margin-bottom: 40px;
+	}
+	.yellow-border {
+		width: 100%;
+		height: 10px;
+		background-color: $yellow;
+		margin-top: 40px;
+	}
 }
 
+// =============================
+// Aside
+// =============================
 
 
-// ===================
+// =============================
 // Footer
-// ===================
+// =============================
 
 footer {
 	div {
@@ -171,7 +190,11 @@ footer {
 	}
 }
 
+
+
 @import 'media-mid';
+@import 'media-max';
+
 
 
 

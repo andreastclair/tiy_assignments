@@ -109,16 +109,12 @@ table {
 .row {
   margin: 0 auto;
   overflow: hidden; }
-  .row .col1, .row .col2, .row .col3, .row .col6 {
-    box-sizing: border-box;
-    float: left;
-    width: 100%;
-    font-family: sans-serif;
-    margin-bottom: 5px; }
 
-body {
-  font-family: "adelle",serif;
-  background: #f6f4f4; }
+.col1, .col2, .col3, .col6 {
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  font-family: sans-serif; }
 
 .container {
   width: 90%;
@@ -127,17 +123,25 @@ body {
 .clear-fix {
   clear: both; }
 
+body {
+  font-family: "adelle",serif;
+  background: #f6f4f4; }
+
 h1 {
   color: #dc0606;
   font-size: 4.5rem;
   font-weight: bold;
   text-shadow: 1px 1px 0 #ffe505;
-  padding-left: 5%; }
+  padding-left: 5%;
+  padding-top: 50px; }
 
 h2 {
-  color: #f6f4f4;
+  color: #ffe505;
   font-size: 1rem;
-  padding-left: 5%; }
+  padding-left: 5%;
+  background-color: rgba(55, 55, 55, 0.5);
+  padding-top: 1%;
+  padding-bottom: 1%; }
 
 h3 {
   color: #dc0606;
@@ -148,6 +152,7 @@ h3 {
 h4 {
   color: #373737;
   font-size: 1rem;
+  font-family: "adelle",serif;
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 5px; }
@@ -200,14 +205,13 @@ header {
   background-size: cover;
   border-bottom: 10px solid #ffe505; }
 
-.red-border {
+.borders .red-border {
   width: 100%;
   height: 4px;
   background-color: #dc0606;
   margin-top: 1px;
   margin-bottom: 40px; }
-
-.yellow-border {
+.borders .yellow-border {
   width: 100%;
   height: 10px;
   background-color: #ffe505;
@@ -222,22 +226,25 @@ footer div {
 @media screen and (min-width: 40em) {
   .row {
     overflow: hidden; }
-    .row .col6 {
-      width: 47.6%;
-      margin-right: 2.8%;
-      max-width: 100%; }
-    .row div:last-child {
-      margin-right: 0; }
 
-  .right-special {
-    margin-top: 45px; }
+  .col6 {
+    width: 33.5%;
+    margin-right: 2.5%;
+    max-width: 100%;
+    margin-bottom: 40px; }
 
-  .right-byo {
-    margin-top: 58px; }
+  div:last-child {
+    margin-right: 0; }
 
   h1 {
     color: #dc0606;
     font-size: 5rem; }
+
+  h2 {
+    color: #ffe505;
+    font-size: 1rem;
+    padding-left: 5%;
+    background-color: rgba(55, 55, 55, 0.5); }
 
   h3 {
     font-size: 2.5rem; }
@@ -249,13 +256,55 @@ footer div {
 
   .pizza-toss {
     height: 250px;
-    background: url("../images/pizza-toss.jpg");
-    background-position: 0 30%;
-    background-size: cover;
-    border-bottom: 10px solid #ffe505; }
+    background-position: 0 30%; }
 
-  .red-border {
-    margin-bottom: 0;
-    height: 12px; } }
+  .borders .red-border {
+    width: 100%;
+    height: 4px;
+    background-color: #dc0606;
+    margin-top: 1px; }
+  .borders .yellow-border {
+    width: 100%;
+    height: 10px;
+    background-color: #ffe505; }
+
+  aside.col6 {
+    margin-right: 0; } }
+@media screen and (min-width: 1200px) {
+  .row {
+    overflow: hidden; }
+
+  div:last-child {
+    margin-right: 0; }
+
+  h1 {
+    font-size: 7rem; }
+
+  h2 {
+    color: #ffe505;
+    font-size: 2rem;
+    padding-left: 5%;
+    background-color: rgba(55, 55, 55, 0.5); }
+
+  .build {
+    text-align: left;
+    width: 280px;
+    float: none; }
+
+  .pizza-toss {
+    height: 350px;
+    background-position: 0 30%; }
+
+  .borders {
+    display: none; }
+
+  aside {
+    border-left: 5px solid #ffe505;
+    border-top: 5px solid #ffe505;
+    border-bottom: 5px solid #ffe505;
+    border-radius: 10px;
+    padding: 2%;
+    float: left;
+    margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */

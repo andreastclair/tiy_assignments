@@ -1,31 +1,39 @@
+// =============================
+// Media-Mid 640px
+// =============================
+
 @media screen and (min-width: 40em) {
   .row { 
     overflow: hidden;
+}
     .col6 {
-      @include grid(8);
+      @include grid(6);
+      margin-bottom: 40px;
       }
     
     div:last-child {
       margin-right: 0;
       }
-  }
-
-  .right-special {
-  	margin-top: 45px;
-  }
-
-  .right-byo {
-  	margin-top: 58px;
-  }
+  
 	
+// =============================
+// Typography
+// =============================	
 
 h1 {
 	color: $red;
 	font-size: 5rem;}
 
+h2 {
+	color: $yellow;
+	font-size: 1rem;
+	padding-left: 5%;
+	background-color: rgba(55, 55, 55, 0.5);
+}
+
 h3 {
 	font-size: 2.5rem;
-	// margin-top: -7px;
+	// margin-top: 2.5rem;
 }
 
 .build {
@@ -35,18 +43,50 @@ h3 {
 	// margin-top: -7px;
 }
 
+// =============================
+// Header
+// =============================
+
 .pizza-toss {
 	height: 250px;
-	background: url("../images/pizza-toss.jpg");
 	background-position: 0 30%;
-	background-size: cover;
-	border-bottom: 10px solid $yellow;
+	// border-bottom: 10px solid $yellow;
 }
 
-.red-border {
-	margin-bottom: 0;
-	height: 12px;
+// =============================
+// Section
+// =============================
+.borders {
+	.red-border {
+		width: 100%;
+		height: 4px;
+		background-color: $red;
+		margin-top: 1px;
+		// margin-bottom: 40px;
+	}
+	.yellow-border {
+		width: 100%;
+		height: 10px;
+		background-color: $yellow;
+		// margin-top: 40px;
+	}
 }
+
+// =============================
+// Section
+// =============================
+
+// =============================
+// Aside
+// =============================
+
+aside.col6 {
+	margin-right: 0;
+}
+
+// =============================
+// Footer
+// =============================
 
 }
 
