@@ -35,7 +35,6 @@
 
 .nav-collapse.opened {
   max-height: 9999px;
-  // float: right;
 }
 
 .nav-toggle {
@@ -48,7 +47,7 @@
   user-select: none;
   color: white;
   // border: 1px solid white;
-  padding: 20px 2%;
+  padding: 10px 2%;
   // display: block;
   text-decoration: none;
 }
@@ -66,6 +65,7 @@
   }
   .js .nav-collapse.closed {
     max-height: none;
+    padding-top: 0;
   }
   .nav-toggle {
     display: none;

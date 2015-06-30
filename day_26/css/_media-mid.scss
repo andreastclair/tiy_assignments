@@ -1,0 +1,49 @@
+@media screen and (min-width: 40em) {
+
+h1 {
+	color: $red;
+	font-size: 5rem;}
+
+h3 {
+	font-size: 2.5rem;
+	// margin-top: -7px;
+}
+
+.build {
+	text-align: right;
+	width: 280px;
+	float: right;
+	// margin-top: -7px;
+}
+
+.grid-1-2 {
+	float: left;
+	width: 40%;
+}	
+
+.grid-2-2 {
+	float: right;
+	width: 40%;
+	margin-top: 56px;
+}
+
+.grid-2-2-byo {
+	margin-top: 68px;
+	float: right;
+	width: 40%;
+}
+
+.pizza-toss {
+	height: 250px;
+	background: url("../images/pizza-toss.jpg");
+	background-position: 0 30%;
+	background-size: cover;
+	border-bottom: 10px solid $yellow;
+}
+
+.red-border {
+	margin-bottom: 0;
+	height: 12px;
+}
+
+}
