@@ -1,0 +1,594 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container-main {
+  max-width: 1300px;
+  margin: 0 auto; }
+
+/*
+  ========================================
+Global Typography
+  ========================================
+*/
+body {
+  font-family: Helvetica;
+  color: #083452; }
+
+h1, h3 {
+  color: white;
+  text-align: center; }
+
+h2, h5 {
+  color: #083452; }
+
+h4 {
+  color: #106db3;
+  font-size: 1.2em;
+  font-style: italic;
+  float: left;
+  margin: 16px 0 30px 20px; }
+
+h5 {
+  font-size: 4em;
+  text-align: center;
+  margin: 41px 0; }
+
+p {
+  font-size: 1em;
+  line-height: 1.7em;
+  color: #5e686f; }
+
+/*
+  ========================================
+Links
+  ========================================
+*/
+a {
+  color: #a3b3bf; }
+
+nav a, li {
+  color: #083452;
+  text-decoration: none; }
+
+footer a {
+  text-decoration: none; }
+
+.posts {
+  text-decoration: none; }
+
+/*
+  ========================================
+  Images
+  ========================================
+*/
+img {
+  max-width: 100%; }
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+header {
+  width: 100%;
+  height: 180px;
+  background-image: url("../images/mainphoto.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  header div {
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px; }
+    header div img {
+      width: 10%;
+      display: inline-block;
+      vertical-align: middle; }
+    header div p {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 2px;
+      color: #083452;
+      font-size: 0.5rem; }
+  header nav {
+    color: #083452;
+    float: right;
+    margin-top: 8px;
+    margin-right: 0; }
+    header nav img {
+      width: 20%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 2px; }
+    header nav li {
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 0.5rem; }
+  header h1 {
+    font-weight: bold;
+    font-size: 2.1rem;
+    padding-top: 60px; }
+  header h3 {
+    font-size: 0.875rem;
+    padding-top: 1%; }
+
+/*
+  ========================================
+  Left Column/Section
+  ========================================
+*/
+section {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 40px; }
+  section h2 {
+    font-size: 1.875rem;
+    line-height: 1.1em; }
+  section .author {
+    height: 40px;
+    margin-left: 80px;
+    margin-top: 16px; }
+  section .time {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.5rem;
+    color: #a3b3bf;
+    margin-left: 10px;
+    margin-bottom: 30px; }
+  section .verticalLine {
+    border-left: solid 1px #a3b3bf;
+    height: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px; }
+  section .all-options {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px; }
+    section .all-options .options {
+      margin-top: 15px;
+      margin-bottom: 5px; }
+      section .all-options .options img {
+        width: 33px;
+        height: 30px;
+        background-color: #5e686f;
+        vertical-align: middle; }
+      section .all-options .options .options-text {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -4.5px;
+        font-size: 0.875rem; }
+      section .all-options .options .options-text span {
+        color: white;
+        background-color: #a3b3bf;
+        padding: 7px 10px 7px 10px; }
+    section .all-options .options .shareicon {
+      background-color: #083452; }
+    section .all-options .options .last-option span {
+      background-color: #106db3; }
+
+/*
+  ========================================
+  Right Column/Aside
+  ========================================
+*/
+aside {
+  max-width: 90%;
+  margin: 0 auto; }
+  aside .authorR {
+    width: 100%;
+    max-width: 84px;
+    padding: 20px 0;
+    display: block;
+    margin: 0 auto; }
+  aside ul {
+    text-align: center;
+    margin-bottom: 20px; }
+    aside ul li {
+      color: #a3b3bf;
+      display: inline-block;
+      text-align: center;
+      font-size: 1.2rem; }
+      aside ul li a {
+        text-decoration: none; }
+    aside ul li:nth-of-type(2) {
+      margin: 0 50px; }
+  aside .paddle {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; }
+  aside .ad {
+    font-size: 0.5em;
+    float: right;
+    margin-top: 5px;
+    margin-right: 11%; }
+  aside .side-head {
+    font-size: 1.063em;
+    font-weight: bold;
+    color: #106db3;
+    margin: 50px 0 7px; }
+  aside .side-copy {
+    font-size: 0.875em;
+    color: #a3b3bf;
+    line-height: 24px; }
+
+/*
+  ========================================
+ Clear Fix
+  ========================================
+*/
+.clear-fix {
+  clear: both; }
+
+/*
+  ========================================
+ Bottom Section
+  ========================================
+*/
+.horizLine {
+  border-top: solid 1px #a3b3bf;
+  width: 100%;
+  margin-top: 50px; }
+
+h5 {
+  font-size: 2.2rem; }
+
+.container-bottom .image {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60px;
+  text-align: center; }
+  .container-bottom .image .text {
+    font-size: 1.75rem;
+    color: #083452;
+    padding: 2% 0; }
+  .container-bottom .image .beer-text {
+    color: white; }
+
+.surfer {
+  background-image: url("../images/surfer.jpg"); }
+
+.beer {
+  background-image: url("../images/beer.jpg"); }
+
+.zack {
+  background-image: url("../images/zack.jpg"); }
+
+.booze {
+  background-image: url("../images/booze.jpg"); }
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer {
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+  background: #083452; }
+  footer div {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto; }
+    footer div img {
+      margin-top: 10px; }
+    footer div .footer-details {
+      font-size: 14px;
+      color: #a3b3bf; }
+    footer div .copyright {
+      margin-top: 0; }
+  footer .title-right-bottom {
+    color: #a3b3bf;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 0.875rem; }
+
+/*
+  ========================================
+  Media Query-600
+  ========================================
+*/
+@media screen and (min-width: 600px) {
+  header div img {
+    width: 15%; }
+  header div p {
+    font-size: 0.875rem; }
+  header nav {
+    margin-top: 12px;
+    margin-right: 5%; }
+    header nav img {
+      width: 30%;
+      margin-left: 2px; }
+    header nav li {
+      margin-left: 2px;
+      font-size: 0.875rem; }
+  header h1 {
+    font-size: 2.5rem;
+    padding-top: 70px; }
+  header h3 {
+    font-size: 0.875rem; }
+
+  section .time {
+    font-size: 1rem; }
+  section h4 {
+    font-size: 1.5em;
+    margin: 16px 0 30px 20px; }
+  section .all-options {
+    width: 100%;
+    display: block;
+    margin: 0 auto; }
+    section .all-options .options {
+      display: inline-block; }
+    section .all-options .mid-option {
+      margin-left: 9%;
+      margin-right: 9%; }
+
+  aside {
+    max-width: 90%;
+    margin: 0 auto; }
+    aside ul li:nth-of-type(2) {
+      margin: 0 20px; }
+    aside .ad {
+      font-size: 0.5em;
+      margin-top: 5px;
+      margin-right: 24%; }
+    aside .side-head {
+      font-size: 1.063em;
+      font-weight: bold;
+      color: #106db3;
+      margin: 73px 0 7px; }
+
+  .horizLine {
+    margin-top: 64px; }
+
+  .surfer {
+    background-image: url("../images/surfer.jpg"); }
+
+  .beer {
+    background-image: url("../images/beer.jpg"); }
+
+  .zack {
+    background-image: url("../images/zack.jpg"); }
+
+  .booze {
+    background-image: url("../images/booze.jpg"); } }
+/*
+  ========================================
+  Media Query-950
+  ========================================
+*/
+@media screen and (min-width: 950px) {
+  header {
+    height: 323px; }
+    header h1 {
+      font-size: 4rem;
+      padding-top: 110px; }
+
+  section {
+    max-width: 55%;
+    float: left;
+    margin-left: 5%; }
+    section h2 {
+      font-size: 2.1rem; }
+    section .all-options .options {
+      float: left;
+      margin-top: 15px;
+      margin-bottom: 0; }
+    section .all-options .mid-option {
+      margin-right: 3%;
+      margin-left: 3%; }
+
+  aside {
+    max-width: 30%;
+    float: right;
+    margin-right: 5%;
+    margin-top: 40px; }
+    aside .authorR {
+      padding: 0;
+      margin-bottom: 20px; }
+    aside ul li {
+      font-size: 0.875rem; }
+    aside ul li:nth-of-type(2) {
+      margin: 0 20px; }
+    aside .ad {
+      float: right;
+      margin-right: 0; }
+
+  .horizLine {
+    margin-top: 54px; }
+
+  .container-bottom {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    .container-bottom .posts {
+      margin: 0 auto;
+      display: inline-block; }
+    .container-bottom .image {
+      background-repeat: no-repeat;
+      width: 323px;
+      height: 330px;
+      margin: 0 auto; }
+
+  .surfer {
+    background-image: url("../images/surfer.jpg"); }
+
+  .beer {
+    background-image: url("../images/beer.jpg"); }
+
+  .zack {
+    background-image: url("../images/zack.jpg"); }
+
+  .booze {
+    background-image: url("../images/booze.jpg"); } }
+@media screen and (min-width: 1220px) {
+  header {
+    height: 523px; }
+    header nav {
+      margin-top: 16px; }
+      header nav img {
+        width: 26px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px; }
+    header h1 {
+      font-size: 110px;
+      padding-top: 200px; }
+    header h3 {
+      font-size: 1em; }
+
+  /*
+    ========================================
+    Left Column/Section
+    ========================================
+  */
+  section {
+    max-width: 610px;
+    margin-left: 160px;
+    margin-top: 80px; }
+    section h2 {
+      font-size: 3em; }
+    section .time {
+      margin-left: 80px;
+      font-size: 0.875rem; }
+
+  /*
+    ========================================
+    Right Column/Aside
+    ========================================
+  */
+  aside {
+    width: 280px;
+    margin-top: 80px;
+    margin-right: 160px;
+    float: right; }
+    aside ul {
+      margin-bottom: 50px; }
+
+  /*
+    ========================================
+   Clear Fix
+    ========================================
+  */
+  .clear-fix {
+    clear: both; }
+
+  /*
+    ========================================
+   Bottom Section
+    ========================================
+  */
+  .image {
+    width: 325px;
+    height: 330px;
+    float: left; }
+    .image .text {
+      font-size: 1.75em;
+      float: left;
+      margin-top: 280px;
+      margin-left: 10px; }
+    .image .beer-text {
+      color: white; }
+    .image .z {
+      margin-top: 284px;
+      line-height: 1.4em; }
+
+  .surfer {
+    background-image: url("../images/surfer.jpg"); }
+
+  .beer {
+    background-image: url("../images/beer.jpg"); }
+
+  .zack {
+    background-image: url("../images/zack.jpg"); }
+
+  .booze {
+    background-image: url("../images/booze.jpg"); }
+
+  /*
+    ========================================
+    Footer
+    ========================================
+  */
+  footer div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-left: 165px; }
+    footer div img {
+      float: left;
+      vertical-align: middle;
+      margin-right: 10px; }
+    footer div .footer-details {
+      font-size: 14px;
+      color: #a3b3bf; }
+  footer .copyright {
+    vertical-align: middle;
+    float: left;
+    margin-top: 30px; }
+  footer .title-right-bottom {
+    vertical-align: middle;
+    float: right;
+    margin-right: 165px;
+    margin-top: 0; } }
+
+/*# sourceMappingURL=style.css.map */

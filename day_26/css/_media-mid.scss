@@ -1,0 +1,85 @@
+// =============================
+// Media-Mid 640px
+// =============================
+
+@media screen and (min-width: 40em) {
+  .row { 
+    overflow: hidden;
+}
+    .col6 {
+      @include grid(8);
+      margin-bottom: 40px;
+      }
+    
+    div:last-child {
+      margin-right: 0;
+      }
+  
+	
+// =============================
+// Typography
+// =============================	
+
+h1 {
+	color: $red;
+	font-size: 5rem;}
+
+h2 {
+	color: $yellow;
+	font-size: 1rem;
+	padding-left: 5%;
+	background-color: rgba(55, 55, 55, 0.5);
+}
+
+h3 {
+	font-size: 2.5rem;
+	// margin-top: 2.5rem;
+}
+
+// =============================
+// Header
+// =============================
+
+.pizza-toss {
+	height: 250px;
+	background-position: 0 30%;
+	// border-bottom: 10px solid $yellow;
+}
+
+// =============================
+// Section
+// =============================
+.borders {
+	.red-border {
+		width: 100%;
+		height: 4px;
+		background-color: $red;
+		margin-top: 1px;
+		// margin-bottom: 40px;
+	}
+	.yellow-border {
+		width: 100%;
+		height: 10px;
+		background-color: $yellow;
+		// margin-top: 40px;
+	}
+}
+
+// =============================
+// Section
+// =============================
+
+// =============================
+// Aside
+// =============================
+
+aside.col6 {
+	margin-right: 0;
+}
+
+// =============================
+// Footer
+// =============================
+
+}
+

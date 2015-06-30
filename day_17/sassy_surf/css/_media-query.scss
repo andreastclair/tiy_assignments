@@ -1,0 +1,117 @@
+/*
+  ========================================
+  Media Query-600
+  ========================================
+*/
+
+@media screen and (min-width: 600px) {
+
+	header {
+		div {
+			img {
+				width: 15%;}
+			p {
+				font-size: 0.875rem;}		
+		}
+		nav {
+			margin-top: 12px;
+			margin-right: 5%;
+			img {
+				width: 30%;
+				margin-left: 2px;}
+			li {
+				margin-left: 2px;
+				font-size: 0.875rem;}
+		}		
+		h1 {
+			font-size: 2.5rem;
+			padding-top: 70px;}
+		h3 {
+			font-size: 0.875rem;}
+	}
+
+	section {
+		h2 {}
+		.author {}
+		.time {
+			font-size: 1rem;}
+		.verticalLine {}
+		h4 {
+			font-size: 1.5em;
+			margin: 16px 0 30px 20px;}
+		.all-options {
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+			.options {
+				display: inline-block;
+				img {}
+				.options-text {}
+				.options-text span {}
+			}
+			.mid-option {
+				margin-left: 9%;
+				margin-right: 9%;
+			}
+			.options {
+			.shareicon {}
+			.last-option span {}
+			}	
+		}			
+	}
+
+	aside {
+		max-width: 90%;
+		margin: 0 auto;
+		.authorR {}
+		ul {
+			li {
+				a {}
+				}			
+			li:nth-of-type(2) {
+				margin: 0 20px;}
+		}			
+		.paddle {}
+		.ad {
+			font-size: 0.5em;
+			// float: right;
+			margin-top: 5px;
+			margin-right: 24%;}
+		.side-head {
+			font-size: 1.063em;
+			font-weight: bold;
+			color: $medblue;
+			margin: 73px 0 7px;}
+		.side-copy {}
+	}			
+
+	.horizLine {
+		margin-top: 64px;}
+	.image {}
+	.text {}
+	.beer-text {}
+	.z {}
+		
+
+	.surfer {
+		background-image: url("../images/surfer.jpg");}
+
+	.beer {
+		background-image: url("../images/beer.jpg");}
+
+	.zack {
+		background-image: url("../images/zack.jpg");}
+
+	.booze {
+		background-image: url("../images/booze.jpg");}
+
+	footer {
+		div {
+			img {}
+			.footer-details {}
+			.copyright {}
+		}		
+	.title-right-bottom {}
+	}
+}	
+

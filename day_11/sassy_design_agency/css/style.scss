@@ -10,19 +10,7 @@
 
 .container {
 	max-width: 1280px;
-	margin: 0 auto;
-}
-
-/*
-  ========================================
- Custom Styles
-  ========================================
-*/
-
-body {
-	font-family: Helvetica;
-	color: $black;
-}
+	margin: 0 auto;}
 
 /*
   ========================================
@@ -30,38 +18,36 @@ body {
   ========================================
 */
 
+body {
+	font-family: Helvetica;
+	color: $black;}
+
 h1, h2, h3, h4 {
-	font-weight: bold;
-}
+	font-weight: bold;}
 
 h1 {
 	font-size: 20px;
 	margin: 15px 40px;
-	float: left;
-}
+	float: left;}
 
 h2 {
 	font-size: 30px;
 	text-align: center;
-	margin-bottom: 60px;
-}
+	margin-bottom: 60px;}
 
 h3 {
 	font-size: 18px;
 	width: 200px;
 	margin-top: 220px;
-	text-align: center;
-}
+	text-align: center;}
 
 h4 {
 	font-size: 30px;
-	margin: 180px 0 0 130px;
-}
+	margin: 180px 0 0 130px;}
 
 p {
 	font-size: 11px;
-	text-align: center;
-}
+	text-align: center;}
 
 /*
   ========================================
@@ -89,8 +75,7 @@ header {
 	height: 580px;
 	background: url("../images/main-photo.jpg");
 	background-size: cover;
-	margin-bottom: 60px;
-}
+	margin-bottom: 60px;}
 
 /*
   ========================================
@@ -109,18 +94,15 @@ section {
 }
 
 .han {
-	background: url("../images/han.jpg");
-} 
+	background: url("../images/han.jpg");} 
 
 .chewbacca {
 	background: url("../images/chewbacca.jpg");
 	margin-left: 240px;
-	margin-right: 240px;
-}
+	margin-right: 240px;}
 
 .darth {
-	background: url("../images/darth.jpg");
-}
+	background: url("../images/darth.jpg");}
 
 /*
   ========================================
@@ -154,8 +136,7 @@ Footer
 footer {
 	font-size: 20px;
 	margin: 55px 0px 55px 365px;
-	float: left;
-}
+	float: left;}
 
 
 

@@ -1,0 +1,155 @@
+@media screen and (min-width: 1220px) {
+
+header {
+	height: 523px;
+	div {
+		img {}
+		p {}		
+	}
+	nav {
+		margin-top: 16px;
+		img {
+			width: 26px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 10px;}
+		li {}
+	}		
+	h1 {
+		font-size: 110px;
+		padding-top: 200px;}
+	h3 {
+		font-size: 1em;}
+}
+
+/*
+  ========================================
+  Left Column/Section
+  ========================================
+*/
+
+section {
+	max-width: 610px;
+	margin-left: 160px;
+	margin-top: 80px;
+	h2 {
+		font-size: 3em;}
+	.author {}
+	.time {
+		margin-left: 80px;
+		font-size: 0.875rem;}
+	.verticalLine {}
+	.options {
+		img {}
+		.options-text {}
+		.options-text span {}
+	}
+	.mid-option {}
+	.options {
+		.shareicon {}
+		.last-option span {
+		}
+	}
+}
+
+/*
+  ========================================
+  Right Column/Aside
+  ========================================
+*/
+
+aside {
+	width: 280px;
+	margin-top: 80px;
+	margin-right: 160px;
+	float: right;
+	.authorR {}
+	ul {
+		margin-bottom: 50px;
+		li {
+			a {}
+		}			
+		li:nth-of-type(2) {}
+	}			
+	.paddle {}
+	.ad {}
+	.side-head {}
+	.side-copy {}
+}			
+
+/*
+  ========================================
+ Clear Fix
+  ========================================
+*/
+
+.clear-fix {
+	clear: both;}
+
+/*
+  ========================================
+ Bottom Section
+  ========================================
+*/
+
+.horizLine {}
+.image {
+	width: 325px;
+	height: 330px;
+	float: left;
+	.text {
+		font-size: 1.75em;
+		float: left;
+		margin-top: 280px;
+		margin-left: 10px;}
+	.beer-text {
+		color: white;}
+	.z {
+		margin-top: 284px;
+		line-height: 1.4em;}	
+}
+
+.surfer {
+	background-image: url("../images/surfer.jpg");}
+
+.beer {
+	background-image: url("../images/beer.jpg");}
+
+.zack {
+	background-image: url("../images/zack.jpg");}
+
+.booze {
+	background-image: url("../images/booze.jpg");}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer {
+	div {
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 20px;
+		margin-left: 165px;
+		img {
+			float: left;
+			vertical-align: middle;
+			margin-right: 10px;}
+		.footer-details {
+			font-size: 14px;
+			color: $ltgrey;}
+	}
+	.copyright {
+		vertical-align: middle;
+		float: left;
+		margin-top: 30px;}
+	.title-right-bottom {
+		vertical-align: middle;
+		float: right;
+		margin-right: 165px;
+		margin-top: 0}
+}
+
+}
