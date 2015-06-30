@@ -144,6 +144,10 @@ header {
 	}
 }	
 
+// =============================
+// Menu
+// =============================
+
 .pizza-toss {
 	width: 100%;
 	height: 200px;
@@ -151,10 +155,6 @@ header {
 	background-size: cover;
 	border-bottom: 10px solid $yellow;
 }
-
-// =============================
-// Section
-// =============================
 
 .borders {
 	.red-border {
@@ -172,14 +172,6 @@ header {
 	}
 }
 
-// =============================
-// Aside
-// =============================
-
-
-// =============================
-// Footer
-// =============================
 
 footer {
 	div {
@@ -190,11 +182,31 @@ footer {
 	}
 }
 
+// =============================
+// Home
+// =============================
+
+.front {
+	width: 100%;
+	height: 250px;
+	background: url("../images/front.jpg");
+	background-size: cover;
+	border-bottom: 7px solid $yellow;
+}
+
+section {
+	width: 100%;
+	background-color: $yellow;
+	padding: 2px;
+	margin: 0 auto;
+}
+
+
+
 
 
 @import 'media-mid';
 @import 'media-max';
-
 
 
 

@@ -223,6 +223,19 @@ footer div {
   background-color: #dc0606;
   margin-top: 40px; }
 
+.front {
+  width: 100%;
+  height: 250px;
+  background: url("../images/front.jpg");
+  background-size: cover;
+  border-bottom: 7px solid #ffe505; }
+
+section {
+  width: 100%;
+  background-color: #ffe505;
+  padding: 2px;
+  margin: 0 auto; }
+
 @media screen and (min-width: 40em) {
   .row {
     overflow: hidden; }
