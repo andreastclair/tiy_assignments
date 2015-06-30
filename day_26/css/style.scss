@@ -2,6 +2,27 @@
 @import 'responsive-nav';
 @import 'custom';
 
+@mixin grid ($col-num) {
+  width: ($col * $col-num)+($gut * (($col-num)-1));
+  margin-right: $gut;
+  max-width: 100%;
+} 
+
+$col: 3.5%;
+// $col: 4.138889%;
+$gut: 2.8%;
+
+.row {
+  margin: 0 auto;
+  overflow: hidden;
+  .col1, .col2, .col3, .col6 {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    font-family: sans-serif;
+    margin-bottom: 5px;}
+}
+
 body {
 	// font-family: "franklin-gothic-urw",sans-serif;
 	font-family: "adelle",serif;
@@ -81,7 +102,7 @@ p {
 
 .italic {
 	font-style: italic;
-	font-size: 0.5rem;
+	font-size: 0.7rem;
 	line-height: 1;
 }
 

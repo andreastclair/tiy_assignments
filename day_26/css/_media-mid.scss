@@ -1,4 +1,23 @@
 @media screen and (min-width: 40em) {
+  .row { 
+    overflow: hidden;
+    .col6 {
+      @include grid(8);
+      }
+    
+    div:last-child {
+      margin-right: 0;
+      }
+  }
+
+  .right-special {
+  	margin-top: 45px;
+  }
+
+  .right-byo {
+  	margin-top: 58px;
+  }
+	
 
 h1 {
 	color: $red;
@@ -16,23 +35,6 @@ h3 {
 	// margin-top: -7px;
 }
 
-.grid-1-2 {
-	float: left;
-	width: 40%;
-}	
-
-.grid-2-2 {
-	float: right;
-	width: 40%;
-	margin-top: 56px;
-}
-
-.grid-2-2-byo {
-	margin-top: 68px;
-	float: right;
-	width: 40%;
-}
-
 .pizza-toss {
 	height: 250px;
 	background: url("../images/pizza-toss.jpg");
@@ -47,3 +49,4 @@ h3 {
 }
 
 }
+

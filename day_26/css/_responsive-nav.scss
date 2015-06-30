@@ -11,12 +11,15 @@
   display: block;
   list-style: none;
   overflow: hidden;
+  // border: 1px solid white;
 }
 
 .nav-collapse li {
   margin-bottom: .5em;
   float: right;
-  margin-right: 2%;
+  // display: block;
+  text-align: right;
+  margin-right: 2%;   
 }
 
 .nav-collapse a {
@@ -46,7 +49,6 @@
   -o-user-select: none;
   user-select: none;
   color: white;
-  // border: 1px solid white;
   padding: 10px 2%;
   // display: block;
   text-decoration: none;
@@ -70,4 +72,5 @@
   .nav-toggle {
     display: none;
   }
+
 }

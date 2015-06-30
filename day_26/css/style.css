@@ -60,6 +60,7 @@ table {
 .nav-collapse li {
   margin-bottom: .5em;
   float: right;
+  text-align: right;
   margin-right: 2%; }
 
 .nav-collapse a {
@@ -105,6 +106,16 @@ table {
 
   .nav-toggle {
     display: none; } }
+.row {
+  margin: 0 auto;
+  overflow: hidden; }
+  .row .col1, .row .col2, .row .col3, .row .col6 {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    font-family: sans-serif;
+    margin-bottom: 5px; }
+
 body {
   font-family: "adelle",serif;
   background: #f6f4f4; }
@@ -164,7 +175,7 @@ p {
 
 .italic {
   font-style: italic;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   line-height: 1; }
 
 span {
@@ -209,6 +220,21 @@ footer div {
   margin-top: 40px; }
 
 @media screen and (min-width: 40em) {
+  .row {
+    overflow: hidden; }
+    .row .col6 {
+      width: 47.6%;
+      margin-right: 2.8%;
+      max-width: 100%; }
+    .row div:last-child {
+      margin-right: 0; }
+
+  .right-special {
+    margin-top: 45px; }
+
+  .right-byo {
+    margin-top: 58px; }
+
   h1 {
     color: #dc0606;
     font-size: 5rem; }
@@ -220,20 +246,6 @@ footer div {
     text-align: right;
     width: 280px;
     float: right; }
-
-  .grid-1-2 {
-    float: left;
-    width: 40%; }
-
-  .grid-2-2 {
-    float: right;
-    width: 40%;
-    margin-top: 56px; }
-
-  .grid-2-2-byo {
-    margin-top: 68px;
-    float: right;
-    width: 40%; }
 
   .pizza-toss {
     height: 250px;
