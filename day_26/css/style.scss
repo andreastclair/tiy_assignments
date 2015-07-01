@@ -38,22 +38,29 @@ $gut: 2.5%;
 	margin: 0 auto;
 }
 
+img {
+	width: 100%;
+}
+
 // =============================
 // Clear Fix
 // =============================
 	
-	.clear-fix {
-		clear: both;
-	}
+.clear-fix {
+	clear: both;
+}
 
 // =============================
 // Typography
 // =============================
 
 body {
-	// font-family: "franklin-gothic-urw",sans-serif;
 	font-family: "adelle",serif;
 	background: $ltgrey;
+}
+
+a {
+	text-decoration: none;	
 }
 
 h1 {
@@ -79,7 +86,6 @@ h3 {
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin: 10px 0;
-	// margin-top: -5px;
 }
 
 h4 {
@@ -127,7 +133,14 @@ span {
 	line-height: 1;
 	font-weight: normal;
 	font-family: "franklin-gothic-urw",sans-serif;
+}
 
+.green {
+	color: $green;
+	font-family: "adelle",serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.2rem;
 }
 
 // =============================
@@ -157,28 +170,33 @@ header {
 }
 
 .borders {
+	width: 100%;
 	.red-border {
-		width: 100%;
 		height: 4px;
 		background-color: $red;
 		margin-top: 1px;
 		margin-bottom: 40px;
 	}
 	.yellow-border {
-		width: 100%;
 		height: 10px;
 		background-color: $yellow;
 		margin-top: 40px;
 	}
 }
 
+.byo {
+	margin-bottom: 40px;
+}
 
 footer {
 	div {
 		width: 100%;
-		padding: 10px 0;
+		padding: 15px 0;
 		background-color: $red;
-		margin-top: 40px;
+		text-align: center;
+		h6 {
+			display: inline;
+		}
 	}
 }
 
@@ -189,17 +207,108 @@ footer {
 .front {
 	width: 100%;
 	height: 250px;
-	background: url("../images/front.jpg");
+	background: url("../images/front-3.jpg");
 	background-size: cover;
-	border-bottom: 7px solid $yellow;
+}
+
+.hours {
+	border-top: 5px solid $yellow;
+	background-color: $black;
+	width: 90%;
+	padding: 5%;
+	h3 {
+		margin-top: 0;
+		text-align: center;
+		font-weight: normal;
+		color: $ltgrey;
+	}
+	h4 {
+		color: $ltgrey;
+		font-weight: normal;
+		text-align: center;
+	}
 }
 
 section {
-	width: 100%;
-	background-color: $yellow;
-	padding: 2px;
-	margin: 0 auto;
+	width: 90%;
+	margin: 40px auto;
 }
+
+.location, .location-more {
+	width: 100%;
+	padding: 15px;
+	background-color: $green;
+	h4 {
+		color: $ltgrey;
+		font-weight: normal;
+		margin-bottom: 0;
+		text-align: center;
+	}	
+}
+
+.location-more {
+	border-bottom: 5px solid $yellow;
+	h3 {
+		margin: 0 auto;
+		text-shadow: 1px 1px 0 $yellow;
+	}
+}
+
+
+
+// =============================
+// Contact
+// =============================
+
+.contact-page {
+	width: 100%;
+	outline: 5px solid $yellow;
+	border-top: 3px solid $red;
+	border-bottom: 3px solid $red;
+	margin: 0 auto;
+	.contact-info {
+		width: 90%;
+		margin: 0 auto;
+		padding: 2%;
+		h3 {
+			color: $black;
+			text-align: center;
+		}
+		.address-pie-face {
+			margin: 50px auto;
+			max-width: 400px;
+			.address, .pie-face {
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 30px;
+			}
+			.pie-face {
+				width: 90px;
+				margin-left: 30px;
+			}
+		}
+		.email-us {
+			margin: 20px auto;
+			border: 4px solid $red;
+			border-radius: 10px;
+			padding: 2%;
+			max-width: 500px;
+		}
+	}	
+}	
+
+span.contact {
+	color: $green;
+	font-style: normal;
+	font-family: "adelle",serif;
+	font-size: 0.875rem;
+}
+
+.iframe {
+	margin-top: 2px;
+	border-bottom: 5px solid $yellow;
+}	
+
 
 
 

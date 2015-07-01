@@ -21,65 +21,61 @@
 // =============================	
 
 h1 {
-	color: $red;
 	font-size: 5rem;}
-
-h2 {
-	color: $yellow;
-	font-size: 1rem;
-	padding-left: 5%;
-	background-color: rgba(55, 55, 55, 0.5);
-}
 
 h3 {
 	font-size: 2.5rem;
-	// margin-top: 2.5rem;
 }
 
 // =============================
-// Header
+// Menu
 // =============================
 
 .pizza-toss {
 	height: 250px;
 	background-position: 0 30%;
-	// border-bottom: 10px solid $yellow;
+}
+
+.byo {
+	margin-bottom: 0;
 }
 
 // =============================
-// Section
+// Home
 // =============================
-.borders {
-	.red-border {
-		width: 100%;
-		height: 4px;
-		background-color: $red;
-		margin-top: 1px;
-		// margin-bottom: 40px;
-	}
-	.yellow-border {
-		width: 100%;
-		height: 10px;
-		background-color: $yellow;
-		// margin-top: 40px;
-	}
+
+.front {
+	height: 350px;
+}
+
+section {
+	max-width: 80%;
 }
 
 // =============================
-// Section
+// Contact
 // =============================
 
-// =============================
-// Aside
-// =============================
+.contact-page {
+	.contact-info {
+		h3 {
+			font-size: 2rem;
+		}
+		.address-pie-face {
+			.address, .pie-face {
+				margin-left: 20px;
+				h4 {
+					font-size: 1.2rem;
+				}
+			}
+			.pie-face {
+				width: 100px;
+				margin-left: 30px;
+			}
+		}
+	}	
+}	
 
-aside.col6 {
-	margin-right: 0;
-}
-
-// =============================
-// Footer
-// =============================
 
 }
 
