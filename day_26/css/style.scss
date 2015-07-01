@@ -38,6 +38,10 @@ $gut: 2.5%;
 	margin: 0 auto;
 }
 
+img {
+	width: 100%;
+}
+
 // =============================
 // Clear Fix
 // =============================
@@ -54,6 +58,10 @@ body {
 	// font-family: "franklin-gothic-urw",sans-serif;
 	font-family: "adelle",serif;
 	background: $ltgrey;
+}
+
+a {
+	text-decoration: none;	
 }
 
 h1 {
@@ -130,6 +138,14 @@ span {
 
 }
 
+.green {
+	color: $green;
+	font-family: "adelle",serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.2rem;
+}
+
 // =============================
 // Header
 // =============================
@@ -157,28 +173,30 @@ header {
 }
 
 .borders {
+	width: 100%;
 	.red-border {
-		width: 100%;
 		height: 4px;
 		background-color: $red;
 		margin-top: 1px;
 		margin-bottom: 40px;
 	}
 	.yellow-border {
-		width: 100%;
 		height: 10px;
 		background-color: $yellow;
 		margin-top: 40px;
 	}
 }
 
+.byo {
+	margin-bottom: 40px;
+}
 
 footer {
 	div {
 		width: 100%;
 		padding: 10px 0;
 		background-color: $red;
-		margin-top: 40px;
+		// margin-top: 40px;
 	}
 }
 
@@ -189,17 +207,103 @@ footer {
 .front {
 	width: 100%;
 	height: 250px;
-	background: url("../images/front.jpg");
+	background: url("../images/front-3.jpg");
 	background-size: cover;
-	border-bottom: 7px solid $yellow;
+}
+
+.hours {
+	border-top: 5px solid $yellow;
+	background-color: $black;
+	width: 90%;
+	padding: 5%;
+	h3 {
+		margin-top: 0;
+		text-align: center;
+		font-weight: normal;
+		color: $ltgrey;
+	}
+	h4 {
+		color: $ltgrey;
+		font-weight: normal;
+		text-align: center;
+	}
 }
 
 section {
-	width: 100%;
-	background-color: $yellow;
-	padding: 2px;
-	margin: 0 auto;
+	width: 90%;
+	margin: 40px auto;
 }
+
+.location, .location-more {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px;
+	background-color: $green;
+		h4 {
+		color: $ltgrey;
+		font-weight: normal;
+	}	
+}
+
+.location-more {
+	border-bottom: 5px solid $yellow;
+}
+
+
+
+// =============================
+// Contact
+// =============================
+
+.contact-page {
+	width: 100%;
+	// background-color: $green;
+	outline: 5px solid $yellow;
+	border-top: 3px solid $red;
+	border-bottom: 3px solid $red;
+	margin: 0 auto;
+	.contact-info {
+		width: 90%;
+		margin: 0 auto;
+		padding: 2%;
+		h3 {
+			color: $black;
+			// font-weight: normal;
+			text-align: center;
+		}
+		.address, .pie-face{
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 auto;
+		}
+		.pie-face {
+			width: 130px;
+			margin: 10px auto;
+			margin-left: 30px;
+		}
+		.email-us {
+			margin: 20px auto;
+			border: 4px solid $red;
+			border-radius: 10px;
+			padding: 2%;
+			max-width: 500px;
+		}
+	}	
+}	
+
+span.contact {
+	color: $green;
+	font-style: normal;
+	font-family: "adelle",serif;
+	font-size: 0.875rem;
+}
+
+.iframe {
+	margin-top: 2px;
+	border-bottom: 5px solid $yellow;
+}	
+
 
 
 

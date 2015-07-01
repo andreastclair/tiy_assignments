@@ -6,15 +6,13 @@
   .row { 
     overflow: hidden;
 }
-    // .col6 {
-    //   @include grid(4);
-    //   }
+    .col6 {
+      @include grid(8);
+      }
     
     div:last-child {
       margin-right: 0;
       }
- 
-
 
 // =============================
 // Typography
@@ -38,7 +36,7 @@ h2 {
 }
 
 // =============================
-// Header
+// Menu
 // =============================
 
 .pizza-toss {
@@ -47,30 +45,82 @@ h2 {
 	// border-bottom: 10px solid $yellow;
 }
 
-// =============================
-// Section
-// =============================
-
 .borders {
 	display: none;
 }
 
-// =============================
-// Aside
-// =============================
-
 aside {
+	float: left;
+	margin-top: 30px;
+}
+
+.specialty {
+	width: 55%;
+	// margin-top: 60px;
+}
+
+.byo {
+	width: 40%;
 	border-left: 5px solid $yellow;
 	border-top: 5px solid $yellow;
 	border-bottom: 5px solid $yellow;
+	outline: 5px solid $red;
+	border-right: 5px solid $yellow;
 	border-radius: 10px;
 	padding: 2%;
 	float: left;
-	margin-right: 0;
+	margin-right: -200px;
 }
 
+
 // =============================
-// Footer
+// Home
 // =============================
+
+.front {
+	width: 100%;
+	height: 250px;
+	background: url("../images/front-3.jpg");
+	background-size: cover;
+}
+
+.hours {
+	border-top: 5px solid $yellow;
+	background-color: $black;
+	width: 90%;
+	padding: 5%;
+	h3 {
+		margin-top: 0;
+		text-align: center;
+		font-weight: normal;
+		color: $ltgrey;
+	}
+	h4 {
+		color: $ltgrey;
+		font-weight: normal;
+		text-align: center;
+	}
+}
+
+section {
+	width: 90%;
+	margin: 40px auto;
+}
+
+.location, .location-more {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px;
+	background-color: $green;
+		h4 {
+		color: $ltgrey;
+		font-weight: normal;
+	}	
+}
+
+.location-more {
+	border-bottom: 5px solid $yellow;
+}
 
 }
