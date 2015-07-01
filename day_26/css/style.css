@@ -235,8 +235,11 @@ header {
 
 footer div {
   width: 100%;
-  padding: 10px 0;
-  background-color: #dc0606; }
+  padding: 15px 0;
+  background-color: #dc0606;
+  text-align: center; }
+  footer div h6 {
+    display: inline; }
 
 .front {
   width: 100%;
@@ -265,16 +268,19 @@ section {
 
 .location, .location-more {
   width: 100%;
-  margin: 0 auto;
-  text-align: center;
   padding: 15px;
   background-color: #5d9a56; }
   .location h4, .location-more h4 {
     color: #f6f4f4;
-    font-weight: normal; }
+    font-weight: normal;
+    margin-bottom: 0;
+    text-align: center; }
 
 .location-more {
   border-bottom: 5px solid #ffe505; }
+  .location-more h3 {
+    margin: 0 auto;
+    text-shadow: 1px 1px 0 #ffe505; }
 
 .contact-page {
   width: 100%;
@@ -289,14 +295,16 @@ section {
     .contact-page .contact-info h3 {
       color: #373737;
       text-align: center; }
-    .contact-page .contact-info .address, .contact-page .contact-info .pie-face {
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 auto; }
-    .contact-page .contact-info .pie-face {
-      width: 130px;
-      margin: 10px auto;
-      margin-left: 30px; }
+    .contact-page .contact-info .address-pie-face {
+      margin: 50px auto;
+      max-width: 400px; }
+      .contact-page .contact-info .address-pie-face .address, .contact-page .contact-info .address-pie-face .pie-face {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 30px; }
+      .contact-page .contact-info .address-pie-face .pie-face {
+        width: 90px;
+        margin-left: 30px; }
     .contact-page .contact-info .email-us {
       margin: 20px auto;
       border: 4px solid #dc0606;
@@ -328,14 +336,7 @@ span.contact {
     margin-right: 0; }
 
   h1 {
-    color: #dc0606;
     font-size: 5rem; }
-
-  h2 {
-    color: #ffe505;
-    font-size: 1rem;
-    padding-left: 5%;
-    background-color: rgba(55, 55, 55, 0.5); }
 
   h3 {
     font-size: 2.5rem; }
@@ -344,16 +345,6 @@ span.contact {
     height: 250px;
     background-position: 0 30%; }
 
-  .borders .red-border {
-    width: 100%;
-    height: 4px;
-    background-color: #dc0606;
-    margin-top: 1px; }
-  .borders .yellow-border {
-    width: 100%;
-    height: 10px;
-    background-color: #ffe505; }
-
   .byo {
     margin-bottom: 0; }
 
@@ -361,7 +352,17 @@ span.contact {
     height: 350px; }
 
   section {
-    max-width: 80%; } }
+    max-width: 80%; }
+
+  .contact-page .contact-info h3 {
+    font-size: 2rem; }
+  .contact-page .contact-info .address-pie-face .address, .contact-page .contact-info .address-pie-face .pie-face {
+    margin-left: 20px; }
+    .contact-page .contact-info .address-pie-face .address h4, .contact-page .contact-info .address-pie-face .pie-face h4 {
+      font-size: 1.2rem; }
+  .contact-page .contact-info .address-pie-face .pie-face {
+    width: 100px;
+    margin-left: 30px; } }
 @media screen and (min-width: 1200px) {
   .row {
     overflow: hidden; }
@@ -378,19 +379,11 @@ span.contact {
     font-size: 7rem; }
 
   h2 {
-    color: #ffe505;
-    font-size: 2rem;
-    padding-left: 5%;
-    background-color: rgba(55, 55, 55, 0.5); }
-
-  .build {
-    text-align: left;
-    width: 280px;
-    float: none; }
+    font-size: 2rem; }
 
   .pizza-toss {
     height: 350px;
-    background-position: 0 30%; }
+    outline: 2px solid #dc0606; }
 
   .borders {
     display: none; }
@@ -404,52 +397,26 @@ span.contact {
 
   .byo {
     width: 40%;
-    border-left: 5px solid #ffe505;
-    border-top: 5px solid #ffe505;
-    border-bottom: 5px solid #ffe505;
+    border: 5px solid #ffe505;
     outline: 5px solid #dc0606;
-    border-right: 5px solid #ffe505;
     border-radius: 10px;
     padding: 2%;
-    float: left;
-    margin-right: -200px; }
+    float: left; }
 
   .front {
-    width: 100%;
-    height: 250px;
-    background: url("../images/front-3.jpg");
-    background-size: cover; }
-
-  .hours {
-    border-top: 5px solid #ffe505;
-    background-color: #373737;
-    width: 90%;
-    padding: 5%; }
-    .hours h3 {
-      margin-top: 0;
-      text-align: center;
-      font-weight: normal;
-      color: #f6f4f4; }
-    .hours h4 {
-      color: #f6f4f4;
-      font-weight: normal;
-      text-align: center; }
+    height: 400px; }
 
   section {
-    width: 90%;
-    margin: 40px auto; }
+    border: 4px solid #ffe505;
+    border-radius: 10px;
+    padding: 2%; }
 
   .location, .location-more {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 15px;
-    background-color: #5d9a56; }
+    padding: 35px; }
     .location h4, .location-more h4 {
-      color: #f6f4f4;
-      font-weight: normal; }
+      font-size: 1.5rem; }
 
-  .location-more {
-    border-bottom: 5px solid #ffe505; } }
+  .contact-page .contact-info .address-pie-face .pie-face {
+    margin-left: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

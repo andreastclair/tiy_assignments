@@ -46,16 +46,15 @@ img {
 // Clear Fix
 // =============================
 	
-	.clear-fix {
-		clear: both;
-	}
+.clear-fix {
+	clear: both;
+}
 
 // =============================
 // Typography
 // =============================
 
 body {
-	// font-family: "franklin-gothic-urw",sans-serif;
 	font-family: "adelle",serif;
 	background: $ltgrey;
 }
@@ -87,7 +86,6 @@ h3 {
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin: 10px 0;
-	// margin-top: -5px;
 }
 
 h4 {
@@ -135,7 +133,6 @@ span {
 	line-height: 1;
 	font-weight: normal;
 	font-family: "franklin-gothic-urw",sans-serif;
-
 }
 
 .green {
@@ -194,9 +191,12 @@ header {
 footer {
 	div {
 		width: 100%;
-		padding: 10px 0;
+		padding: 15px 0;
 		background-color: $red;
-		// margin-top: 40px;
+		text-align: center;
+		h6 {
+			display: inline;
+		}
 	}
 }
 
@@ -236,18 +236,22 @@ section {
 
 .location, .location-more {
 	width: 100%;
-	margin: 0 auto;
-	text-align: center;
 	padding: 15px;
 	background-color: $green;
-		h4 {
+	h4 {
 		color: $ltgrey;
 		font-weight: normal;
+		margin-bottom: 0;
+		text-align: center;
 	}	
 }
 
 .location-more {
 	border-bottom: 5px solid $yellow;
+	h3 {
+		margin: 0 auto;
+		text-shadow: 1px 1px 0 $yellow;
+	}
 }
 
 
@@ -258,7 +262,6 @@ section {
 
 .contact-page {
 	width: 100%;
-	// background-color: $green;
 	outline: 5px solid $yellow;
 	border-top: 3px solid $red;
 	border-bottom: 3px solid $red;
@@ -269,18 +272,20 @@ section {
 		padding: 2%;
 		h3 {
 			color: $black;
-			// font-weight: normal;
 			text-align: center;
 		}
-		.address, .pie-face{
-			display: inline-block;
-			vertical-align: middle;
-			margin: 0 auto;
-		}
-		.pie-face {
-			width: 130px;
-			margin: 10px auto;
-			margin-left: 30px;
+		.address-pie-face {
+			margin: 50px auto;
+			max-width: 400px;
+			.address, .pie-face {
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 30px;
+			}
+			.pie-face {
+				width: 90px;
+				margin-left: 30px;
+			}
 		}
 		.email-us {
 			margin: 20px auto;
