@@ -1,0 +1,21 @@
+@import 'reset';
+@font-face {
+	font-family: 'Russian';
+	src: local("Russian.ttf"),
+		url('Russian.ttf');
+}
+@mixin font($em){
+    font-size: ($em*16) + px;
+    font-size: ($em) + em;
+}
+
+
+body {
+	background-color: #2f2f2e;
+}
+
+h1 {
+	color: white;
+	font-family: 'Russian';
+	@include font(6);
+}
