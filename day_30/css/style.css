@@ -46,15 +46,170 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'Russian';
-  src: local("Russian.ttf"), url("Russian.ttf"); }
+  font-family: 'motherland';
+  src: local("motherland.ttf"), url("motherland.ttf"); }
+@font-face {
+  font-family: 'KyrillaSansSerif-Black';
+  src: local("KyrillaSansSerif-Black.ttf"), url("KyrillaSansSerif-Black.ttf"); }
+/*
+  ========================================
+  Grid
+  ========================================
+*/
 body {
   background-color: #2f2f2e; }
 
+.page-wrapper {
+  max-width: 90%;
+  margin: 0 auto; }
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
 h1 {
-  color: white;
-  font-family: 'Russian';
+  color: #2f2f2e;
+  font-family: 'motherland';
   font-size: 96px;
-  font-size: 6em; }
+  font-size: 6em;
+  line-height: 1.4em;
+  text-align: center; }
+
+h2 {
+  font-family: 'KyrillaSansSerif-Black';
+  font-size: 32px;
+  font-size: 2em;
+  color: #d1bb94;
+  line-height: 1.4em;
+  text-align: center; }
+
+h3 {
+  font-family: 'KyrillaSansSerif-Black';
+  font-size: 19.2px;
+  font-size: 1.2em;
+  color: #2f2f2e;
+  line-height: 1.4em; }
+
+p {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1em;
+  color: #2f2f2e;
+  line-height: 1.4em; }
+
+li {
+  font-family: sans-serif;
+  line-height: 1.4em;
+  color: #2f2f2e; }
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+a {
+  text-decoration: none;
+  color: #2f2f2e; }
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+header {
+  background: url("lady.png");
+  background-size: contain;
+  height: 800px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #2f2f2e;
+  background-repeat: no-repeat; }
+  header h1 {
+    position: absolute;
+    top: 20vw;
+    font-size: 8vw;
+    right: 10vw;
+    transform: rotate(-18deg); }
+  header h2 {
+    position: absolute;
+    transform: rotate(-17deg);
+    font-size: 3vw;
+    top: 27vw;
+    right: 9vw; }
+
+/*
+  ========================================
+  Section
+  ========================================
+*/
+section {
+  background-color: #e7261f; }
+
+.summary {
+  background-color: #d1bb94;
+  margin-top: -550px; }
+
+.preamble {
+  background-color: #d1bb94; }
+
+.main {
+  background-color: #d1bb94; }
+
+.participation {
+  background-color: #d1bb94; }
+
+.benefits {
+  background-color: #d1bb94; }
+
+.requirements {
+  background-color: #d1bb94; }
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer {
+  background-color: #e7261f; }
+
+/*
+  ========================================
+  Aside
+  ========================================
+*/
+aside {
+  background-color: #d1bb94; }
+
+@media screen and (min-width: 700px) {
+  header h1 {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    top: 15vw;
+    font-size: 8vw;
+    right: 8vw; }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; }
+    to {
+      margin-left: 0%;
+      width: 47.2%; } }
+  header h2 {
+    animation-duration: 1s;
+    animation-name: slidein-two;
+    font-size: 3vw;
+    top: 23vw;
+    right: 9vw; }
+  @keyframes slidein-two {
+    from {
+      margin-left: 100%;
+      width: 300%; }
+    to {
+      margin-left: 0%;
+      width: 39%; } }
+  header .summary {
+    background-color: #d1bb94;
+    margin-top: -800px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,91 @@
+@media screen and (min-width: 700px) {
+
+
+header {
+		h1 {
+			animation-duration: 1.5s;
+  			animation-name: slidein;
+			top: 15vw;
+			font-size: 8vw;
+			right: 8vw;
+			@keyframes slidein {
+				from {
+					margin-left: 100%;
+					width: 300%; 
+				}
+				to {
+					margin-left: 0%;
+					width: 47.2%;
+				}
+			}
+		}	
+		h2 {
+			animation-duration: 1s;
+  			animation-name: slidein-two;
+			font-size: 3vw;
+			top: 23vw;
+			right: 9vw;
+			@keyframes slidein-two {
+				from {
+					margin-left: 100%;
+					width: 300%; 
+				}
+				to {
+					margin-left: 0%;
+					width: 39%;
+				}
+			}
+		}
+.summary {
+	background-color: $white;
+	margin-top: -800px;
+}
+
+}
+
+
+
+		
+
+// .slidein {
+//   -moz-animation-duration: 3s;
+//   -webkit-animation-duration: 3s;
+//   animation-duration: 3s;
+//   -moz-animation-name: slidein;
+//   -webkit-animation-name: slidein;
+//   animation-name: slidein;
+//   -moz-animation-iteration-count: 3;
+//   -webkit-animation-iteration-count: 3;
+//   animation-iteration-count: 3;
+//   -moz-animation-direction: alternate;
+//   -webkit-animation-direction: alternate;
+//   animation-direction: alternate;
+// }
+
+// @-moz-keyframes slidein {
+//   from {
+//     margin-left:0%;
+//     width:300%
+//   }
+      
+//   to {
+//     margin-left:100%;
+//     width:100%;
+//   }
+// }
+
+// @-webkit-keyframes slidein {
+//   from {
+//     margin-left:0%;
+//     width:300%
+//   }
+  
+//   to {
+//    margin-left:100%;
+//    width:100%;
+//  }
+// }
+
+
+
+}

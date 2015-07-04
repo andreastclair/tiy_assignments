@@ -1,21 +1,184 @@
 @import 'reset';
+@import 'custom';
 @font-face {
-	font-family: 'Russian';
-	src: local("Russian.ttf"),
-		url('Russian.ttf');
+	font-family: 'motherland';
+	src: local("motherland.ttf"),
+		url('motherland.ttf');
+}
+@font-face {
+	font-family: 'KyrillaSansSerif-Black';
+	src: local("KyrillaSansSerif-Black.ttf"),
+		url('KyrillaSansSerif-Black.ttf');
 }
 @mixin font($em){
     font-size: ($em*16) + px;
     font-size: ($em) + em;
 }
 
+/*
+  ========================================
+  Grid
+  ========================================
+*/
 
 body {
-	background-color: #2f2f2e;
+	background-color: $black;
 }
 
-h1 {
-	color: white;
-	font-family: 'Russian';
-	@include font(6);
+.page-wrapper {
+	max-width: 90%;
+	margin: 0 auto;
 }
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1 {
+	color: $black;
+	font-family: 'motherland';
+	@include font(6);
+	line-height: 1.4em;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'KyrillaSansSerif-Black';
+	@include font(2);
+	color: $white;
+	line-height: 1.4em;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'KyrillaSansSerif-Black';
+	@include font(1.2);
+	color: $black;
+	line-height: 1.4em;
+}
+
+p {
+	font-family: sans-serif;
+	@include font(1);
+	color: $black;
+	line-height: 1.4em;
+}
+
+li {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: $black;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+	text-decoration: none;
+	color: $black;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+
+header {
+	background: url("lady.png");
+	background-size: contain;
+	height: 800px;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: $black;
+	background-repeat: no-repeat;
+		h1 {
+			position: absolute;
+			top: 20vw;
+			font-size: 8vw;
+			right: 10vw;
+			transform: rotate(-18deg);
+		}
+		h2 {
+			position: absolute;
+			transform: rotate(-17deg);
+			font-size: 3vw;
+			top: 27vw;
+			right: 9vw;
+		}
+			
+}	
+
+/*
+  ========================================
+  Section
+  ========================================
+*/
+
+section {
+	background-color: $red;
+}
+
+.summary {
+	background-color: $white;
+	margin-top: -550px;
+}
+
+.preamble {
+	background-color: $white;
+}
+
+.main {
+	background-color: $white;
+}
+
+.participation {
+	background-color: $white;
+}
+
+.benefits {
+	background-color: $white;
+}
+
+.requirements {
+	background-color: $white;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer {
+	background-color: $red;
+}
+
+/*
+  ========================================
+  Aside
+  ========================================
+*/
+
+aside {
+	background-color: $white;
+}
+
+
+
+@import 'mid-media';
+@import 'max-media';
+
+
+
+
+
+
+
+
