@@ -28,6 +28,7 @@ body {
 .page-wrapper {
 	max-width: 90%;
 	margin: 0 auto;
+	border-left: 3px solid $white;
 }
 
 /*
@@ -54,9 +55,11 @@ h2 {
 
 h3 {
 	font-family: 'KyrillaSansSerif-Black';
-	@include font(1.2);
+	@include font(1.8);
 	color: $black;
 	line-height: 1.4em;
+	padding: 2%;
+	transform: rotate(-18deg);
 }
 
 p {
@@ -64,12 +67,16 @@ p {
 	@include font(1);
 	color: $black;
 	line-height: 1.4em;
+	padding: 2%;
+	width: 60%;
+	margin-left: 30%;
 }
 
 li {
 	font-family: sans-serif;
 	line-height: 1.4em;
 	color: $black;
+	padding: 2%;
 }
 
 /*
@@ -78,10 +85,10 @@ li {
   ========================================
 */
 
-a {
-	text-decoration: none;
-	color: $black;
-}
+// a {
+// 	text-decoration: none;
+// 	color: $black;
+// }
 
 /*
   ========================================
@@ -94,10 +101,11 @@ header {
 	background: url("lady.png");
 	background-size: contain;
 	height: 800px;
-	padding: 20px;
+	padding: 10px;
 	margin-top: 20px;
-	background-color: $black;
 	background-repeat: no-repeat;
+	border-top: 3px solid $white;
+	background-color: $red;
 		h1 {
 			position: absolute;
 			top: 20vw;
@@ -122,16 +130,20 @@ header {
 */
 
 section {
-	background-color: $red;
+	// background-color: $red;
 }
 
 .summary {
 	background-color: $white;
-	margin-top: -550px;
+	margin-top: -600px;
+	border-top: 5px solid $black;
+	p {
+		border-left: 5px solid $black;
+	}
 }
 
 .preamble {
-	background-color: $white;
+	background-color: $green;
 }
 
 .main {
@@ -139,7 +151,7 @@ section {
 }
 
 .participation {
-	background-color: $white;
+	background-color: $green;
 }
 
 .benefits {
@@ -147,7 +159,7 @@ section {
 }
 
 .requirements {
-	background-color: $white;
+	background-color: $green;
 }
 
 /*
@@ -157,7 +169,7 @@ section {
 */
 
 footer {
-	background-color: $red;
+	background-color: $green;
 }
 
 /*

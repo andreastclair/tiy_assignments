@@ -61,7 +61,8 @@ body {
 
 .page-wrapper {
   max-width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border-left: 3px solid #d1bb94; }
 
 /*
   ========================================
@@ -86,32 +87,34 @@ h2 {
 
 h3 {
   font-family: 'KyrillaSansSerif-Black';
-  font-size: 19.2px;
-  font-size: 1.2em;
+  font-size: 28.8px;
+  font-size: 1.8em;
   color: #2f2f2e;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  padding: 2%;
+  transform: rotate(-18deg); }
 
 p {
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1em;
   color: #2f2f2e;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  padding: 2%;
+  width: 60%;
+  margin-left: 30%; }
 
 li {
   font-family: sans-serif;
   line-height: 1.4em;
-  color: #2f2f2e; }
+  color: #2f2f2e;
+  padding: 2%; }
 
 /*
   ========================================
   Links
   ========================================
 */
-a {
-  text-decoration: none;
-  color: #2f2f2e; }
-
 /*
   ========================================
   Header
@@ -121,10 +124,11 @@ header {
   background: url("lady.png");
   background-size: contain;
   height: 800px;
-  padding: 20px;
+  padding: 10px;
   margin-top: 20px;
-  background-color: #2f2f2e;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  border-top: 3px solid #d1bb94;
+  background-color: #e7261f; }
   header h1 {
     position: absolute;
     top: 20vw;
@@ -143,27 +147,27 @@ header {
   Section
   ========================================
 */
-section {
-  background-color: #e7261f; }
-
 .summary {
   background-color: #d1bb94;
-  margin-top: -550px; }
+  margin-top: -600px;
+  border-top: 5px solid #2f2f2e; }
+  .summary p {
+    border-left: 5px solid #2f2f2e; }
 
 .preamble {
-  background-color: #d1bb94; }
+  background-color: #4b966d; }
 
 .main {
   background-color: #d1bb94; }
 
 .participation {
-  background-color: #d1bb94; }
+  background-color: #4b966d; }
 
 .benefits {
   background-color: #d1bb94; }
 
 .requirements {
-  background-color: #d1bb94; }
+  background-color: #4b966d; }
 
 /*
   ========================================
@@ -171,7 +175,7 @@ section {
   ========================================
 */
 footer {
-  background-color: #e7261f; }
+  background-color: #4b966d; }
 
 /*
   ========================================
@@ -208,8 +212,11 @@ aside {
     to {
       margin-left: 0%;
       width: 39%; } }
-  header .summary {
+  .summary {
     background-color: #d1bb94;
-    margin-top: -800px; } }
+    margin-top: -400px; } }
+@media screen and (min-width: 1150px) {
+  .summary {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */
