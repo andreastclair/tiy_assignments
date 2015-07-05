@@ -22,11 +22,13 @@
 */
 
 body {
+	// background: url("diag.png");
+	// background-size: 800%;
 	background-color: $black;
 }
 
 .page-wrapper {
-	max-width: 90%;
+	max-width: 100%;
 	margin: 0 auto;
 	border-left: 3px solid $white;
 }
@@ -102,7 +104,7 @@ header {
 	background-size: contain;
 	height: 800px;
 	padding: 10px;
-	margin-top: 20px;
+	// margin-top: 20px;
 	background-repeat: no-repeat;
 	border-top: 3px solid $white;
 	background-color: $red;
@@ -134,11 +136,15 @@ section {
 }
 
 .summary {
+	background: url("diag.png");
+	background-size: 50%;
 	background-color: $white;
 	margin-top: -600px;
-	border-top: 5px solid $black;
+	border-top: 5px solid $green;
+	// border-bottom: 5px solid $black;
 	p {
-		border-left: 5px solid $black;
+		border-left: 5px solid $green;
+		// background-color: $red;
 	}
 }
 
@@ -169,7 +175,18 @@ section {
 */
 
 footer {
-	background-color: $green;
+	background-color: $black;
+	text-align: center;
+	padding: 3%;
+	a {
+		color: $white;
+		text-decoration: none;
+		margin: 0 10px;
+		font-family: 'KyrillaSansSerif-Black';
+		&:hover {
+			color: $green;
+		} 
+	}
 }
 
 /*
@@ -180,7 +197,14 @@ footer {
 
 aside {
 	background-color: $white;
+	ul {
+		margin-top: 10px;
+		width: 60%;
+		margin-left: 30%;
+
+	}
 }
+
 
 
 

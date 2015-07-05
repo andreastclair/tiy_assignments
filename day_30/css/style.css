@@ -60,7 +60,7 @@ body {
   background-color: #2f2f2e; }
 
 .page-wrapper {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   border-left: 3px solid #d1bb94; }
 
@@ -125,7 +125,6 @@ header {
   background-size: contain;
   height: 800px;
   padding: 10px;
-  margin-top: 20px;
   background-repeat: no-repeat;
   border-top: 3px solid #d1bb94;
   background-color: #e7261f; }
@@ -148,11 +147,13 @@ header {
   ========================================
 */
 .summary {
+  background: url("diag.png");
+  background-size: 50%;
   background-color: #d1bb94;
   margin-top: -600px;
-  border-top: 5px solid #2f2f2e; }
+  border-top: 5px solid #4b966d; }
   .summary p {
-    border-left: 5px solid #2f2f2e; }
+    border-left: 5px solid #4b966d; }
 
 .preamble {
   background-color: #4b966d; }
@@ -175,7 +176,16 @@ header {
   ========================================
 */
 footer {
-  background-color: #4b966d; }
+  background-color: #2f2f2e;
+  text-align: center;
+  padding: 3%; }
+  footer a {
+    color: #d1bb94;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'KyrillaSansSerif-Black'; }
+    footer a:hover {
+      color: #4b966d; }
 
 /*
   ========================================
@@ -184,6 +194,10 @@ footer {
 */
 aside {
   background-color: #d1bb94; }
+  aside ul {
+    margin-top: 10px;
+    width: 60%;
+    margin-left: 30%; }
 
 @media screen and (min-width: 700px) {
   header h1 {
