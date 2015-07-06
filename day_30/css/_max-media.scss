@@ -1,15 +1,43 @@
 @media screen and (min-width: 1150px) {
 
-/*
-  ========================================
-  Grid
-  ========================================
-*/
-
-.page-wrapper {
-	// border-left: 10px solid $white;
+.slidein {
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -moz-animation-name: slidein;
+  -webkit-animation-name: slidein;
+  animation-name: slidein;
+  -moz-animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
+@-moz-keyframes slidein {
+  from {
+    margin-left:0%;
+    width:300%
+  }
+      
+  to {
+    margin-left:100%;
+    width:100%;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left:0%;
+    width:300%
+  }
+  
+  to {
+   margin-left:100%;
+   width:100%;
+ }
+}
 
 /*
   ========================================
@@ -17,22 +45,37 @@
   ========================================
 */
 
-
 header {	
 	height: 800px;
-	padding: 10px;
-		h1 {
-			top: 20vw;
-			font-size: 8vw;
-			right: 10vw;
-		}
-		h2 {
-			font-size: 3vw;
-			top: 27vw;
-			right: 9vw;
-		}
-			
-}	
+	h1 {
+		animation-duration: 1.5s;
+  		animation-name: slidein;
+  		@keyframes slidein {
+				from {
+					margin-left: 100%;
+					width: 300%; 
+				}
+				to {
+					margin-left: 0%;
+					width: 47.2%;
+				}
+			}
+	}
+	h2 {
+		animation-duration: 1s;
+  		animation-name: slidein-two;
+  		@keyframes slidein-two {
+				from {
+					margin-left: 100%;
+					width: 300%; 
+				}
+				to {
+					margin-left: 0%;
+					width: 39%;
+				}
+			}
+	}
+}				
 
 /*
   ========================================
@@ -45,30 +88,24 @@ section {
 }
 
 .summary {
-	background: url("diag.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	transform: rotate(-18deg);
-	margin-top: -100px;
-	margin-left: -60px;
+	margin-top: -150px;
+	margin-left: -70px;
 	width: 110%;
-	p {
-		border-left: 10px solid $black;
-	}
 }
 
 .preamble {
-	background-color: $green;
+	border-bottom: 5px solid $white;
 	h3 {
-		transform: rotate(45deg);
+		color: $white;
+		font-family: 'motherland';
 		position: relative;
-		top: 38vw;
-		left: 5vw;
-		@include font(2);
+		top: -2vw;
+		left: -1vw;
+		@include font(4);
 	}
 	p {
-		width: 50%;
-		margin-left: 42%;
+		padding-top: 0;
+		padding-bottom: 0;
 	}	
 }
 
@@ -76,9 +113,13 @@ section {
 .explanation {
 	width: 60%;
 	float: left;
-	background-color: $white;
+	background-color: $white;	
 	h3 {
 		transform: rotate(0deg);
+	}
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 	
 }
@@ -90,6 +131,10 @@ section {
 	h3 {
 		transform: rotate(0deg);
 	}
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	
 }
 
@@ -99,6 +144,10 @@ section {
 	background-color: $white;
 	h3 {
 		transform: rotate(0deg);
+	}
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 	
 }
@@ -110,6 +159,10 @@ section {
 	h3 {
 		transform: rotate(0deg);
 	}
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	
 }
 
@@ -120,16 +173,18 @@ section {
 */
 
 footer {
+	background: url("diag.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 60%;
 	float: left;
-	background-color: $black;
 	text-align: center;
 	padding: 3% 0;
-	background-color: $red;
 	a {
-		color: $white;
+		color: $black;
+		@include font(2);
 		text-decoration: none;
-		margin: 0 10px;
+		margin: 0 30px;
 		font-family: 'KyrillaSansSerif-Black';
 		&:hover {
 			color: $green;
@@ -161,11 +216,12 @@ aside {
 		a, li {
 			color: $white;
 		}
-
 	}
 }
 
 }
+
+
 
 
 

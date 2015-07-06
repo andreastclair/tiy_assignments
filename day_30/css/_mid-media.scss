@@ -45,10 +45,11 @@ header {
 	margin-top: -350px;
 	margin-left: -50px;
 	width: 120%;
-	border-top: none;
-	border-bottom: none;
+	border-top: 5px solid $white;
+	border-bottom: 5px solid $white;
 	p {
 		border-left: 10px solid $black;
+		font-weight: bold;
 	}
 }
 
@@ -92,6 +93,95 @@ header {
  }
 }
 // ======================================
+
+.preamble {
+	padding-top: 10px;
+	border-top: 5px solid $white;
+	h3 {
+		color: $white;
+	}
+	p {
+		margin-top: 15px;
+	}
+}
+
+.explanation {
+	padding-top: 0;
+	h3 {
+		color: $green;
+	}
+	p {
+		margin-top: 15px;
+	}
+}
+
+.participation {
+	padding-top: 0;
+	h3 {
+		color: $white;
+	}
+	p {
+		margin-top: 15px;
+	}
+}
+
+.benefits {
+	padding-top: 0;
+	h3 {
+		color: $green;
+	}
+	p {
+		margin-top: 15px;
+	}
+}
+
+.requirements {
+	padding-top: 0;
+	h3 {
+		color: $white;
+	}
+	p {
+		margin-top: 15px;
+	}
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer {
+	background-color: $black;
+	text-align: center;
+	padding: 3%;
+	a {
+		color: $white;
+		text-decoration: none;
+		margin: 0 10px;
+		font-family: 'KyrillaSansSerif-Black';
+		&:hover {
+			color: $green;
+		} 
+	}
+}
+
+/*
+  ========================================
+  Aside
+  ========================================
+*/
+
+aside {
+	padding-top: 10px;
+	h3 {
+		color: $red;
+	}
+	ul {
+		margin-top: 35px;
+	}
+}
+
 
 }
 
