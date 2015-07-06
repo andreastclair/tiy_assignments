@@ -22,15 +22,12 @@
 */
 
 body {
-	// background: url("diag.png");
-	// background-size: 800%;
-	background-color: $black;
+	background-color: $black;	
 }
 
 .page-wrapper {
 	max-width: 100%;
 	margin: 0 auto;
-	border-left: 3px solid $white;
 }
 
 /*
@@ -87,10 +84,14 @@ li {
   ========================================
 */
 
-// a {
-// 	text-decoration: none;
-// 	color: $black;
-// }
+a {
+	font-family: 'KyrillaSansSerif-Black';
+	text-decoration: none;
+	color: $black;
+		&:hover {
+			color: $blue;
+		} 
+}
 
 /*
   ========================================
@@ -99,15 +100,13 @@ li {
 */
 
 
-header {
+header {	
 	background: url("lady.png");
 	background-size: contain;
-	height: 800px;
+	height: 700px;
 	padding: 10px;
-	// margin-top: 20px;
+	margin: 0 auto;
 	background-repeat: no-repeat;
-	border-top: 3px solid $white;
-	background-color: $red;
 		h1 {
 			position: absolute;
 			top: 20vw;
@@ -132,40 +131,60 @@ header {
 */
 
 section {
-	// background-color: $red;
 }
 
 .summary {
-	background: url("diag.png");
-	background-size: 50%;
 	background-color: $white;
-	margin-top: -600px;
-	border-top: 5px solid $green;
-	// border-bottom: 5px solid $black;
+	margin-top: -350px;
+	border-top: 5px solid $red;
+	border-bottom: 5px solid $red;
 	p {
-		border-left: 5px solid $green;
-		// background-color: $red;
 	}
 }
 
 .preamble {
 	background-color: $green;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	p {
+		margin-top: 5px;
+	}
 }
 
-.main {
+.explanation {
 	background-color: $white;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	p {
+		margin-top: 5px;
+	}
 }
 
 .participation {
 	background-color: $green;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	p {
+		margin-top: 5px;
+	}
 }
 
 .benefits {
 	background-color: $white;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	p {
+		margin-top: 5px;
+	}
 }
 
 .requirements {
 	background-color: $green;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	p {
+		margin-top: 5px;
+	}
 }
 
 /*
@@ -197,8 +216,10 @@ footer {
 
 aside {
 	background-color: $white;
+	padding-bottom: 30px;
+	padding-top: 10px;
 	ul {
-		margin-top: 10px;
+		margin-top: 5px;
 		width: 60%;
 		margin-left: 30%;
 

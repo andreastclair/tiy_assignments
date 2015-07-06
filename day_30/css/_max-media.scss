@@ -1,7 +1,179 @@
 @media screen and (min-width: 1150px) {
 
+/*
+  ========================================
+  Grid
+  ========================================
+*/
 
-	.summary {
-	margin-top: 0;
+.page-wrapper {
+	// border-left: 10px solid $white;
 }
+
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+
+header {	
+	height: 800px;
+	padding: 10px;
+		h1 {
+			top: 20vw;
+			font-size: 8vw;
+			right: 10vw;
+		}
+		h2 {
+			font-size: 3vw;
+			top: 27vw;
+			right: 9vw;
+		}
+			
+}	
+
+/*
+  ========================================
+  Section
+  ========================================
+*/
+
+section {
+	
 }
+
+.summary {
+	background: url("diag.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: rotate(-18deg);
+	margin-top: -100px;
+	margin-left: -60px;
+	width: 110%;
+	p {
+		border-left: 10px solid $black;
+	}
+}
+
+.preamble {
+	background-color: $green;
+	h3 {
+		transform: rotate(45deg);
+		position: relative;
+		top: 38vw;
+		left: 5vw;
+		@include font(2);
+	}
+	p {
+		width: 50%;
+		margin-left: 42%;
+	}	
+}
+
+
+.explanation {
+	width: 60%;
+	float: left;
+	background-color: $white;
+	h3 {
+		transform: rotate(0deg);
+	}
+	
+}
+
+.participation {
+	width: 60%;
+	float: left;
+	background-color: $green;
+	h3 {
+		transform: rotate(0deg);
+	}
+	
+}
+
+.benefits {
+	width: 60%;
+	float: left;
+	background-color: $white;
+	h3 {
+		transform: rotate(0deg);
+	}
+	
+}
+
+.requirements {
+	width: 60%;
+	float: left;
+	background-color: $green;
+	h3 {
+		transform: rotate(0deg);
+	}
+	
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer {
+	width: 60%;
+	float: left;
+	background-color: $black;
+	text-align: center;
+	padding: 3% 0;
+	background-color: $red;
+	a {
+		color: $white;
+		text-decoration: none;
+		margin: 0 10px;
+		font-family: 'KyrillaSansSerif-Black';
+		&:hover {
+			color: $green;
+		} 
+	}
+}
+
+/*
+  ========================================
+  Aside
+  ========================================
+*/
+
+aside {
+	background-color: $white;
+	background: url("fist-2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: right;
+	margin-right: 5%;
+	margin-top: -125%;
+	ul, h3 {
+		transform: rotate(0deg);
+		position: relative;
+		top: 700px;
+		width: 100%;
+		color: $white;
+		right: 30%;
+		a, li {
+			color: $white;
+		}
+
+	}
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+

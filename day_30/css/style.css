@@ -61,8 +61,7 @@ body {
 
 .page-wrapper {
   max-width: 100%;
-  margin: 0 auto;
-  border-left: 3px solid #d1bb94; }
+  margin: 0 auto; }
 
 /*
   ========================================
@@ -115,6 +114,13 @@ li {
   Links
   ========================================
 */
+a {
+  font-family: 'KyrillaSansSerif-Black';
+  text-decoration: none;
+  color: #2f2f2e; }
+  a:hover {
+    color: #053889; }
+
 /*
   ========================================
   Header
@@ -123,11 +129,10 @@ li {
 header {
   background: url("lady.png");
   background-size: contain;
-  height: 800px;
+  height: 700px;
   padding: 10px;
-  background-repeat: no-repeat;
-  border-top: 3px solid #d1bb94;
-  background-color: #e7261f; }
+  margin: 0 auto;
+  background-repeat: no-repeat; }
   header h1 {
     position: absolute;
     top: 20vw;
@@ -147,28 +152,45 @@ header {
   ========================================
 */
 .summary {
-  background: url("diag.png");
-  background-size: 50%;
   background-color: #d1bb94;
-  margin-top: -600px;
-  border-top: 5px solid #4b966d; }
-  .summary p {
-    border-left: 5px solid #4b966d; }
+  margin-top: -350px;
+  border-top: 5px solid #e7261f;
+  border-bottom: 5px solid #e7261f; }
 
 .preamble {
-  background-color: #4b966d; }
+  background-color: #4b966d;
+  padding-bottom: 30px;
+  padding-top: 10px; }
+  .preamble p {
+    margin-top: 5px; }
 
-.main {
-  background-color: #d1bb94; }
+.explanation {
+  background-color: #d1bb94;
+  padding-bottom: 30px;
+  padding-top: 10px; }
+  .explanation p {
+    margin-top: 5px; }
 
 .participation {
-  background-color: #4b966d; }
+  background-color: #4b966d;
+  padding-bottom: 30px;
+  padding-top: 10px; }
+  .participation p {
+    margin-top: 5px; }
 
 .benefits {
-  background-color: #d1bb94; }
+  background-color: #d1bb94;
+  padding-bottom: 30px;
+  padding-top: 10px; }
+  .benefits p {
+    margin-top: 5px; }
 
 .requirements {
-  background-color: #4b966d; }
+  background-color: #4b966d;
+  padding-bottom: 30px;
+  padding-top: 10px; }
+  .requirements p {
+    margin-top: 5px; }
 
 /*
   ========================================
@@ -193,9 +215,11 @@ footer {
   ========================================
 */
 aside {
-  background-color: #d1bb94; }
+  background-color: #d1bb94;
+  padding-bottom: 30px;
+  padding-top: 10px; }
   aside ul {
-    margin-top: 10px;
+    margin-top: 5px;
     width: 60%;
     margin-left: 30%; }
 
@@ -227,10 +251,167 @@ aside {
       margin-left: 0%;
       width: 39%; } }
   .summary {
-    background-color: #d1bb94;
-    margin-top: -400px; } }
+    background: url("diag.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(-18deg);
+    margin-top: -350px;
+    margin-left: -50px;
+    width: 120%;
+    border-top: none;
+    border-bottom: none; }
+    .summary p {
+      border-left: 10px solid #2f2f2e; }
+
+  .slidein {
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -moz-animation-name: slidein;
+    -webkit-animation-name: slidein;
+    animation-name: slidein;
+    -moz-animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; }
+
+  @-moz-keyframes slidein {
+    from {
+      margin-left: 0%;
+      width: 300%; }
+    to {
+      margin-left: 100%;
+      width: 100%; } }
+  @-webkit-keyframes slidein {
+    from {
+      margin-left: 0%;
+      width: 300%; }
+    to {
+      margin-left: 100%;
+      width: 100%; } } }
 @media screen and (min-width: 1150px) {
+  /*
+    ========================================
+    Grid
+    ========================================
+  */
+  /*
+    ========================================
+    Header
+    ========================================
+  */
+  header {
+    height: 800px;
+    padding: 10px; }
+    header h1 {
+      top: 20vw;
+      font-size: 8vw;
+      right: 10vw; }
+    header h2 {
+      font-size: 3vw;
+      top: 27vw;
+      right: 9vw; }
+
+  /*
+    ========================================
+    Section
+    ========================================
+  */
   .summary {
-    margin-top: 0; } }
+    background: url("diag.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(-18deg);
+    margin-top: -100px;
+    margin-left: -60px;
+    width: 110%; }
+    .summary p {
+      border-left: 10px solid #2f2f2e; }
+
+  .preamble {
+    background-color: #4b966d; }
+    .preamble h3 {
+      transform: rotate(45deg);
+      position: relative;
+      top: 38vw;
+      left: 5vw;
+      font-size: 32px;
+      font-size: 2em; }
+    .preamble p {
+      width: 50%;
+      margin-left: 42%; }
+
+  .explanation {
+    width: 60%;
+    float: left;
+    background-color: #d1bb94; }
+    .explanation h3 {
+      transform: rotate(0deg); }
+
+  .participation {
+    width: 60%;
+    float: left;
+    background-color: #4b966d; }
+    .participation h3 {
+      transform: rotate(0deg); }
+
+  .benefits {
+    width: 60%;
+    float: left;
+    background-color: #d1bb94; }
+    .benefits h3 {
+      transform: rotate(0deg); }
+
+  .requirements {
+    width: 60%;
+    float: left;
+    background-color: #4b966d; }
+    .requirements h3 {
+      transform: rotate(0deg); }
+
+  /*
+    ========================================
+    Footer
+    ========================================
+  */
+  footer {
+    width: 60%;
+    float: left;
+    background-color: #2f2f2e;
+    text-align: center;
+    padding: 3% 0;
+    background-color: #e7261f; }
+    footer a {
+      color: #d1bb94;
+      text-decoration: none;
+      margin: 0 10px;
+      font-family: 'KyrillaSansSerif-Black'; }
+      footer a:hover {
+        color: #4b966d; }
+
+  /*
+    ========================================
+    Aside
+    ========================================
+  */
+  aside {
+    background-color: #d1bb94;
+    background: url("fist-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+    margin-right: 5%;
+    margin-top: -125%; }
+    aside ul, aside h3 {
+      transform: rotate(0deg);
+      position: relative;
+      top: 700px;
+      width: 100%;
+      color: #d1bb94;
+      right: 30%; }
+      aside ul a, aside ul li, aside h3 a, aside h3 li {
+        color: #d1bb94; } }
 
 /*# sourceMappingURL=style.css.map */
