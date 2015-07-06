@@ -38,18 +38,19 @@ header {
 		}
 	}	
 .summary {
-	background: url("diag.png");
+	background: url("diag-min.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	transform: rotate(-18deg);
 	margin-top: -350px;
-	margin-left: -50px;
+	margin-left: -70px;
 	width: 120%;
 	border-top: 5px solid $white;
 	border-bottom: 5px solid $white;
 	p {
 		border-left: 10px solid $black;
 		font-weight: bold;
+		padding-right: 40%;
 	}
 }
 
@@ -99,9 +100,13 @@ header {
 	border-top: 5px solid $white;
 	h3 {
 		color: $white;
+		font-family: 'motherland';
+		@include font(4);
 	}
 	p {
 		margin-top: 15px;
+		padding-top: 0;
+		padding-bottom: 0;	
 	}
 }
 
@@ -152,16 +157,10 @@ header {
 */
 
 footer {
-	background-color: $black;
-	text-align: center;
-	padding: 3%;
+	padding: 3% 0 50px 0;
 	a {
-		color: $white;
-		text-decoration: none;
-		margin: 0 10px;
-		font-family: 'KyrillaSansSerif-Black';
-		&:hover {
-			color: $green;
+		&:hover, &:active {
+			background-size: 30px;
 		} 
 	}
 }

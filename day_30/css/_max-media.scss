@@ -47,6 +47,7 @@
 
 header {	
 	height: 800px;
+	margin-left: 35px;
 	h1 {
 		animation-duration: 1.5s;
   		animation-name: slidein;
@@ -89,8 +90,9 @@ section {
 
 .summary {
 	margin-top: -150px;
-	margin-left: -70px;
-	width: 110%;
+	margin-left: -80px;
+	width: 115%;
+	@include font(1.5);
 }
 
 .preamble {
@@ -99,7 +101,7 @@ section {
 		color: $white;
 		font-family: 'motherland';
 		position: relative;
-		top: -2vw;
+		top: -1vw;
 		left: -1vw;
 		@include font(4);
 	}
@@ -111,9 +113,10 @@ section {
 
 
 .explanation {
-	width: 60%;
+	width: 70%;
 	float: left;
-	background-color: $white;	
+	background-color: $white;
+	border-top: none;
 	h3 {
 		transform: rotate(0deg);
 	}
@@ -125,7 +128,7 @@ section {
 }
 
 .participation {
-	width: 60%;
+	width: 70%;
 	float: left;
 	background-color: $green;
 	h3 {
@@ -139,7 +142,7 @@ section {
 }
 
 .benefits {
-	width: 60%;
+	width: 70%;
 	float: left;
 	background-color: $white;
 	h3 {
@@ -153,7 +156,7 @@ section {
 }
 
 .requirements {
-	width: 60%;
+	width: 70%;
 	float: left;
 	background-color: $green;
 	h3 {
@@ -173,21 +176,19 @@ section {
 */
 
 footer {
-	background: url("diag.png");
+	background: url("diag-min.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 60%;
+	width: 100%;
 	float: left;
-	text-align: center;
-	padding: 3% 0;
+	padding: 3% 0 80px 50px;
 	a {
 		color: $black;
 		@include font(2);
-		text-decoration: none;
 		margin: 0 30px;
-		font-family: 'KyrillaSansSerif-Black';
-		&:hover {
-			color: $green;
+		padding-bottom: 70px;
+		&:hover, &:active {
+			background-size: 50px;
 		} 
 	}
 }
@@ -199,25 +200,52 @@ footer {
 */
 
 aside {
-	background-color: $white;
-	background: url("fist-2.png");
-	background-size: contain;
-	background-repeat: no-repeat;
+	width: 25%;
 	float: right;
-	margin-right: 5%;
-	margin-top: -125%;
-	ul, h3 {
-		transform: rotate(0deg);
-		position: relative;
-		top: 700px;
-		width: 100%;
+	background-color: $black;
+	margin-top: -120%;
+	h3 {
+		width: 35%;
+	}
+	ul, h3, a, li {
 		color: $white;
-		right: 30%;
-		a, li {
-			color: $white;
+		transform: rotate(0deg);
+		margin-top: 0;
+	}
+	a {
+		&:hover {
+			color: $green;
 		}
 	}
 }
+
+// aside {
+// 	background-color: $white;
+// 	background: url("fist-min.png");
+// 	background-size: contain;
+// 	width: 40%;
+// 	margin-top: -125.1%;
+// 	background-repeat: no-repeat;
+// 	float: right;
+// 	ul, h3 {
+// 		transform: rotate(0deg);
+// 		position: relative;
+// 		top: 610px;
+// 		width: 100%;
+// 		margin-left: 40%;
+// 		color: $white;
+// 		right: 30%;
+// 		margin-top: 0;
+// 		a, li {
+// 			color: $white;
+// 		}
+// 		a {
+// 			&:hover {
+// 				color: $green;
+// 			}
+// 		}
+// 	}
+// }
 
 }
 

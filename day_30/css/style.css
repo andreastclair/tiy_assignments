@@ -127,7 +127,7 @@ a {
   ========================================
 */
 header {
-  background: url("lady.png");
+  background: url("lady-min.png");
   background-size: contain;
   height: 700px;
   padding: 10px;
@@ -154,41 +154,48 @@ header {
 .summary {
   background-color: #d1bb94;
   margin-top: -350px;
-  border-top: 5px solid #e7261f;
-  border-bottom: 5px solid #e7261f; }
+  border-top: 5px solid #a7403e;
+  border-bottom: 5px solid #a7403e; }
+  .summary a:hover {
+    color: #4b966d; }
 
 .preamble {
   background-color: #4b966d;
   padding-bottom: 30px;
-  padding-top: 10px; }
+  padding-top: 50px;
+  border-top: 10px solid #2f2f2e; }
   .preamble p {
     margin-top: 5px; }
 
 .explanation {
   background-color: #d1bb94;
   padding-bottom: 30px;
-  padding-top: 10px; }
+  padding-top: 30px;
+  border-top: 10px solid #2f2f2e; }
   .explanation p {
     margin-top: 5px; }
 
 .participation {
   background-color: #4b966d;
   padding-bottom: 30px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  border-top: 10px solid #2f2f2e; }
   .participation p {
     margin-top: 5px; }
 
 .benefits {
   background-color: #d1bb94;
   padding-bottom: 30px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  border-top: 10px solid #2f2f2e; }
   .benefits p {
     margin-top: 5px; }
 
 .requirements {
   background-color: #4b966d;
   padding-bottom: 30px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  border-top: 10px solid #2f2f2e; }
   .requirements p {
     margin-top: 5px; }
 
@@ -200,14 +207,19 @@ header {
 footer {
   background-color: #2f2f2e;
   text-align: center;
-  padding: 3%; }
+  padding: 3% 0 30px 0;
+  border-top: 10px solid #2f2f2e; }
   footer a {
     color: #d1bb94;
     text-decoration: none;
     margin: 0 10px;
-    font-family: 'KyrillaSansSerif-Black'; }
-    footer a:hover {
-      color: #4b966d; }
+    font-family: 'KyrillaSansSerif-Black';
+    padding-bottom: 40px; }
+    footer a:hover, footer a:active {
+      color: transparent;
+      background: url("fist-2.png");
+      background-size: 20px;
+      background-repeat: no-repeat; }
 
 /*
   ========================================
@@ -222,6 +234,8 @@ aside {
     margin-top: 15px;
     width: 60%;
     margin-left: 30%; }
+  aside a:hover {
+    color: #4b966d; }
 
 @media screen and (min-width: 700px) {
   header h1 {
@@ -251,18 +265,19 @@ aside {
       margin-left: 0%;
       width: 39%; } }
   .summary {
-    background: url("diag.png");
+    background: url("diag-min.png");
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(-18deg);
     margin-top: -350px;
-    margin-left: -50px;
+    margin-left: -70px;
     width: 120%;
     border-top: 5px solid #d1bb94;
     border-bottom: 5px solid #d1bb94; }
     .summary p {
       border-left: 10px solid #2f2f2e;
-      font-weight: bold; }
+      font-weight: bold;
+      padding-right: 40%; }
 
   .slidein {
     -moz-animation-duration: 3s;
@@ -296,9 +311,14 @@ aside {
     padding-top: 10px;
     border-top: 5px solid #d1bb94; }
     .preamble h3 {
-      color: #d1bb94; }
+      color: #d1bb94;
+      font-family: 'motherland';
+      font-size: 64px;
+      font-size: 4em; }
     .preamble p {
-      margin-top: 15px; }
+      margin-top: 15px;
+      padding-top: 0;
+      padding-bottom: 0; }
 
   .explanation {
     padding-top: 0; }
@@ -334,16 +354,9 @@ aside {
     ========================================
   */
   footer {
-    background-color: #2f2f2e;
-    text-align: center;
-    padding: 3%; }
-    footer a {
-      color: #d1bb94;
-      text-decoration: none;
-      margin: 0 10px;
-      font-family: 'KyrillaSansSerif-Black'; }
-      footer a:hover {
-        color: #4b966d; }
+    padding: 3% 0 50px 0; }
+    footer a:hover, footer a:active {
+      background-size: 30px; }
 
   /*
     ========================================
@@ -353,7 +366,7 @@ aside {
   aside {
     padding-top: 10px; }
     aside h3 {
-      color: #e7261f; }
+      color: #a7403e; }
     aside ul {
       margin-top: 35px; } }
 @media screen and (min-width: 1150px) {
@@ -391,7 +404,8 @@ aside {
     ========================================
   */
   header {
-    height: 800px; }
+    height: 800px;
+    margin-left: 35px; }
     header h1 {
       animation-duration: 1.5s;
       animation-name: slidein; }
@@ -419,8 +433,10 @@ aside {
   */
   .summary {
     margin-top: -150px;
-    margin-left: -70px;
-    width: 110%; }
+    margin-left: -80px;
+    width: 115%;
+    font-size: 24px;
+    font-size: 1.5em; }
 
   .preamble {
     border-bottom: 5px solid #d1bb94; }
@@ -428,7 +444,7 @@ aside {
       color: #d1bb94;
       font-family: 'motherland';
       position: relative;
-      top: -2vw;
+      top: -1vw;
       left: -1vw;
       font-size: 64px;
       font-size: 4em; }
@@ -437,9 +453,10 @@ aside {
       padding-bottom: 0; }
 
   .explanation {
-    width: 60%;
+    width: 70%;
     float: left;
-    background-color: #d1bb94; }
+    background-color: #d1bb94;
+    border-top: none; }
     .explanation h3 {
       transform: rotate(0deg); }
     .explanation p {
@@ -447,7 +464,7 @@ aside {
       padding-bottom: 0; }
 
   .participation {
-    width: 60%;
+    width: 70%;
     float: left;
     background-color: #4b966d; }
     .participation h3 {
@@ -457,7 +474,7 @@ aside {
       padding-bottom: 0; }
 
   .benefits {
-    width: 60%;
+    width: 70%;
     float: left;
     background-color: #d1bb94; }
     .benefits h3 {
@@ -467,7 +484,7 @@ aside {
       padding-bottom: 0; }
 
   .requirements {
-    width: 60%;
+    width: 70%;
     float: left;
     background-color: #4b966d; }
     .requirements h3 {
@@ -482,22 +499,20 @@ aside {
     ========================================
   */
   footer {
-    background: url("diag.png");
+    background: url("diag-min.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 60%;
+    width: 100%;
     float: left;
-    text-align: center;
-    padding: 3% 0; }
+    padding: 3% 0 80px 50px; }
     footer a {
       color: #2f2f2e;
       font-size: 32px;
       font-size: 2em;
-      text-decoration: none;
       margin: 0 30px;
-      font-family: 'KyrillaSansSerif-Black'; }
-      footer a:hover {
-        color: #4b966d; }
+      padding-bottom: 70px; }
+      footer a:hover, footer a:active {
+        background-size: 50px; }
 
   /*
     ========================================
@@ -505,21 +520,17 @@ aside {
     ========================================
   */
   aside {
-    background-color: #d1bb94;
-    background: url("fist-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 25%;
     float: right;
-    margin-right: 5%;
-    margin-top: -125%; }
-    aside ul, aside h3 {
-      transform: rotate(0deg);
-      position: relative;
-      top: 700px;
-      width: 100%;
+    background-color: #2f2f2e;
+    margin-top: -120%; }
+    aside h3 {
+      width: 35%; }
+    aside ul, aside h3, aside a, aside li {
       color: #d1bb94;
-      right: 30%; }
-      aside ul a, aside ul li, aside h3 a, aside h3 li {
-        color: #d1bb94; } }
+      transform: rotate(0deg);
+      margin-top: 0; }
+    aside a:hover {
+      color: #4b966d; } }
 
 /*# sourceMappingURL=style.css.map */
