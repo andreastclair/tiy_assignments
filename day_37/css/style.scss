@@ -1,0 +1,327 @@
+@import 'reset';
+@import 'colors';
+@mixin font($em){
+    font-size: ($em*16) + px;
+    font-size: ($em) + em;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;}
+
+.container-main {
+	max-width: 1300px;
+	margin: 0 auto;}
+
+/*
+  ========================================
+Global Typography
+  ========================================
+*/
+
+body {
+	font-family: Helvetica;
+	color: $dkblue;}
+
+h1, h3 {
+	color: white;
+	text-align: center;}
+
+h2, h5 {
+	color: $dkblue;}
+
+h4 {
+	color: $medblue;
+	font-size: 1.8em;
+	font-style: italic;
+	float: left;
+	margin: 16px 0 30px 20px;}
+
+h5 {
+	font-size: 4em;
+	text-align: center;
+	margin: 41px 0;}
+
+p {
+	font-size: 1em;
+	line-height: 1.7em;
+	color: $dkgrey;}
+
+/*
+  ========================================
+Links
+  ========================================
+*/
+
+a {
+	color: $ltgrey;}
+
+nav a, li, {
+	color: $dkblue;
+	text-decoration: none;}
+
+footer a {
+	text-decoration: none;}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+header {
+	width: 1300px;
+	height: 623px;
+	background: url("../images/ballet-2.gif");
+	background-size: cover;
+	// div {
+	// 	float: left;
+	// 	margin-left: 110px;
+	// 	margin-top: 10px;
+	// 	img {
+	// 		width: 46px;
+	// 		display: inline-block;
+	// 		vertical-align: middle;}
+		p {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 110px;
+			margin-top: 30px;
+			color: black;}		
+	
+	nav {
+		color: black;	
+		float: right;
+		margin-top: 30px;
+		margin-right: 110px;
+		img {
+			width: 26px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 10px;}
+		li {
+			display: inline-block;
+			margin-left: 20px;
+			color: black;}
+	}		
+	h1 {
+		font-weight: bold;
+		@include font(5);
+		padding-top: 200px;}
+	h3 {
+		@include font(1.5);}
+}
+
+/*
+  ========================================
+  Left Column/Section
+  ========================================
+*/
+
+section {
+	max-width: 610px;
+	margin-left: 160px;
+	float: left;
+	margin-top: 80px;
+	h2 {
+		font-size: 3em;
+		line-height: 1.1em;}
+	.author {
+		height: 22px;
+		margin-top: 16px;}
+	.time {
+		display: inline-block;
+		margin-left: 80px;
+		font-size: 14px;
+		color: $ltgrey;
+		margin-bottom: 30px;}
+	.verticalLine {
+		border-left: solid 1px $ltgrey;
+		height: 55px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 5px;}
+	.options {
+		float: left;
+		margin-top: 15px;
+		img {
+			width: 33px;
+			height: 30px;
+			background-color: $dkgrey;
+			vertical-align: middle;}
+		.options-text {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: -4.5px;
+			font-size: 14px;}
+		.options-text span {
+		color: white;
+		background-color: $ltgrey;
+		padding: 7px 11px 7px 11px;}
+	}
+	.mid-option {
+		margin-left: 10px;
+		margin-right: 10px;}
+	.options {
+		.shareicon {
+			background-color: $dkblue;}
+		.last-option span {
+			background-color: $medblue;
+		}
+	}
+}
+
+/*
+  ========================================
+  Right Column/Aside
+  ========================================
+*/
+
+aside {
+	width: 280px;
+	margin-top: 90px;
+	margin-right: 160px;
+	float: right;
+	.authorR {
+		width: 84px;
+		height: 84px;
+		margin: 0 98px 30px 98px;}
+	ul {
+		text-align: center;
+		margin-bottom: 50px;
+		li {
+			color: $ltgrey;
+			display: inline-block;
+			font-size: 0.875em;
+			a {
+				text-decoration: none;}
+		}			
+		li:nth-of-type(2) {
+			margin: 0 20px;}
+	}			
+	.paddle {
+		height: 300px;
+		width: 280px;}
+	.ad {
+		font-size: 0.875em;
+		float: right;
+		margin-top: 5px;}
+	.side-head {
+		font-size: 1.063em;
+		font-weight: bold;
+		color: $medblue;
+		margin: 73px 0 7px;}
+	.side-copy {
+		font-size: 0.875em;
+		color: $ltgrey;
+		line-height: 24px;}
+}			
+
+/*
+  ========================================
+ Clear Fix
+  ========================================
+*/
+
+.clear-fix {
+	clear: both;}
+
+/*
+  ========================================
+ Bottom Section
+  ========================================
+*/
+
+.horizLine {
+	border-top: solid 1px $ltgrey;
+	width: 100%;
+	margin-top: 64px;}
+.image {
+	width: 325px;
+	height: 330px;
+	float: left;
+	.text {
+		font-size: 1.75em;
+		color: $dkblue;
+		float: left;
+		margin-top: 290px;
+		margin-left: 10px;}
+	.beer-text {
+		color: white;}
+	.z {
+		margin-top: 246px;
+		line-height: 1.4em;}	
+}
+
+.surfer {
+	background: url("../images/surfer.jpg");}
+
+.beer {
+	background: url("../images/beer.jpg");}
+
+.zack {
+	background: url("../images/zack.jpg");}
+
+.booze {
+	background: url("../images/booze.jpg");}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer {
+	width: 1300px;
+	height: 100px;
+	background: $dkblue;
+	div {
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 31.5px;
+		margin-left: 165px;
+		img {
+			float: left;
+			margin-right: 10px;}
+		.footer-details {
+			font-size: 14px;
+			color: $ltgrey;}
+	}
+	.copyright {
+		float: left;
+		margin-top: 12px;}
+	.title-right-bottom {
+		color: $ltgrey;
+		float: right;
+		margin-right: 165px;
+		margin-top: 41.5px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
