@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #F9F9F9;
+  font-family: "jaf-bernina-sans-condensed",sans-serif; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+h1 {
+  font-size: 35.2px;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #F9F9F9;
+  font-family: "jaf-bernina-sans-condensed",sans-serif; }
+
+h2, li {
+  color: #F9F9F9;
+  font-weight: bold;
+  font-size: 24px;
+  font-size: 1.5em; }
+
+p {
+  font-size: 16px;
+  font-size: 1em;
+  color: white;
+  line-height: 1.4; }
+
+a {
+  text-decoration: none;
+  color: #F9F9F9; }
+
+a:hover {
+  color: #EB9486; }
+
+header {
+  height: 90px;
+  background-color: #5B5B5B;
+  border-bottom: 8px solid #B2D8AF;
+  padding-bottom: 15px;
+  margin-bottom: 50px; }
+  header .logo {
+    width: 80px;
+    border-radius: 50px;
+    position: relative;
+    top: 40px;
+    left: 8%;
+    border: 5px solid #B2D8AF; }
+  header h1 {
+    display: inline;
+    text-transform: uppercase;
+    padding-left: 9%; }
+    header h1 span {
+      color: #EB9486;
+      font-size: 14px;
+      font-size: 0.875em; }
+  header nav {
+    float: right;
+    padding-right: 8%;
+    padding-top: 70px; }
+    header nav li {
+      display: inline;
+      margin-right: 6%; }
+
+.all-projects {
+  text-align: center; }
+  .all-projects .project {
+    display: inline; }
+    .all-projects .project img {
+      width: 275px;
+      border-radius: 200px;
+      margin: 3% 3%;
+      border: 10px solid #B2D8AF;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+      -moz-filter: grayscale(1);
+      -o-filter: grayscale(1);
+      -ms-filter: grayscale(1); }
+    .all-projects .project img:hover {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0);
+      -moz-filter: grayscale(0);
+      -o-filter: grayscale(0);
+      -ms-filter: grayscale(0); }
+
+footer {
+  margin-top: 50px;
+  height: 220px;
+  background-color: #5B5B5B;
+  border-top: 8px solid #B2D8AF;
+  padding: 25px; }
+  footer .details {
+    text-align: center;
+    padding-right: 0;
+    margin-top: 10px; }
+    footer .details h2 {
+      margin-bottom: 20px;
+      color: #EB9486; }
+    footer .details .about {
+      width: 250px;
+      display: inline-block;
+      text-align: left;
+      vertical-align: top; }
+    footer .details .contact {
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      margin: 0 190px; }
+    footer .details .follow {
+      display: inline-block;
+      text-align: left;
+      vertical-align: top; }
+      footer .details .follow img {
+        width: 40px;
+        margin-right: 10px; }
+      footer .details .follow img:hover {
+        filter: saturate(0%);
+        -webkit-filter: saturate(0%);
+        -moz-filter: saturate(0%);
+        -o-filter: saturate(0%);
+        -ms-filter: saturate(0%); }
+
+/*# sourceMappingURL=style.css.map */

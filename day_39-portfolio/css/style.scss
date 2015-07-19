@@ -1,0 +1,184 @@
+@import 'reset';
+@import 'custom';
+
+@mixin font($em){
+    font-size: ($em*16) + px;
+    font-size: ($em) + em;
+}
+
+
+
+body {
+	background-color: $white;
+	font-family: "jaf-bernina-sans-condensed",sans-serif;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	@include font(2.2);
+	font-weight: bold;
+	color: $white;
+	font-family: "jaf-bernina-sans-condensed",sans-serif;
+}
+
+h2, li {
+	color: $white;
+	font-weight: bold;
+	@include font(1.5);
+}	
+
+p {
+	@include font(1);
+	color: white;
+	line-height: 1.4;
+}
+
+a {
+	text-decoration: none;
+	color: $white;
+}
+
+a:hover {
+	color: $pink;
+}		
+
+
+
+// ===============================
+// Header
+// ===============================
+
+header {
+	height: 90px;
+	background-color: $dkgrey;
+	border-bottom: 8px solid $ltgreen;
+	padding-bottom: 15px;
+	margin-bottom: 50px;
+	.logo {
+		width: 80px;
+		border-radius: 50px;
+		position: relative;
+		top: 40px;
+		left: 8%;
+		border: 5px solid $ltgreen;
+	}
+	h1 {
+		display: inline;
+		text-transform: uppercase;
+		padding-left: 9%;
+		// padding-top: 10px;
+		span {
+			color: $pink;
+			@include font(0.875);
+		}
+	}
+	nav {
+		float: right;
+		padding-right: 8%;
+		padding-top: 70px;
+		li {
+			display: inline;
+			margin-right: 6%;
+		}
+	}	
+}
+
+// ===============================
+// Projects
+// ===============================
+
+.all-projects {
+	text-align: center;
+	.project {
+		display: inline;
+		img {
+			width: 275px;
+			border-radius: 200px;
+			margin: 3% 3%;
+			border: 10px solid $ltgreen;
+			-webkit-filter: grayscale(1);
+  			filter: grayscale(1);
+  			-webkit-filter: grayscale(1);
+			-moz-filter: grayscale(1);
+			-o-filter: grayscale(1);
+			-ms-filter: grayscale(1);
+  		}
+		img:hover {
+			filter: grayscale(0);
+			-webkit-filter: grayscale(0);
+			-moz-filter: grayscale(0);
+			-o-filter: grayscale(0);
+			-ms-filter: grayscale(0);
+		}	
+		
+	}
+}
+
+// ===============================
+// Footer
+// ===============================
+
+footer {
+	margin-top: 50px;
+	height: 220px;
+	background-color: $dkgrey;
+	border-top: 8px solid $ltgreen;
+	padding: 25px;
+	.details {
+		// width: 90%;
+		// margin: 0 auto;
+		text-align: center;
+		padding-right: 0;
+		margin-top: 10px;
+		h2 {
+			margin-bottom: 20px;
+			color: $pink;
+		}
+		.about {
+			// background-color: red;
+			// width: 25%;
+			width:250px;
+			display: inline-block;
+			text-align: left;
+			vertical-align: top;
+		}
+		.contact {
+			// background-color: green;
+			// width: 25%;
+			display: inline-block;
+			text-align: left;
+			vertical-align: top;
+			margin: 0 190px;
+
+		}
+		.follow {
+			// background-color: blue;
+			// width: 25%;
+			display: inline-block;
+			text-align: left;
+			vertical-align: top;
+			img {
+				width: 40px;
+				margin-right: 10px;
+				// margin-top: 10px;
+			}
+			img:hover {
+				filter: saturate(0%);
+				-webkit-filter: saturate(0%);
+				-moz-filter: saturate(0%);
+				-o-filter: saturate(0%);
+				-ms-filter: saturate(0%);
+			}
+		}
+	}
+}
+
+
+
+
+
+
