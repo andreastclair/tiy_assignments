@@ -53,6 +53,8 @@ a:hover {
 // ===============================
 
 header {
+	position: fixed;
+	width: 100%;
 	height: 90px;
 	background-color: $dkgrey;
 	border-bottom: 8px solid $ltgreen;
@@ -82,7 +84,7 @@ header {
 		padding-top: 70px;
 		li {
 			display: inline;
-			margin-right: 6%;
+			margin-right: 5%;
 		}
 	}	
 }
@@ -93,6 +95,8 @@ header {
 
 .all-projects {
 	text-align: center;
+	padding-top: 160px;
+	margin-bottom: 50px;
 	.project {
 		display: inline;
 		img {
@@ -119,11 +123,46 @@ header {
 }
 
 // ===============================
+// Posts
+// ===============================
+
+.pillows {
+	background: url("../images/pillows.jpg");
+	background-size: cover;
+	padding-top: 200px;
+	background-repeat: no-repeat;
+}
+
+section {
+	// padding-top: 200px;
+	padding-bottom: 550px;
+	.row {
+		margin-bottom: 60px;
+		.preview {
+			width: 20%;
+			display: inline-block;
+			margin: 0 2.4%;
+			vertical-align: top;
+			h2 {
+				color: $ltgreen;
+				margin-bottom: 10px;
+			}
+			h2:hover {
+				color: $pink;
+			}
+			p {
+				color: black;
+			}
+		}	
+	}
+}
+
+// ===============================
 // Footer
 // ===============================
 
 footer {
-	margin-top: 50px;
+	// margin-top: 50px;
 	height: 220px;
 	background-color: $dkgrey;
 	border-top: 8px solid $ltgreen;
