@@ -73,10 +73,22 @@ h3 {
   font-size: 2.5em;
   line-height: 3; }
 
+h4 {
+  color: #171717;
+  font-size: 24px;
+  font-size: 1.5em;
+  line-height: 2; }
+
+span {
+  font-family: "jaf-bernina-sans-condensed",sans-serif;
+  color: #EB9486;
+  font-size: 12.8px;
+  font-size: 0.8em; }
+
 p {
   font-size: 16px;
   font-size: 1em;
-  color: white;
+  color: #F9F9F9;
   line-height: 1.4; }
 
 a {
@@ -105,10 +117,6 @@ header {
     display: inline;
     text-transform: uppercase;
     padding-left: 9%; }
-    header h1 span {
-      color: #EB9486;
-      font-size: 14px;
-      font-size: 0.875em; }
   header nav {
     float: right;
     padding-right: 8%;
@@ -170,7 +178,7 @@ section {
       section .row .preview h2:hover {
         color: #EB9486; }
       section .row .preview p {
-        color: black; }
+        color: #171717; }
 
 .blog-title {
   padding-top: 200px;
@@ -182,7 +190,37 @@ section {
     font-size: 48px;
     font-size: 3em; }
   .blog-title p {
-    color: black; }
+    color: #171717; }
+
+.project {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  text-align: center;
+  width: 70%; }
+  .project h2 {
+    color: #B2D8AF;
+    font-size: 48px;
+    font-size: 3em; }
+  .project p {
+    color: #171717;
+    text-align: left;
+    margin: 20px auto;
+    width: 70%; }
+  .project a {
+    text-decoration: underline;
+    color: #171717; }
+  .project a:hover {
+    color: #EB9486; }
+  .project .desktop {
+    width: 500px;
+    margin: 60px; }
+  .project .desktop2 {
+    width: 100%;
+    margin: 60px auto; }
+  .project .phone {
+    width: 33%;
+    margin: 0 60px; }
 
 .cat {
   background: url("../images/cat.jpg");
@@ -196,7 +234,7 @@ section {
   top: 175px;
   left: 55%; }
   .about-me-intro p {
-    color: black;
+    color: #171717;
     margin-top: -25px;
     margin-left: 270px; }
 
