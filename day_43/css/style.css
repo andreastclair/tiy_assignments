@@ -1,0 +1,18 @@
+body {
+  font-family: Helvetica;
+  color: #5B5B5B;
+  background-color: #F9F9F9; }
+
+nav a {
+  color: #98C9A3; }
+
+h1 {
+  font-size: 32px;
+  font-size: 2em;
+  font-weight: bold; }
+
+h2 {
+  font-size: 24px;
+  font-size: 1.5em; }
+
+/*# sourceMappingURL=style.css.map */

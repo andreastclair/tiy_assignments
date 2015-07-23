@@ -1,0 +1,25 @@
+@import 'custom';
+
+@mixin font($em){
+    font-size: ($em*16) + px;
+    font-size: ($em) + em;
+}
+
+body {
+	font-family: Helvetica;
+	color: $dkgrey;
+	background-color: $white;
+}
+
+nav a {
+	color: $medgreen;
+}
+
+h1 {
+	@include font(2);
+	font-weight: bold;
+}
+
+h2 {
+	@include font(1.5);
+}
