@@ -1,18 +1,284 @@
-body {
-  font-family: Helvetica;
-  color: #5B5B5B;
-  background-color: #F9F9F9; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-nav a {
-  color: #98C9A3; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: sans-serif;
+  color: #171717; }
+
+.section {
+  padding-top: 50px; }
+
+.post-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 50px 0; }
+
+.horiz-line {
+  width: 100%;
+  border-top: 1px solid #C8D6D5;
+  margin: 38px 0 0 0; }
 
 h1 {
+  font-family: "futura-pt",sans-serif;
+  font-weight: light;
+  font-size: 48px;
+  font-size: 3em;
+  text-align: center;
+  color: #171717; }
+
+h3 {
+  margin-top: 25px;
+  color: #171717;
+  height: 35px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 28.8px;
+  font-size: 1.8em; }
+
+h4 {
+  text-align: left;
+  margin: 30px 0 20px 0;
+  font-weight: bold;
+  font-size: 30px;
+  font-size: 1.875em; }
+
+h6 {
+  font-family: "futura-pt",sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  font-size: 1em; }
+
+.bold {
+  font-weight: bold;
+  line-height: 1.6;
+  color: #5B5B5B;
+  font-size: 16px;
+  font-size: 1em; }
+
+.header {
+  font-size: 32px;
+  font-size: 2em; }
+
+.logo {
+  font-weight: bold;
+  color: #171717;
   font-size: 32px;
   font-size: 2em;
-  font-weight: bold; }
+  margin-top: 0;
+  line-height: 1; }
 
-h2 {
-  font-size: 24px;
-  font-size: 1.5em; }
+.logo2 {
+  font-size: 32px;
+  font-size: 2em;
+  color: #171717;
+  margin-top: 0;
+  line-height: 1; }
+
+.bold-link {
+  color: #5EAFBD;
+  font-weight: bold;
+  font-size: 19.2px;
+  font-size: 1.2em;
+  margin-top: 5px; }
+
+span.reg-link {
+  color: #5EAFBD;
+  font-size: 16px;
+  font-size: 1em;
+  font-family: "jaf-bernina-sans-condensed",sans-serif; }
+
+.active {
+  color: #EE7B42;
+  font-size: 16px;
+  font-size: 1em; }
+
+.style-guide h2 {
+  color: #B2D8AF;
+  font-size: 48px;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center; }
+.style-guide nav {
+  margin: 25px 0;
+  background-color: #5EAFBD;
+  padding: 8px;
+  text-align: center; }
+.style-guide a {
+  text-decoration: none;
+  color: #F9F9F9; }
+  .style-guide a:hover {
+    color: #EE7B42; }
+.style-guide li {
+  display: inline;
+  margin: 0 8px;
+  line-height: 1.8;
+  font-weight: normal;
+  font-size: 14px;
+  font-size: 0.875em; }
+.style-guide p {
+  color: #171717;
+  font-family: "Arial";
+  line-height: 1.8; }
+.style-guide .box {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 10px; }
+.style-guide .one {
+  background-color: #5EAFBD; }
+.style-guide .two {
+  background-color: #EE7B42; }
+.style-guide .three {
+  background-color: #F2EA29; }
+.style-guide .four {
+  background-color: #C8D6D5; }
+.style-guide .five {
+  background-color: #ECEBF2; }
+.style-guide .icons {
+  margin: 5px 0 20px 0;
+  max-width: 500px; }
+.style-guide .icons-full {
+  margin: 5px 0 20px 0; }
+.style-guide .icons-small {
+  margin: 5px 0 20px 0;
+  max-width: 100px; }
+.style-guide .ribbon {
+  margin: 5px 0 0 0;
+  max-width: 60px; }
+.style-guide .col {
+  background-color: #C8D6D5;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  margin: 5px 0 20px 0; }
+.style-guide .full {
+  width: 91%; }
+.style-guide .left {
+  width: 30%; }
+.style-guide .right {
+  width: 60%; }
+.style-guide .left-3 {
+  width: 20%; }
+.style-guide .right-9 {
+  width: 70%; }
+.style-guide .cog {
+  width: 40px;
+  display: block;
+  margin: 10px 0; }
+.style-guide .buttons {
+  height: 30px;
+  width: 70px;
+  margin-top: 5px; }
+.style-guide .avatar {
+  background-color: #C8D6D5;
+  padding: 10px;
+  margin: 5px 10px 30px 0;
+  text-align: left;
+  font-family: "Arial";
+  font-size: 12.8px;
+  font-size: 0.8em;
+  border-radius: 15%; }
+.style-guide .user-mobile-home {
+  height: 45px;
+  width: 45px; }
+.style-guide .user-desktop-home {
+  height: 48px;
+  width: 48px; }
+.style-guide .user-mobile-profile {
+  height: 52px;
+  width: 52px; }
+.style-guide .user-desktop-profile {
+  height: 88px;
+  width: 88px; }
+.style-guide .friends {
+  height: 31px;
+  width: 31px; }
+.style-guide .book {
+  background-color: #C8D6D5;
+  margin: 5px 10px 30px 0;
+  padding: 10px;
+  font-size: 12.8px;
+  font-size: 0.8em;
+  font-family: "Arial"; }
+.style-guide .mobile-feed {
+  width: 37px;
+  height: 56px; }
+.style-guide .desktop-feed {
+  width: 41px;
+  height: 62px; }
+.style-guide .desktop-reccs {
+  width: 56px;
+  height: 89px; }
+.style-guide .mobile-shelves {
+  width: 200px;
+  height: 311px; }
+.style-guide .desktop-shelves {
+  width: 94px;
+  height: 125px; }
+.style-guide .mobile-profile {
+  width: 28px;
+  height: 44px; }
+.style-guide .desktop-profile {
+  width: 37px;
+  height: 57px; }
+.style-guide .desktop-ad {
+  width: 90px;
+  height: 117px; }
+.style-guide .stars {
+  margin-top: 10px; }
+.style-guide .search {
+  margin: 5px 0 20px 0; }
+.style-guide .mobile {
+  max-width: 70%; }
+.style-guide .desktop {
+  max-width: 50%; }
+.style-guide .status {
+  max-width: 60%;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

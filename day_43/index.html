@@ -3,320 +3,234 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Table of Contents</title>
+	<title>Goodreads | Style Guide</title>
 	<link rel="stylesheet" href="css/foundation.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<script src="//use.typekit.net/api8nyt.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 	<script src="js/vendor/modernizr.min.js">
 	</script>
 </head>
 <body>
-<p>
+	<div class="post-container">
+		<div class="style-guide">
 
-</p>
-<div class="row">
-	<div class="small-12 medium-12 columns">
-		<h1 id="toc">
-			Goodreads Redesign
-		</h1>
-	</div>
-</div>
-<div class="row">
-	<div class="small-12 medium-12 columns">
-		<nav> 
-		<ol>
-			<li><a href="#grid">Grid</a></li>
-			<li><a href="#css">CSS</a></li>
-			<li><a href="#colors">Colors</a></li>
-			<li><a href="#typography">Typography</a></li>
-			<li><a href="#buttons">Buttons</a></li>
-			<li><a href="#forms">Forms</a></li>
-			<li><a href="#lists">Lists</a></li>
-			<li><a href="#patterns">Patterns</a></li>
-		</ol>
-		</nav> 
-	</div>
-</div>
-<div class="row">
-	<div class="small-12 medium-12 columns">
-		<h1 id="grid">
-			Grid
-		</h1>
-	</div>
-</div>
-<div class="row">
-	<div class="small-6 medium-6 columns">
-		<h2>
-			The Problem
-		</h2>
-		<p>
-			You&#39;ve got tons of content, each needing different sized vertical columns, and don&#39;t know how to quick and easily get it all done.
-		</p>
-		<h2>
-			The Solution
-		</h2>
-		<p>
-			The awesome grid! The grid is built around three key elements: containers, rows, and columns. Containers create base padding for the page; rows create a max-width and contain the columns; and columns create the final structure. Everything on your page that you don&#39;t give a specific structural style to should be within a container, row and column.
-		</p>
-		<h2>
-			How to Use
-		</h2>
-		<p>
-			Using this framework is easy. Here&#39;s how your code will look when you use a series of <code>&lt;div&gt;</code> tags to create vertical columns.
-		</p>
-		<h2>
-			Nesting Support
-		</h2>
-		<p>
-			In the Grid you can nest columns down as far as you&#39;d like. Just embed rows inside columns and go from there. Each embedded row can contain up to ___ columns.
-		</p>
-		<p>
-			[ code ]
-		</p>
-	</div>
-	<div class="small-6 medium-6 columns">
-		<p>
-			[ samples ]
-		</p>
-	</div>
-</div>
-<div class="row">
-	<div class="small-12 medium-12 columns">
-		<h1 id="css">
-			Maintaining CSS
-		</h1>
-	</div>
-</div>
-<div class="row">
-	<div class="small-6 medium-6 columns">
-		<h2>
-			When to Use
-		</h2>
-		<p>
-			Stylesheet maintenance can become overwhelming on large applications. Here are a few tips and tricks to keeping your sanity in a CSS heavy world.
-		</p>
-		<h2>
-			A Few Rules for Clean CSS
-		</h2>
-		<ul>
-			<li><strong>Good Commenting.</strong> A stylesheet with clear comments that delineate each main section of code makes it a lot easier to find by scanning the page or using cmd/ctrl+F to search.</li>
-			<li><strong>Don&#39;t repeat yourself.</strong> Child element declarations should not repeat styles unless they override what is already there.</li>
-			<li><strong>Group elements.</strong> Keep parent/child elements near each other in the CSS. This not only helps you identify areas which can be pruned or cleaned up but also makes it easier on other users of the stylesheet.</li>
-		</ul>
-	</div>
-	<div class="small-6 medium-6 columns">
-		<p>
-			[ samples ]
-		</p>
-	</div>
-</div>
 
-<div class="row">
-	<div class="small-12 medium-12 columns">
-		<h1 id="colors">
-			Colors
-		</h1>
+			<h1 id="toc">good<span class="bold">reads</span> / style<span class="bold">guide</span></h1>
+
+			<nav> 
+				<ul>
+					<li><a href="#grid">Grid</a></li>
+					<li><a href="#colors">Colors</a></li>
+					<li><a href="#typography">Typography</a></li>
+					<li><a href="#active">Active</a></li>
+					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#user-images">User Profile Images</a></li>
+					<li><a href="#book-covers">Book Covers</a></li>
+					<li><a href="#ratings">Ratings</a></li>
+					<li><a href="#search-bars">Search Bars</a></li>
+					<li><a href="#icons">Icons</a></li>
+				</ul>
+			</nav> 
+
+			<p>
+				Goodreads is a social site for readers and authors to find and share books that they love. With a Goodreads account, a user can build personal libraries with multiple shelves, track their reading progress, and find and recommend other titles to and from their friends.
+			</p>
+			<h3>
+				Challenges
+			</h3>
+			<p>
+				The current Goodreads site is too cluttered. There is a lack of overall hierarchy which makes navigation confusing. With all of the site&#39;s features displayed, it&#39;s difficult for the user to tell what&#39;s the most important and where their attention should go first. There is no clear difference in type treatment for links. 
+			</p>
+			<h3>
+				Goals
+			</h3>
+			<p>
+				Define hierarchy on all pages. Make the site easier to navigate. Reduce clutter.
+			</p>
+			<h3>
+				Solution
+			</h3>
+			<p>
+				Use color and font-sizes to define hierarchy. Use the Gestalt principles to group like elements together, making the site easier to navigate. Combine elements into dropdown menus.
+			</p>
+
+			<div class="horiz-line"></div>
+
+			<div id="grid" class="section">
+				<h4>
+					Grid
+				</h4>
+				<p>This project calls for a simple grid of one to two sections for easy navigation. In the small device grid, the single column layout allows for easy readability of dense content. In the medium and large devices, the layout shifts so that navigation options are in the 5 columns in the left section, with the majority of the content taking up the remaining seven columns on the right. All layouts are accompanied by an icon set in the footer for small devices and in near the header for the medium and large devices. All grids are designed with media queries for responsiveness.</p>
+				<br>
+				<p>Small Device Grid</p>
+				<div class="full col">12 Co</div>
+				<p>Medium/Large Device Grid - Home Page</p>
+				<div class="left col">5 Col</div>
+				<div class="right col">7 Col</div>
+				<p>Medium/Large Device Grid - Shelves and Profile Pages</p>
+				<div class="left-3 col">3 Col</div>
+				<div class="right-9 col">9 Col</div>
+			</div>	
+
+			<div class="horiz-line"></div>
+
+			<div id="colors" class="section">
+				<h4>
+					Colors
+				</h4>
+				<p>My plan for the redesign is to focus on user achievements. Users will have the opportunity to gain badges when they complete books, sign up for new challenges, create new shelves, or participate in a reading poll. This new focus requires a set of colors that reflect positivity, encouragement, and winning. I've chosen bright colors with high contrast to create an inviting and exciting site that will engage the users and result in continuous use, motivating them to update their reading status and move on to the next book.</p>
+				<div class="box one"><p>#5EAFBD</p></div>
+				<div class="box two"><p>#EE7B42</p></div>
+				<div class="box three"><p>#F2EA29</p></div>
+				<div class="box four"><p>#C8D6D5</p></div>
+				<div class="box five"><p>#ECEBF2</p></div>
+			</div>	
+
+			<div class="horiz-line"></div>
+
+			<div id="typography" class="section">
+				<h4>
+					Typography
+				</h4>
+				<h6><span class="logo2">good</span><span class="logo">reads</span></h6>
+				<h6 class="header">WELCOME!</h6>
+				<h6>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h6>
+				<h6>1 2 3 4 5 6 7 8 9 0</h6>
+				<p>Futura PT regular / 1em / 1.6</p>
+				<br>
+				<h6 class="bold">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h6>
+				<h6 class="bold">1 2 3 4 5 6 7 8 9 0</h6>
+				<p>Futura PT bold / 1em / 1.6</p>
+			</div>	
+			
+			<div class="horiz-line"></div>
+			
+			<div id="links" class="section">
+				<h4 id="links">
+					Links
+				</h4>
+				<div class="box one"><p>#5EAFBD</p></div> 
+				<h6 class="bold-link">buy it now!</h6>
+				<h6>Daniel voted on the <span class="reg-link">Best Books Ever list</span></h6>
+			</div>	
+			
+			<div class="horiz-line"></div>
+			
+			<div id="active" class="section">
+				<h4>
+					Active
+				</h4>
+				<div class="box two"><p>#EE7B42</p></div>
+				<img class="cog" src="/images/cog.svg">
+				<h6><span class="active">All</span></h6>
+				<h6>Author | <span class="active">Title</span> | Rating</h6>
+			</div>	
+			
+			<div class="horiz-line"></div>
+			
+			<div id="buttons" class="section">
+				<h4>
+					Buttons
+				</h4>
+				<p>The only button on the page is used for posting status updates, comments, and ratings.</p>
+				<img class="buttons" src="/images/goodreads-buttons1.svg">
+			</div>	
+
+			<div class="horiz-line"></div>
+
+			<div id="user-images" class="section">
+				<h4>
+					User Profile Images
+				</h4>
+				<p>All user images have a 15% border radius to create a rounded corner.</p>
+				<br>
+				<p>User profile image for home page on small device.</p>
+				<div class="avatar user-mobile-home">35px / 35px</div>
+				
+				<p>User profile image for home page on large device.</p>
+				<div class="avatar user-desktop-home">38px / 38px</div>
+				
+				<p>User profile image for profile page on small device.</p>
+				<div class="avatar user-mobile-profile">42px / 42px</div>
+				
+				<p>User profile image for profile page on large device</p>
+				<div class="avatar user-desktop-profile">78px / 78px</div>
+				
+				<p>Friend profile image on all devices</p>
+				<div class="avatar friends">21px / 21px</div>
+			</div>	
+			
+			<div class="horiz-line"></div>
+
+			<div id="book-covers" class="section">
+				<h4>
+					Book Covers
+				</h4>
+				<p>Book cover for small device home page feed</p>
+				<div class="book mobile-feed">37px / 56px</div>
+
+				<p>Book cover for large device home page feed</p>
+				<div class="book desktop-feed">41px / 62px</div>
+
+				<p>Book cover for large device recommendations</p>
+				<div class="book desktop-reccs">56px / 89px</div>
+				
+				<p>Book cover for small device book shelves view</p>
+				<div class="book mobile-shelves">200px / 311px</div>
+
+				<p>Book cover for large device book shelves grid view</p>
+				<div class="book desktop-shelves">94px / 125px</div>
+
+				<p>Book cover for small device profile page</p>
+				<div class="book mobile-profile">28px / 44px</div>
+				
+				<p>Book cover for large device profile page</p>
+				<div class="book desktop-profile">37px / 57px</div>
+
+				<p>Book cover for large device sponsored ad section</p>
+				<div class="book desktop-ad">90px / 117px</div>
+			</div>	
+
+			<div class="horiz-line"></div>
+
+			<h4 id="ratings">
+				Ratings
+			</h4>
+			<p>Users can rate their books up to five stars.</p>
+			<img class="stars" src="/images/goodreads-stars.svg">
+
+			<div class="horiz-line"></div>
+
+			<h4 id="search-bars">
+				Search Bars
+			</h4>
+			<p>This is the search bar for small devices. It appears at the top of the screen for the home and shelves pages.</p>
+			<img class="search mobile" src="/images/goodreads-search1.svg">
+			<p>This is the search bar for medium and large devices. It appears in the upper right corner of all pages for users to quickly and easily search for books.</p>
+			<img class="search desktop" src="/images/goodreads-search2.svg">
+			<p>This is the status bar. Users can input their status updates here. This only appears on the home page.</p>
+			<img class="search status" src="/images/goodreads-search3.svg">
+
+			<div class="horiz-line"></div>
+
+			<h4 id="icons">
+				Icons
+			</h4>
+			<p>Here is the icon set for the mobile view of the site. This will appear at the footer of all mobile pages.</p>
+			<img class="icons" src="/images/goodreads-icons.svg">
+			<p>Here is the icon set for screen sizes larger than mobile, or, 700px. This set also shows how notifications will display.</p>
+			<img class="icons" src="/images/goodreads-icons2.svg">
+			<p>The icons move from the foot of the pages and appear in the upper right corner as shown below.</p>
+			<img class="icons-full" src="/images/goodreads-icons3.svg">
+			<p>The arrow icon is used for the "back to top" option on the shelves page so that users can jump back to the top of their shelf without having to scroll. The pencil icon is so that users can quickly and easily edit their shelves.</p>
+			<img class="icons-small" src="/images/goodreads-icons4.svg">
+			<p>The Achievements icon will show on a users' profile page inside of the Achievements tab. This icon represents personal successes such as completing a book, reaching a milestone in their reading challenge, adding a shelf, participating in a poll, or joining Goodreads. This icon will have a 10px margin surrounding it on all sides and will be 33px / 57px.</p>
+			<img class="ribbon" src="/images/goodreads-ribbon.svg">
+		</div>	
 	</div>
-</div>
-<div class="row">
-	<div class="small-6 medium-6 columns">
-		<h2>
-			When to Use
-		</h2>
-		<p>
-			By default, the middle range should be used before any other. We&#39;ve labeled each color on the grid. Use the production code to match each color.
-		</p>
-	</div>
-	<div class="small-6 medium-6 columns">
-		<p>
-			[ samples ]
-		</p>
-	</div>
-</div>
-<div class="row">
-	<div class="small-12 medium-12 columns">
-		<h1 id="typography">
-			Typography
-		</h1>
-	</div>
-</div>
-<div class="row">
-	<div class="small-6 medium-6 columns">
-		<h2>
-			When to Use
-		</h2>
-		<p>
-			Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h4 and should be styled in a clear hierarchy (i.e., largest to smallest).
-		</p>
-		<h2>
-			When to Use Paragraphs
-		</h2>
-		<p>
-			Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such.
-		</p>
-		<h2>
-			Editing the CSS
-		</h2>
-		<p>
-			CSS for headings can be found in foundation.css while custom paragraph styles can be found in app.css.
-		</p>
-	</div>
-	<div class="small-6 medium-6 columns">
-		<p>
-			[ sample ]
-		</p>
-	</div>
-</div>
-<div class="row">
-	<div class="small-12 medium-12 columns">
-		<h1 id="buttons">
-			Buttons
-		</h1>
-	</div>
-</div>
-<div class="row">
-	<div class="small-6 medium-6 columns">
-		<h2>
-			When to Use
-		</h2>
-		<p>
-			Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you&#39;re strapped to. On the Web, we follow similar conventions.
-		</p>
-		<h2>
-			How to Use
-		</h2>
-		<p>
-			This solution is perfect when the button needs to submit a form of some kind.
-		</p>
-		<p>
-			Note: Make sure to keep type=&ldquo;submit&rdquo; on the button tag. That&#39;s what tells Internet Explorer to submit the form. This doesn&#39;t matter for anchor tags.
-		</p>
-		<h2>
-			Using the Anchor Tag
-		</h2>
-		<p>
-			When you need the button to take you somewhere (e.g. a sign up button), this is the perfect solution.
-		</p>
-		<h2>
-			Editing the CSS
-		</h2>
-		<p>
-			CSS for buttons can be found in app.css.
-		</p>
-	</div>
-	<div class="small-6 medium-6 columns">
-		<p>
-			[ samples ]
-		</p>
-	</div>
-</div>
-<div class="row">
-	<div class="small-12 medium-12 columns">
-		<h1 id="forms">
-			Forms
-		</h1>
-	</div>
-</div>
-<div class="row">
-	<div class="small-6 medium-6 columns">
-		<h2>
-			Elements of a Form
-		</h2>
-		<p>
-			A form should be marked up using it&#39;s default HTML properties. The ones we make use of include (in hierarchical order):
-		</p>
-		<ul>
-			<li>form</li>
-			<li>label</li>
-			<li>input</li>
-			<li>select</li>
-			<li>textarea</li>
-			<li>button</li>
-		</ul>
-		<h2>
-			How to Use
-		</h2>
-		<p>
-			Make forms great and easy to use with the following rules:
-		</p>
-		<ol>
-			<li>Wrap checkboxes and radio buttons within labels for larger hit areas, and be sure to set the for, name, and id attributes for all applicable elements.</li>
-			<li>Series of checkboxes and radio buttons below within a <code>&lt;ul class=&quot;(inline) actions&quot;&gt;</code>.</li>
-			<li>Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).</li>
-		</ol>
-		<h2>
-			Form Layouts
-		</h2>
-		<p>
-			We use a class of &ldquo;nice&rdquo; on most of forms within the application. Within the form, we use a class of &ldquo;input-text&rdquo; for any input field to add a shadow that creates a more clickable look and feel.
-		</p>
-	</div>
-	<div class="small-6 medium-6 columns">
-		<p>
-			[ samples ]
-		</p>
-	</div>
-</div>
-<div class="row">
-	<div class="small-12 medium-12 columns">
-		<h1 id="lists">
-			Lists
-		</h1>
-	</div>
-</div>
-<div class="row">
-	<div class="small-6 medium-6 columns">
-		<h2>
-			When to Use
-		</h2>
-		<p>
-			Lists are great for presenting a series of related phrases or sentences that need to be read faster (skimming).
-		</p>
-		<h2>
-			Which to Use
-		</h2>
-		<p>
-			Our styles allow for a multitude of lists, including: ul for generic lists and ol for numbered lists.
-		</p>
-		<h2>
-			How to Use
-		</h2>
-		<p>
-			Note the code snippets under each subheading on the right; look there for required classes and list markup.
-		</p>
-		<h2>
-			Editing the CSS
-		</h2>
-		<p>
-			CSS for list styles can be found in foundation.css while custom list styles can be found in app.css.
-		</p>
-	</div>
-	<div class="small-6 medium-6 columns">
-		<p>
-			[ samples ]
-		</p>
-	</div>
-</div>
-<div class="row">
-	<div class="small-12 medium-12 columns">
-		<h1 id="patterns">
-			Patterns
-		</h1>
-	</div>
-</div>
-<div class="row">
-	<div class="small-6 medium-6 columns">
-		<h2>
-			When to Use
-		</h2>
-		<p>
-			Throughout the website there are patterns that work no matter which module they are part of. We&#39;ll outline the basics and let you know where to use them.
-		</p>
-	</div>
-	<div class="small-6 medium-6 columns">
-		<p>
-			[ project-specific samples ]
-		</p>
-	</div>
-</div>
 </body>
 </html>
+
+
+

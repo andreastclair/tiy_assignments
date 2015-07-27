@@ -1,25 +1,329 @@
 @import 'custom';
+@import 'reset';
 
 @mixin font($em){
     font-size: ($em*16) + px;
     font-size: ($em) + em;
 }
 
+// ===============================
+// GR Redesign
+// ===============================
+
 body {
-	font-family: Helvetica;
-	color: $dkgrey;
-	background-color: $white;
+	font-family: sans-serif;
+	color: $black;
 }
 
-nav a {
-	color: $medgreen;
+.section {
+	padding-top: 50px;
+}
+
+.post-container {
+	width: 75%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.horiz-line {
+	width: 100%;
+	border-top: 1px solid $grgrey;
+	margin: 38px 0 0 0;
 }
 
 h1 {
-	@include font(2);
-	font-weight: bold;
+	font-family: "futura-pt",sans-serif;
+	font-weight: light;
+	@include font(3);
+	text-align: center;
+	color: $black;
 }
 
-h2 {
-	@include font(1.5);
+h3 {
+	margin-top: 25px;
+	color: $black;
+	height: 35px;
+	text-align: left;
+	text-transform: uppercase;
+	@include font(1.8);
 }
+
+h4 {
+	text-align: left;
+	margin: 30px 0 20px 0;
+	font-weight: bold;
+	@include font(1.875);
+}
+
+h6 {
+	font-family: "futura-pt",sans-serif;
+	line-height: 1.6;
+	@include font(1);
+ }
+
+ .bold {
+		font-weight: bold;
+		line-height: 1.6;
+		color: $dkgrey;
+		@include font(1);
+}
+
+ // span {
+	// font-family: "futura-pt",sans-serif;
+ // }
+
+ .header {
+		@include font(2);
+	}
+
+.logo {
+	font-weight: bold;
+	color: $black;
+	@include font(2);
+	margin-top: 0;
+	line-height: 1;
+}
+.logo2 {
+	@include font(2);
+	color: $black;
+	margin-top: 0;
+	line-height: 1;
+}
+
+.bold-link {
+	color: $grblue;
+	font-weight: bold;
+	@include font(1.2);
+	margin-top: 5px;
+}
+span.reg-link {
+	color: $grblue;
+	@include font(1);
+	font-family: "jaf-bernina-sans-condensed",sans-serif;
+}
+
+.active {
+	color: $grorange;
+	@include font(1);
+}
+
+.style-guide {
+	// padding-top: 100px;
+	h2 {
+		color: $ltgreen;
+		@include font(3);
+		font-weight: bold;
+		text-align: center;
+	}
+	nav {
+		margin: 25px 0;
+		background-color: $grblue;
+		padding: 8px;
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+		color: $white;
+		&:hover {
+		color: $grorange;
+		}
+	}
+	li {
+		display: inline;
+		margin: 0 8px;
+		line-height: 1.8;
+		font-weight: normal;
+		@include font(0.875);
+	}
+	p {
+		color: $black;
+		font-family: "Arial";
+		line-height: 1.8;
+	}
+	
+	
+	
+	// COLORS
+	.box { 
+		width: 100px;
+		height: 100px;
+		padding: 10px;
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.one {
+		background-color: $grblue;
+	}
+	.two {
+		background-color: $grorange;
+	}
+	.three {
+		background-color: $gryellow;
+	}
+	.four {
+		background-color: $grgrey;
+	}
+	.five {
+		background-color: $grpurple;
+	}
+
+	// ICONS
+	.icons {
+		margin: 5px 0 20px 0;
+		max-width: 500px;
+	}
+	.icons-full {
+		margin: 5px 0 20px 0;
+	}
+	.icons-small {
+		margin: 5px 0 20px 0;
+		max-width: 100px;
+	}
+	.ribbon {
+		margin: 5px 0 0 0;
+		max-width: 60px;
+	}
+
+
+
+// GRID
+	.col {
+		background-color: $grgrey;
+		display: inline-block;
+		padding: 5px;
+		text-align: center;
+		margin: 5px 0 20px 0;
+	}
+	.full {
+		width: 91%;
+	}
+	.left {
+		width: 30%;
+	}
+	.right {
+		width: 60%;
+	}
+	.left-3 {
+		width: 20%;
+	}
+	.right-9 {
+		width: 70%;
+	}
+	
+
+	// ACTIVE
+	.cog {
+		width: 40px;
+		display: block;
+		margin: 10px 0;
+	}
+
+	// BUTTONS
+	.buttons {
+		height: 30px;
+		width: 70px;
+		margin-top: 5px;
+	}
+
+	// USER IMAGES
+	.avatar {
+		background-color: $grgrey;
+		padding: 10px;
+		margin: 5px 10px 30px 0;
+		text-align: left;
+		font-family: "Arial";
+		@include font(0.8);
+		border-radius: 15%;
+	}
+	.user-mobile-home {
+		height: 45px;
+		width: 45px;
+	}
+	.user-desktop-home {
+		height: 48px;
+		width: 48px;
+	}
+	.user-mobile-profile {
+		height: 52px;
+		width: 52px;
+	}
+	.user-desktop-profile {
+		height: 88px;
+		width: 88px;
+	}
+	.friends {
+		height: 31px;
+		width: 31px;
+	}
+	// BOOKS
+	.book {
+		background-color: $grgrey;
+		margin: 5px 10px 30px 0;
+		padding: 10px;
+		@include font(0.8);
+		font-family: "Arial";
+	}
+	.mobile-feed {
+		width: 37px;
+		height: 56px;
+	}
+	.desktop-feed {
+		width: 41px;
+		height: 62px;
+	}
+	.desktop-reccs {
+		width: 56px;
+		height: 89px;
+	}
+	.mobile-shelves {
+		width: 200px;
+		height: 311px;
+	}
+	.desktop-shelves {
+		width: 94px;
+		height: 125px;
+	}
+	.mobile-profile {
+		width: 28px;
+		height: 44px;
+	}
+	.desktop-profile {
+		width: 37px;
+		height: 57px;
+	}
+	.desktop-ad {
+		width: 90px;
+		height: 117px;
+	}
+	// RATINGS
+	.stars {
+		margin-top: 10px;
+	}
+	// SEARCH
+	.search {
+		margin: 5px 0 20px 0;
+	}
+	.mobile {
+		max-width: 70%;
+	}
+	.desktop {
+		max-width: 50%;
+	}
+	.status {
+		max-width: 60%;
+		margin-bottom: 0;
+	}
+}
+
+
+
+// @import 'mid-media';
+// @import 'mid2-media';
+// @import 'mid3-media';
+// @import 'max-media';
+
+
+
+
+
+
