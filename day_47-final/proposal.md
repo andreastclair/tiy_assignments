@@ -3,25 +3,23 @@
 - Costume Collective
 - Costume Count 
 - 5,6,7,8
-- Cha-cha-charity (this one is terrible, but I had to get it out of my brain)
+- Cha-cha Charity 
 - Pointe and Stretch
 - I dance, you dance
 - We dance  
 
 ##History & Intro
-A charity-based site for buying and selling used dance costumes. A minimum of 25% of proceeds are donated to a charity that funds dance scholarships and/or classes for kids who can't afford them. 25% is collected by the site for running costs, and the remaining 50% can be paid directly to the seller or donated.  
+A charity-based site for buying and selling used dance costumes. A minimum of 25% of proceeds are donated to a charity that funds dance scholarships and/or classes for kids who can't afford them. 25% is collected by the site for running costs, and the remaining 50% can be paid directly to the seller or donated in full.  
 
-The incentive for selling costumes through the site rather than going to a local dance studio and donating them is monetary. If you sell through the site, the charities will get money that they can use however they need, like spreading the joy of dance. If you just donate costumes, you're only giving them fabric. 
+The incentive for selling costumes through the site rather than going to a local dance studio and donating them is monetary. If you sell through the site, the charities will get money that they can use however they need to spread the joy of dance to kids who may not have the opportunity to dance otherwise. If you only donate your costumes, you're just giving away fabric. Instead, share an experience that will be a positive outlet that helps build fiendships, teamwork, trust and self-worth while creating brain stimulation and promoting health and excercise. Dance can be an incredible outlet and it's easy to fall in love with. What isn't always easy, is finding the means to get to the studio. 
 
-The money help can fund:
+Your donations can help fund:
 - Community dance programs and venues
 - Entry fees to competitions
 - Travel to auditions
 - Dance classes
 
-Sellers will keep their own inventory, like ebay or Etsy, and make their own prices. Sellers can sell individual costumes or team costumes, but no handmade costumes. Sellers will be required to meet photo specs. They can have multiple photos but at least one of those photos must be taken against a white wall, front and back. This will be the main image.
-
-There are no additional fees for becoming a member, but posting items is a one time fee of xcents each. Items can remain on the site until sold.  
+Sellers will keep their own inventory, like eBay or Etsy, and make their own prices. Sellers can sell individual costumes or team costumes, but no handmade costumes. Sellers can upload up to five images per costume and are encouraged to shoot high quality photos. The faq will give tips for shooting a good product photo. There are no additional fees for becoming a member or posting to the site.  
 
 Sellers will fill out a form describing:
 - costume description (include info like tears, missing sequins, itchy straps, accessories included, size runs small/big, etc)
@@ -36,22 +34,23 @@ Sellers will fill out a form describing:
 ##Project Issues and Goals
 Issues: Convincing sellers to sell through the site rather than somewhere else where they aren't required to donate a portion to charity.  
 
-Goals: Create a place for dancers to sell their old costumes while helping those less fortunate experience the gift of dance. 
+Goals: Create a marketplace for used costumes while helping those less fortunate experience the gift of dance. 
 
 ##Challenges  
-The majority of my users will be moms. There are the new-to-dance moms with kids under age 10, and then there are the dance-mom-veterans, like my mom, who have had dancing daughters for the last 36 years. This puts my target market in the age range of 35-65. These moms need to be the power users of this site. 
+The majority of my users will be moms. There are the new-to-dance moms with kids under age 10, and then there are the dance-mom-veterans, like my mom, who have had dancing daughters for the last 36 years. This puts my target market in the age range of 35-65. These moms need to be the power users of this site.  
+
 The challenge here is to create a site that is visually appealing while also being simple enough for moms who may not be as familiar with online selling. 
 
 ##Audience
-Primary: dance moms, former dancers, dance studios
+Primary: dance moms, former dancers, dance studios  
+
 Secondary: philanthropists, charity organizations
 
 ##Competitve Market Study  
 - Other buy and sell costume shops online do not have a charity aspect.
-- Their current designs don't represent the costume well. (pictures are sideways and not reviewed for quality) This causes a lack of trust in the site.
-- 
 
 ##SWOT Analysis
+
 ###Strengths:
 - Helping to make dance accessible by all
 - Selling costumes for a good cause
@@ -79,10 +78,13 @@ dance, charity, scholarships, costumes, reusing, shop, buy, sell, online market
 
 ##Game Plan
 - Interview dancers that I know and see if they would be willing to participate
+- Research potential charities
+- Decide on a social network integration aspect to help with reach
 - Read studies about how dance helps individuals and communities
 - Create a page on the site encouraging sellers to use us rather than another site that might pay more
 - Do a flow chart as a buyer and as a seller to identify which pages are most necessary for presentation
-- Use the Etsy or ebay model of users who sell 
+- Use the Etsy or eBay model of users who sell 
+- Run site tests with users who aren't familiar with online selling
 
 ##Deliverables
 - 3 style tiles with different explorations and written concepts
@@ -92,21 +94,25 @@ dance, charity, scholarships, costumes, reusing, shop, buy, sell, online market
 - Icon set of 3-5 icons
 
 ###Initial Research : Would people even be in to this?  
-Letter to my old dance buddies:
-Hey _!   
+####Letter to my old dance buddies:  
+
+Hey ____!   
 I'm researching a new idea and would love your input.
-I've spent my summer at a code school learning web design and our final project is coming up. I've decided to create a website for dancers to sell their old costumes under the condition that a minimum of 25% goes to charity, 25% goes to the site to keep it running, and 50% can go back to the seller (or, the seller can choose to donate all of it, that's up to them). I know that you could probably make more money selling somewhere else that doesn't take a cut, but the cut this model would be taking is for a good cause.   
+I've spent my summer at a code school learning web design and our final project is coming up. I've decided to create a website for dancers to sell their old costumes under the condition that a minimum of 25% goes to charity, 25% goes to the site to keep it running, and 50% can go back to the seller (or, the seller can choose to donate all of it, that's up to them). I know that you could probably make more money selling somewhere else that doesn't take a cut, but the cut this model would be taking is for a good cause.  
+
 The goal of the charity aspect is to help fund scholarships for dancers. So, in short, it could potentially help fund community dance programs, entry fees for competitions, travel for auditions, dance classes, etc., to those dancers who may not have the opportunity to participate otherwise. It could give kids exposure to an artform that could encourage them to do something positive with their lives, do something afterschool that's good for them, help stimulate their brains, keep them healthy, help them build teamwork and friendship and trust in groups, the list goes on. I know that I don't have to explain to you all the wonderful benefits of dance, but you get the idea. This isn't an actual live thing, but who knows, maybe SYTYCD will sponsor it one day! (big dreams, haha) This part of my research is finding out if dancers would be willing to sell their costumes to a place like this. So, would you?  
+
+####Responses
 
 Stephanie: Absolutely.  
 
 Molly: This sounds like a wonderful idea! I am a little bit of a weirdo, in the fact that it's hard for me to let go of items--especially ones that have sentimental value. However, if I rationalize with myself and think about how I'll never wear these costumes again, AND that they can be worn by someone else, AND can help others, I think I should (and could) be willing to part with them. Sorry for the long answer! But yes, I'd be interested and willing to help when the time comes!  
 
-Valerie: I just talked to a studio owner (I had to teach). She said she would be very interested in this. I think it is an amazing idea and I think you would have a tremendous response.  
+Valerie: I just talked to a studio owner. She said she would be very interested in this. I think it is an amazing idea and I think you would have a tremendous response.  
 
-Chelsea: My purpose in life is to help others. My career is helping others. Even though I have memories with the costumes, I am more than willing to sell (or even donate) them to help kiddos who need them.
+Chelsea: Yes! My purpose in life is to help others. My career is helping others. Even though I have memories with the costumes, I am more than willing to sell (or even donate) them to help kiddos who need them.
 
-
+Allison: Yes! How many can I donate?
 
 
 
