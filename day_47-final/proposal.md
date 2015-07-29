@@ -39,7 +39,9 @@ Goals: Create a marketplace for used costumes while helping those less fortunate
 ##Challenges  
 The majority of my users will be moms. There are the new-to-dance moms with kids under age 10, and then there are the dance-mom-veterans, like my mom, who have had dancing daughters for the last 36 years. This puts my target market in the age range of 35-65. These moms need to be the power users of this site.  
 
-The challenge here is to create a site that is visually appealing while also being simple enough for moms who may not be as familiar with online selling. 
+The challenge here is to create a site that is visually appealing while also being simple enough for moms who may not be as familiar with online selling.  
+
+Another challenge will be to convince dancers to donate their costumes. Even though they may have only worn them for 20 minutes and haven't pulled them out of the closet in a decade, those costumes hold a lot of sentimental value and can be hard to part with. 
 
 ##Audience
 Primary: dance moms, former dancers, dance studios  
@@ -67,14 +69,19 @@ Secondary: philanthropists, charity organizations
 - Getting enough reach to actually benefit 
 
 ###Opportunities:
--  After looking at the competition, no other site offers the charity aspect. 
+- After looking at the competition, no other site offers the charity aspect. 
 
 ###Threats:
+- Other sites that don't take as large of a cut
 
 ##Keywords
 dance, charity, scholarships, costumes, reusing, shop, buy, sell, online market
 
 ##"This not That"
+- Community dance [not] Exclusive dance  
+- Giving back [not] Profit 
+- Reusing old costumes [not] Wasting old costumes
+- Easy online selling process [not] Over-complicated setups
 
 ##Game Plan
 - Interview dancers that I know and see if they would be willing to participate
@@ -102,7 +109,7 @@ I've spent my summer at a code school learning web design and our final project 
 
 The goal of the charity aspect is to help fund scholarships for dancers. So, in short, it could potentially help fund community dance programs, entry fees for competitions, travel for auditions, dance classes, etc., to those dancers who may not have the opportunity to participate otherwise. It could give kids exposure to an artform that could encourage them to do something positive with their lives, do something afterschool that's good for them, help stimulate their brains, keep them healthy, help them build teamwork and friendship and trust in groups, the list goes on. I know that I don't have to explain to you all the wonderful benefits of dance, but you get the idea. This isn't an actual live thing, but who knows, maybe SYTYCD will sponsor it one day! (big dreams, haha) This part of my research is finding out if dancers would be willing to sell their costumes to a place like this. So, would you?  
 
-####Responses
+####Responses:
 
 Stephanie: Absolutely.  
 
