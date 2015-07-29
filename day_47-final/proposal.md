@@ -121,6 +121,8 @@ Chelsea: Yes! My purpose in life is to help others. My career is helping others.
 
 Allison: Yes! How many can I donate?
 
+Rachel: Wow that sounds awesome!! If I can find any of mine I definitely will and you can keep the profit! I gave most of mine to Cheryl when I graduated high school but the next time I'm in Lawton I'll look and leave them with your mom, would that be ok? I really hope this takes off because it's such an awesome idea! You should tweet Ellen DeGeneres and Nigel from SYTYCD and see if they take notice!
+
 
 
 
