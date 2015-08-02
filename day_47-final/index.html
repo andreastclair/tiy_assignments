@@ -7,23 +7,72 @@
 		<script src="js/responsive-nav.min.js"></script>
 		<script src="//use.typekit.net/vdg6dwu.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
+		<link rel="icon" type="image/png" href="images/logo.png">
 	</head>
 
 	<body>
 
 		<header>
-			@@include('./_test.html')
-			<h1>Second Position</h1>
+			<div class="name">
+				<img class="logo" src="/images/logo.png">
+				<h1>SecondPosition</h1>
+			</div>	
+			
+			<div class="clear-fix"></div>
 
 			<!-- <nav class="nav-collapse"> -->
 			<nav>
 			  <ul>
-			    <li><a href="#">About</a></li>
-			    <li><a href="#">Login/Sign Up</a></li>
+			    <li><a href="#">Your Account</a></li>
+			    <li><a href="#">Cart</a></li>
 			  </ul>
 			</nav>
 		</header>
 
+		<div class="container">
+
+			<div class="intro">
+				<h2>OUR MISSION</h2>
+				<p>We raise money through costume sales to fund dance programs for children, because every child deserves to have their moment in the spotlight.</p>
+			</div>
+
+			<div class="centered">
+				<div class="costumes">
+					<h2>
+						<a href="#">COSTUMES</a>
+					</h2>
+				</div>
+				<div class="shoes">
+					<h2>
+						<a href="#">SHOES</a>
+					</h2>
+				</div>
+				<div class="accessories">
+					<h2>
+						<a href="#">ACCESSORIES</a>
+					</h2>
+				</div>
+			</div>	
+
+			<div class="partners">
+				<h2>
+					<a href="#">OUR PARTNERS</a>
+				</h2>
+				<img class="partner-logo" src="/images/partner-1.png">
+				<img class="partner-logo" src="/images/partner-2.png">
+				<img class="partner-logo" src="/images/partner-3.png">
+			</div>
+			<div class="donate">
+				<h2>
+					<a href="#">DONATE</a>
+				</h2>
+			</div>
+
+		</div>
+
+		<footer>
+			<img class="social" src="/images/social.png">
+		</footer>
 
 		<script>
 		  var nav = responsiveNav(".nav-collapse");

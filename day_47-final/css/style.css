@@ -47,7 +47,15 @@ table {
 
 body {
   font-family: "futura-pt",sans-serif;
-  background-color: #EFEDED; }
+  background-color: #EFEDED;
+  color: #3A4149; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+.clear-fix {
+  clear: both; }
 
 h1 {
   font-size: 56px;
@@ -57,7 +65,7 @@ h1 {
 h2 {
   font-size: 40px;
   font-size: 2.5em;
-  line-height: 1.3; }
+  line-height: 1.5; }
 
 p {
   font-size: 24px;
@@ -65,17 +73,135 @@ p {
   line-height: 1.8; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #EFEDED; }
+  a:hover {
+    color: #76E2C0; }
 
 header {
   width: 100%;
-  margin: 0 auto; }
-  header h1 {
-    text-align: center; }
+  margin: 0 auto 20px auto;
+  background-color: #454E56;
+  padding-bottom: 10px; }
+  header .name .logo {
+    visibility: hidden;
+    width: 0; }
+  header .name h1 {
+    text-align: center;
+    color: #EFEDED; }
   header nav {
     text-align: center; }
     header nav li {
       display: inline;
       margin: 8px; }
+
+.intro {
+  width: 90%;
+  margin: 0 auto 20px auto; }
+  .intro h2 {
+    text-align: center; }
+
+.costumes, .donate {
+  background-color: #3A4149;
+  text-align: center;
+  padding: 60px 0; }
+  .costumes h2, .donate h2 {
+    color: #EFEDED; }
+
+.shoes, .accessories {
+  position: absolute;
+  visibility: hidden; }
+
+.partners {
+  background-color: #EFEDED;
+  text-align: center;
+  padding: 60px 0; }
+  .partners a {
+    color: #3A4149; }
+    .partners a:hover {
+      color: #76E2C0; }
+  .partners .partner-logo {
+    visibility: hidden;
+    position: absolute; }
+
+footer {
+  background-color: #454E56;
+  padding: 30px 0; }
+  footer .social {
+    display: block;
+    margin: 0 auto; }
+
+@media screen and (min-width: 800px) {
+  .container {
+    width: 90%;
+    margin: 0 auto; }
+
+  header {
+    height: 80px;
+    padding-bottom: 0;
+    padding-top: 10px; }
+    header .name {
+      padding: 0 0 0 5%; }
+      header .name .logo {
+        visibility: visible;
+        width: 100px;
+        padding: 0 10px 10px 0;
+        float: left; }
+      header .name h1 {
+        margin-top: 20px;
+        text-align: left; }
+    header nav {
+      position: absolute;
+      top: 10px;
+      right: 10px; }
+
+  .intro {
+    width: 100%;
+    padding: 50px 0;
+    border-bottom: 1px solid #8BA19E; }
+
+  .centered {
+    margin: 70px auto 5px auto;
+    padding-bottom: 70px;
+    width: 775px; }
+    .centered .costumes {
+      display: inline-block;
+      background-color: #3A4149;
+      text-align: center;
+      padding: 0;
+      width: 230px;
+      height: 230px; }
+    .centered .shoes, .centered .accessories {
+      display: inline-block;
+      visibility: visible;
+      position: relative;
+      width: 230px;
+      height: 230px;
+      background-color: #3A4149;
+      text-align: center; }
+    .centered h2 {
+      color: #EFEDED;
+      margin-top: 80px;
+      font-size: 35.2px;
+      font-size: 2.2em; }
+
+  .shoes {
+    margin: 0 5%; }
+
+  .donate {
+    position: absolute;
+    visibility: hidden; }
+
+  .partners {
+    border-top: 1px solid #8BA19E;
+    padding: 0; }
+    .partners .partner-logo {
+      visibility: visible;
+      position: relative;
+      width: 80px;
+      display: inline-block;
+      border-radius: 50px;
+      border: 3px solid #3A4149;
+      margin: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
