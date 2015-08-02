@@ -41,20 +41,41 @@ header {
 .intro {
 	width: 100%;
 	padding: 50px 0;
-	border-bottom: 1px solid $grey;
+	// border-bottom: 1px solid $grey;
+	margin-bottom: 5px;
 }
 
 .centered {
-	margin: 70px auto 5px auto;
-	padding-bottom: 70px;
-	width: 775px;
+	background-color: white;
+	margin: 0 auto 5px auto;
+	text-align: center;
+	padding: 70px 0;
+	width: 100%;
+	border-top: 1px solid $grey;
+	border-bottom: 1px solid $grey;
+	h2 {
+		color: $white;
+		margin-top: 230px;
+		@include font(2.2);
+	}
 	.costumes {
+		border-top: none;
+		background: url("/images/costumes.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0;
 		display: inline-block;
-		background-color: $black;
-		text-align: center;
 		padding: 0;
 		width: 230px;
 		height: 230px;
+		a {
+			color: $black;
+			font-weight: normal;
+			text-shadow: 1px 1px 1px transparent;
+			&:hover {
+				color: $yellow;
+			}
+		}
 	}	
 	.shoes, .accessories {
 		display: inline-block;
@@ -64,26 +85,40 @@ header {
 		height: 230px;
 		background-color: $black;
 		text-align: center;
-	}	
-	h2 {
-		color: $white;
-		margin-top: 80px;
-		@include font(2.2);
+		a {
+			color: $black;
+			&:hover {
+				color: $yellow;
+			}
+		}
 	}
-	
-}
-.shoes {
-	margin: 0 5%;
-}
-
-.donate {
-	position: absolute;
-	visibility: hidden;
+	.shoes {
+		margin: 0 5%;
+		background: url("/images/shoes.jpg");
+		background-size: cover;
+	}	
+	.accessories {
+		background: url("/images/tiara.jpg");
+		background-size: cover;
+	}	
 }
 
 .partners {
-	border-top: 1px solid $grey;
-	padding: 0;
+	background: none;
+	border-top: none;
+	border-bottom: 1px solid $grey;
+	padding: 60px 0 60px 0;
+	margin: 0;
+	p {
+		visibility: visible;
+		position: relative;
+		text-align: left;
+	}
+	a {
+		text-shadow: 1px 1px 1px transparent;
+		color: $black;
+		font-weight: normal;
+	}
 	.partner-logo {
 		visibility: visible;
 		position: relative;
@@ -91,7 +126,61 @@ header {
 		display: inline-block;
 		border-radius: 50px;
 		border: 3px solid $black;
-		margin: 20px;
+		margin: 30px 40px 0 40px;
+	}
+}
+
+.donate {
+	border-top: 1px solid $grey;
+	margin-top: 5px;
+	background: none;
+	position: relative;
+	visibility: visible;
+	padding: 60px 0;
+	p {
+		visibility: visible;
+		position: relative;
+		text-align: left;
+	}
+	a {
+		text-shadow: 1px 1px 1px transparent;
+		color: $black;
+		font-weight: normal;
+	}
+	.donate-icon {
+		visibility: visible;
+		position: relative;
+		display: block;
+		margin: 30px auto 20px auto;
+		&:hover {
+			width: 85px;
+			height: 85px;
+			-moz-border-radius: 100px;
+			-webkit-border-radius: 100px;
+			border-radius: 100px;
+		}
+	}
+	
+}
+
+// ===================================
+// FOOTER
+// ===================================
+
+footer {
+	background-color: $ltblack;
+	padding: 30px 5%;
+	.social {
+		visibility: hidden;
+		position: absolute;
+	}
+	.contact, .follow, .foot-details-left, .foot-details-right {
+		visibility: visible;
+		position: relative;
+		display: inline-block;
+		.social2 {
+			width: 165px;
+		}
 	}
 }
 

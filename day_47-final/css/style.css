@@ -67,10 +67,28 @@ h2 {
   font-size: 2.5em;
   line-height: 1.5; }
 
+h3 {
+  font-size: 30px;
+  font-size: 1.875em;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #EFEDED; }
+
+h4 {
+  font-size: 16px;
+  font-size: 1em;
+  line-height: 2;
+  color: #EFEDED; }
+
 p {
-  font-size: 24px;
-  font-size: 1.5em;
+  font-size: 22.4px;
+  font-size: 1.4em;
   line-height: 1.8; }
+
+span {
+  color: #6AD2B0; }
+  span:hover {
+    color: #EFCB35; }
 
 a {
   text-decoration: none;
@@ -95,41 +113,81 @@ header {
       display: inline;
       margin: 8px; }
 
-.intro {
+.paragraph {
   width: 90%;
-  margin: 0 auto 20px auto; }
+  margin: 0 auto; }
+
+.intro {
+  padding: 50px 0;
+  width: 90%;
+  margin: 10px auto 30px auto; }
   .intro h2 {
     text-align: center; }
 
-.costumes, .donate {
+.costumes, .donate, .partners {
   background-color: #3A4149;
   text-align: center;
-  padding: 60px 0; }
-  .costumes h2, .donate h2 {
-    color: #EFEDED; }
+  padding: 80px 0; }
+  .costumes a, .donate a, .partners a {
+    color: #454E56;
+    text-shadow: 1px 1px 1px #6AD2B0;
+    font-weight: bold; }
+    .costumes a:hover, .donate a:hover, .partners a:hover {
+      color: #EFCB35;
+      text-shadow: 1px 1px 1px transparent; }
+
+.costumes {
+  border-top: 1px solid #EFCB35;
+  background: url("/images/costumesBW.jpg");
+  background-size: cover;
+  background-position: 0 -50px; }
+
+.donate {
+  background: url("/images/donateBW.jpg");
+  background-size: cover;
+  background-position: 0 -50px; }
+  .donate p {
+    visibility: hidden;
+    position: absolute; }
+  .donate .donate-icon {
+    visibility: hidden;
+    position: absolute; }
+
+.partners {
+  background: url("/images/partnersBW.jpg");
+  background-size: cover;
+  background-position: 0 -50px;
+  text-align: center;
+  border-top: 10px solid #EFCB35;
+  border-bottom: 10px solid #EFCB35; }
+  .partners p {
+    visibility: hidden;
+    position: absolute; }
+  .partners .partner-logo {
+    visibility: hidden;
+    position: absolute; }
 
 .shoes, .accessories {
   position: absolute;
   visibility: hidden; }
 
-.partners {
-  background-color: #EFEDED;
-  text-align: center;
-  padding: 60px 0; }
-  .partners a {
-    color: #3A4149; }
-    .partners a:hover {
-      color: #76E2C0; }
-  .partners .partner-logo {
-    visibility: hidden;
-    position: absolute; }
-
 footer {
+  border-top: 1px solid #EFCB35;
   background-color: #454E56;
-  padding: 30px 0; }
+  padding: 30px 0;
+  height: 100px; }
   footer .social {
     display: block;
     margin: 0 auto; }
+  footer .contact, footer .follow, footer .foot-details-left, footer .foot-details-right {
+    visibility: hidden;
+    position: absolute; }
+  footer .contact, footer .follow {
+    float: left; }
+  footer .foot-details-left, footer .foot-details-right {
+    float: right; }
+  footer .foot {
+    margin: 0 2%; }
 
 @media screen and (min-width: 800px) {
   .container {
@@ -158,19 +216,37 @@ footer {
   .intro {
     width: 100%;
     padding: 50px 0;
-    border-bottom: 1px solid #8BA19E; }
+    margin-bottom: 5px; }
 
   .centered {
-    margin: 70px auto 5px auto;
-    padding-bottom: 70px;
-    width: 775px; }
+    background-color: white;
+    margin: 0 auto 5px auto;
+    text-align: center;
+    padding: 70px 0;
+    width: 100%;
+    border-top: 1px solid #8BA19E;
+    border-bottom: 1px solid #8BA19E; }
+    .centered h2 {
+      color: #EFEDED;
+      margin-top: 230px;
+      font-size: 35.2px;
+      font-size: 2.2em; }
     .centered .costumes {
+      border-top: none;
+      background: url("/images/costumes.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0;
       display: inline-block;
-      background-color: #3A4149;
-      text-align: center;
       padding: 0;
       width: 230px;
       height: 230px; }
+      .centered .costumes a {
+        color: #3A4149;
+        font-weight: normal;
+        text-shadow: 1px 1px 1px transparent; }
+        .centered .costumes a:hover {
+          color: #EFCB35; }
     .centered .shoes, .centered .accessories {
       display: inline-block;
       visibility: visible;
@@ -179,22 +255,32 @@ footer {
       height: 230px;
       background-color: #3A4149;
       text-align: center; }
-    .centered h2 {
-      color: #EFEDED;
-      margin-top: 80px;
-      font-size: 35.2px;
-      font-size: 2.2em; }
-
-  .shoes {
-    margin: 0 5%; }
-
-  .donate {
-    position: absolute;
-    visibility: hidden; }
+      .centered .shoes a, .centered .accessories a {
+        color: #3A4149; }
+        .centered .shoes a:hover, .centered .accessories a:hover {
+          color: #EFCB35; }
+    .centered .shoes {
+      margin: 0 5%;
+      background: url("/images/shoes.jpg");
+      background-size: cover; }
+    .centered .accessories {
+      background: url("/images/tiara.jpg");
+      background-size: cover; }
 
   .partners {
-    border-top: 1px solid #8BA19E;
-    padding: 0; }
+    background: none;
+    border-top: none;
+    border-bottom: 1px solid #8BA19E;
+    padding: 60px 0 60px 0;
+    margin: 0; }
+    .partners p {
+      visibility: visible;
+      position: relative;
+      text-align: left; }
+    .partners a {
+      text-shadow: 1px 1px 1px transparent;
+      color: #3A4149;
+      font-weight: normal; }
     .partners .partner-logo {
       visibility: visible;
       position: relative;
@@ -202,6 +288,69 @@ footer {
       display: inline-block;
       border-radius: 50px;
       border: 3px solid #3A4149;
-      margin: 20px; } }
+      margin: 30px 40px 0 40px; }
+
+  .donate {
+    border-top: 1px solid #8BA19E;
+    margin-top: 5px;
+    background: none;
+    position: relative;
+    visibility: visible;
+    padding: 60px 0; }
+    .donate p {
+      visibility: visible;
+      position: relative;
+      text-align: left; }
+    .donate a {
+      text-shadow: 1px 1px 1px transparent;
+      color: #3A4149;
+      font-weight: normal; }
+    .donate .donate-icon {
+      visibility: visible;
+      position: relative;
+      display: block;
+      margin: 30px auto 20px auto; }
+      .donate .donate-icon:hover {
+        width: 85px;
+        height: 85px;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        border-radius: 100px; }
+
+  footer {
+    background-color: #454E56;
+    padding: 30px 5%; }
+    footer .social {
+      visibility: hidden;
+      position: absolute; }
+    footer .contact, footer .follow, footer .foot-details-left, footer .foot-details-right {
+      visibility: visible;
+      position: relative;
+      display: inline-block; }
+      footer .contact .social2, footer .follow .social2, footer .foot-details-left .social2, footer .foot-details-right .social2 {
+        width: 165px; } }
+@media screen and (min-width: 1100px) {
+  .paragraph {
+    width: 55%;
+    margin: 0 auto; }
+
+  .centered h2 {
+    margin-top: 290px; }
+  .centered .costumes, .centered .shoes, .centered .accessories {
+    width: 300px;
+    height: 300px; }
+
+  .partners .partner-logo {
+    width: 100px;
+    border-radius: 100%; }
+
+  .donate .donate-icon {
+    width: 100px; }
+    .donate .donate-icon:hover {
+      width: 105px;
+      height: 105px;
+      -moz-border-radius: 100px;
+      -webkit-border-radius: 100px;
+      border-radius: 100px; } }
 
 /*# sourceMappingURL=style.css.map */

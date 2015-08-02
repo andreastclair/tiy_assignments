@@ -9,7 +9,7 @@
 body {
   font-family: "futura-pt",sans-serif;
   background-color: $white;
-  color: $black;
+  color: $black;  
   }
 
 .container {
@@ -35,9 +35,29 @@ h2 {
 	line-height: 1.5;
 }
 
+h3 {
+	@include font(1.875);
+	line-height: 1.5;
+	font-weight: bold;
+	color: $white;
+}
+
+h4 {
+	@include font(1);
+	line-height: 2;
+	color: $white;
+}
+
 p {
-	@include font(1.5);
+	@include font(1.4);
 	line-height: 1.8;
+}
+
+span {
+	color: $dkgreen;
+	&:hover {
+		color: $yellow;
+	}
 }
 
 a {
@@ -57,7 +77,7 @@ header {
 	width: 100%;
 	margin: 0 auto 20px auto;
 	background-color: $ltblack;
-	padding-bottom: 10px;
+	padding-bottom: 10px;	
 	.name {
 		.logo {
 			visibility: hidden;
@@ -80,20 +100,71 @@ header {
 // ===================================
 // HOME/BROWSE
 // ===================================
-.intro {
+
+.paragraph {
 	width: 90%;
-	margin: 0 auto 20px auto;
+	margin: 0 auto;
+}
+
+.intro {
+	padding: 50px 0;
+	width: 90%;
+	margin: 10px auto 30px auto;
 	h2 {
 		text-align: center;
 	}
 }
 
-.costumes, .donate {
+.costumes, .donate, .partners {
 	background-color: $black;
 	text-align: center;
-	padding: 60px 0;
-	h2 {
-		color: $white;
+	padding: 80px 0;
+	a {
+		color: $ltblack;
+		text-shadow: 1px 1px 1px $dkgreen;
+		font-weight: bold;
+		&:hover {
+			color: $yellow;
+			text-shadow: 1px 1px 1px transparent;
+		}
+	}
+}
+
+.costumes {
+	border-top: 1px solid $yellow;
+	background: url("/images/costumesBW.jpg");
+	background-size: cover;
+	background-position: 0 -50px;
+}
+
+.donate {
+	background: url("/images/donateBW.jpg");
+	background-size: cover;
+	background-position: 0 -50px;
+	p {
+		visibility: hidden;
+		position: absolute;
+	}
+	.donate-icon {
+		visibility: hidden;
+		position: absolute;
+	}	
+}
+
+.partners {
+	background: url("/images/partnersBW.jpg");
+	background-size: cover;
+	background-position: 0 -50px;
+	text-align: center;
+	border-top: 10px solid $yellow;
+	border-bottom: 10px solid $yellow;
+	p {
+		visibility: hidden;
+		position: absolute;
+	}
+	.partner-logo {
+		visibility: hidden;
+		position: absolute;
 	}
 }
 
@@ -102,33 +173,34 @@ header {
 	visibility: hidden;
 }
 
-.partners {
-	background-color: $white;
-	text-align: center;
-	padding: 60px 0;
-	a {
-		color: $black;
-		&:hover {
-			color: $ltgreen;
-		}
-	}
-	.partner-logo {
-		visibility: hidden;
-		position: absolute;
-	}
-}
-
 // ===================================
 // FOOTER
 // ===================================
+
 footer {
+	border-top: 1px solid $yellow;
 	background-color: $ltblack;
 	padding: 30px 0;
+	height: 100px;
 	.social {
 		display: block;
 		margin: 0 auto;
+	}
+	.contact, .follow, .foot-details-left, .foot-details-right {
+		visibility: hidden;
+		position: absolute;
+	}
+	.contact, .follow {
+		float: left;
+	}
+	.foot-details-left, .foot-details-right {
+		float: right;
+	}
+	.foot {
+		margin: 0 2%;
 	}
 
 }
 
 @import 'mid-media';
+@import 'max-media';
