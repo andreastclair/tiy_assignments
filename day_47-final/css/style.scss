@@ -1,5 +1,7 @@
 @import 'reset';
 @import 'custom';
+// @import 'bourbon/bourbon';
+// @import 'neat/neat';
 
 @mixin font($em){
     font-size: ($em*16) + px;
@@ -196,6 +198,37 @@ header {
 }	
 
 // ===================================
+// COSTUME GALLERY
+// ===================================
+
+.gallery {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	// background-color: red;
+	.item-foot {
+		width: 100%;
+		max-width: 230px;
+		// margin-right: 2%;
+		// margin: 10px auto;
+		outline: 3px solid $black;
+		.item {
+			width: 100%;
+			max-width: 230px;
+			border-bottom: 3px solid $black;
+		}
+		.opts {
+			width: 100%;
+			max-width: 230px;
+			height: 40px;
+			// background-color: $dkgreen;
+			margin: 0 auto;
+			
+		}
+	}
+}
+
+// ===================================
 // FOOTER
 // ===================================
 
@@ -209,7 +242,7 @@ footer {
 		width: 200px;
 	}
 	.contact, .follow, .foot-details-left, .foot-details-right {
-		visibility: hidden;
+		display: none;
 		position: absolute;
 	}
 	.contact, .follow {
@@ -224,5 +257,6 @@ footer {
 
 }
 
+@import '600-media';
 @import 'mid-media';
 @import 'max-media';

@@ -34,3 +34,31 @@
 }
 
 }
+
+// ===================================
+// COSTUME GALLERY
+// ===================================
+
+.gallery {
+	width: 90%;
+	margin: 0 auto;
+	.item-foot {
+		width: 22.7%;
+		float: left;
+		// margin-right: 2%;
+		margin: 20px;
+		outline: 3px solid $black;
+		.item {
+			width: 100%;
+			border-bottom: 3px solid $black;
+		}
+		.opts {
+			width: 100%;
+			max-width: 230px;
+			height: 40px;
+			// background-color: $dkgreen;
+			margin: 0 auto;
+			
+		}
+	}
+}
