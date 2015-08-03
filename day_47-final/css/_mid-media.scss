@@ -150,11 +150,12 @@ header {
 	.donate-icon {
 		visibility: visible;
 		position: relative;
+		width: 100px;
 		display: block;
 		margin: 30px auto 20px auto;
 		&:hover {
-			width: 85px;
-			height: 85px;
+			width: 105px;
+			height: 105px;
 			-moz-border-radius: 100px;
 			-webkit-border-radius: 100px;
 			border-radius: 100px;
@@ -170,6 +171,7 @@ header {
 footer {
 	background-color: $ltblack;
 	padding: 30px 5%;
+	height: 100px;
 	.social {
 		visibility: hidden;
 		position: absolute;
