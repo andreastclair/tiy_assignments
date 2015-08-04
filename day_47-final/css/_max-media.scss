@@ -33,7 +33,7 @@
 	}
 }
 
-}
+
 
 // ===================================
 // COSTUME GALLERY
@@ -42,6 +42,7 @@
 .gallery {
 	width: 90%;
 	margin: 0 auto;
+	// padding-top: 70px;
 	.item-foot {
 		width: 22.7%;
 		float: left;
@@ -61,4 +62,42 @@
 			
 		}
 	}
+}
+
+// ===================================
+// ITEM PAGE
+// ===================================
+.item-container {
+	width: 85%;
+	margin: 70px auto;
+	.main-photo {
+		float: left;
+		width: 55%;
+		.main-item {
+			width: 100%;
+		}
+	}
+	.side-images {
+		.sub-item {
+			width: 23%;
+			margin: 2% 2% 2% 0;
+			&:nth-of-type(4) {
+				margin-right: 0;
+			}
+		}
+	}	
+}
+
+aside {
+	width: 35%;
+	float: right;
+}
+
+.donation-info {
+	margin: 50px auto;
+	width: 90%;
+}
+
+
+
 }

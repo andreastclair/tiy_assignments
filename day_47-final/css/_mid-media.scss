@@ -193,6 +193,39 @@ header {
 }
 
 // ===================================
+// ITEM PAGE
+// ===================================
+.item-container {
+	width: 95%;
+	margin: 70px auto;
+	.main-photo {
+		float: left;
+		width: 50%;
+		.main-item {
+			width: 100%;
+		}
+	}
+	.side-images {
+		.sub-item {
+			width: 22.6%;
+			margin: 2% 2% 2% 0;
+			&:nth-of-type(4) {
+				margin-right: 0;
+			}
+		}
+	}	
+}
+
+aside {
+	width: 40%;
+	float: right;
+}
+
+.donation-info {
+	margin: 50px 0;
+}
+
+// ===================================
 // FOOTER
 // ===================================
 
@@ -201,13 +234,12 @@ footer {
 	padding: 30px 5%;
 	height: 100px;
 	.social {
-		visibility: hidden;
+		display: none;
 		position: absolute;
 	}
 	.contact, .follow, .foot-details-left, .foot-details-right {
 		display: block;
 		position: relative;
-		display: inline-block;
 		.social2 {
 			width: 165px;
 		}

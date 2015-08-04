@@ -23,6 +23,11 @@ body {
 	clear: both;
 }
 
+.horiz-line {
+	border-bottom: 1px solid $black;
+	margin: 40px 0;
+}
+
 // ===================================
 // TYPE
 // ===================================
@@ -55,6 +60,18 @@ p {
 	line-height: 1.8;
 }
 
+.bold {
+	@include font(1.4);
+	line-height: 1.8;
+	font-weight: bold;
+}
+
+.italic {
+	@include font(1.4);
+	line-height: 1.8;
+	font-style: italic;
+}
+
 span {
 	color: $dkgreen;
 	&:hover {
@@ -68,6 +85,26 @@ a {
 	&:hover {
 		color: $ltgreen;
 	}
+}
+
+.btn {
+  background: #76E2C0;
+  font-family: "futura-pt",sans-serif;
+  background-image: -webkit-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: -moz-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: -ms-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: -o-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: linear-gradient(to bottom, #76E2C0, #6AD2B0);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  padding: 5px 10px;
+  margin: 0 10px 10px;
+}
+
+.btn:hover {
+  background: #8BA19E;
+  text-decoration: none;
 }
 
 // ===================================
@@ -209,6 +246,7 @@ header {
 	.item-foot {
 		width: 100%;
 		max-width: 230px;
+		margin: 40px auto;
 		// margin-right: 2%;
 		// margin: 10px auto;
 		outline: 3px solid $black;
@@ -220,12 +258,40 @@ header {
 		.opts {
 			width: 100%;
 			max-width: 230px;
-			height: 40px;
+			padding-left: 65%;
+			// height: 40px;
 			// background-color: $dkgreen;
 			margin: 0 auto;
-			
+			.favorite {
+				width: 30px;
+			}
+			.plus {
+				width: 30px;
+			}
 		}
 	}
+}
+
+// ===================================
+// ITEM PAGE
+// ===================================
+.item-container {
+	width: 90%;
+	margin: 0 auto;
+	.main-photo {
+		.main-item {
+			width: 100%;
+		}
+	}
+	.side-images {
+		.sub-item {
+			width: 20%;
+			margin: 5.6% 5.6% 5.6% 0;
+			&:nth-of-type(4) {
+				margin-right: 0;
+			}
+		}
+	}	
 }
 
 // ===================================
@@ -236,6 +302,7 @@ footer {
 	border-top: 1px solid $yellow;
 	background-color: $ltblack;
 	padding: 30px 0;
+	// margin-top: 50px;
 	.social {
 		display: block;
 		margin: 0 auto;

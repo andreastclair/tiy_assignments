@@ -57,6 +57,10 @@ body {
 .clear-fix {
   clear: both; }
 
+.horiz-line {
+  border-bottom: 1px solid #3A4149;
+  margin: 40px 0; }
+
 h1 {
   font-size: 56px;
   font-size: 3.5em;
@@ -85,6 +89,18 @@ p {
   font-size: 1.4em;
   line-height: 1.8; }
 
+.bold {
+  font-size: 22.4px;
+  font-size: 1.4em;
+  line-height: 1.8;
+  font-weight: bold; }
+
+.italic {
+  font-size: 22.4px;
+  font-size: 1.4em;
+  line-height: 1.8;
+  font-style: italic; }
+
 span {
   color: #6AD2B0; }
   span:hover {
@@ -95,6 +111,24 @@ a {
   color: #EFEDED; }
   a:hover {
     color: #76E2C0; }
+
+.btn {
+  background: #76E2C0;
+  font-family: "futura-pt",sans-serif;
+  background-image: -webkit-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: -moz-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: -ms-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: -o-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: linear-gradient(to bottom, #76E2C0, #6AD2B0);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  padding: 5px 10px;
+  margin: 0 10px 10px; }
+
+.btn:hover {
+  background: #8BA19E;
+  text-decoration: none; }
 
 header {
   width: 100%;
@@ -192,6 +226,7 @@ header {
   .gallery .item-foot {
     width: 100%;
     max-width: 230px;
+    margin: 40px auto;
     outline: 3px solid #3A4149; }
     .gallery .item-foot .item {
       width: 100%;
@@ -200,8 +235,23 @@ header {
     .gallery .item-foot .opts {
       width: 100%;
       max-width: 230px;
-      height: 40px;
+      padding-left: 65%;
       margin: 0 auto; }
+      .gallery .item-foot .opts .favorite {
+        width: 30px; }
+      .gallery .item-foot .opts .plus {
+        width: 30px; }
+
+.item-container {
+  width: 90%;
+  margin: 0 auto; }
+  .item-container .main-photo .main-item {
+    width: 100%; }
+  .item-container .side-images .sub-item {
+    width: 20%;
+    margin: 5.6% 5.6% 5.6% 0; }
+    .item-container .side-images .sub-item:nth-of-type(4) {
+      margin-right: 0; }
 
 footer {
   border-top: 1px solid #EFCB35;
@@ -223,16 +273,16 @@ footer {
 
 @media screen and (min-width: 620px) {
   .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto; }
 
   .gallery {
-    width: 90%;
+    width: 100%;
     margin: 0 auto; }
     .gallery .item-foot {
-      width: 50%;
+      width: 100%;
       float: left;
-      margin: 10px;
+      margin: 20px;
       outline: 3px solid #3A4149; }
       .gallery .item-foot .item {
         width: 100%;
@@ -241,7 +291,18 @@ footer {
       .gallery .item-foot .opts {
         width: 100%;
         height: 40px;
-        margin: 0 auto; } }
+        margin: 0 auto; }
+
+  .item-container {
+    width: 90%;
+    margin: 0 auto; }
+    .item-container .main-photo .main-item {
+      width: 100%; }
+    .item-container .side-images .sub-item {
+      width: 20.2%;
+      margin: 5.6% 5.6% 5.6% 0; }
+      .item-container .side-images .sub-item:nth-of-type(4) {
+        margin-right: 0; } }
 @media screen and (min-width: 800px) {
   .container {
     width: 90%;
@@ -388,17 +449,37 @@ footer {
         height: 40px;
         margin: 0 auto; }
 
+  .item-container {
+    width: 95%;
+    margin: 70px auto; }
+    .item-container .main-photo {
+      float: left;
+      width: 50%; }
+      .item-container .main-photo .main-item {
+        width: 100%; }
+    .item-container .side-images .sub-item {
+      width: 22.6%;
+      margin: 2% 2% 2% 0; }
+      .item-container .side-images .sub-item:nth-of-type(4) {
+        margin-right: 0; }
+
+  aside {
+    width: 40%;
+    float: right; }
+
+  .donation-info {
+    margin: 50px 0; }
+
   footer {
     background-color: #454E56;
     padding: 30px 5%;
     height: 100px; }
     footer .social {
-      visibility: hidden;
+      display: none;
       position: absolute; }
     footer .contact, footer .follow, footer .foot-details-left, footer .foot-details-right {
       display: block;
-      position: relative;
-      display: inline-block; }
+      position: relative; }
       footer .contact .social2, footer .follow .social2, footer .foot-details-left .social2, footer .foot-details-right .social2 {
         width: 165px; } }
 @media screen and (min-width: 1100px) {
@@ -417,22 +498,45 @@ footer {
     border-radius: 100%; }
 
   .donate .donate-icon {
-    width: 100px; } }
-.gallery {
-  width: 90%;
-  margin: 0 auto; }
-  .gallery .item-foot {
-    width: 22.7%;
-    float: left;
-    margin: 20px;
-    outline: 3px solid #3A4149; }
-    .gallery .item-foot .item {
-      width: 100%;
-      border-bottom: 3px solid #3A4149; }
-    .gallery .item-foot .opts {
-      width: 100%;
-      max-width: 230px;
-      height: 40px;
-      margin: 0 auto; }
+    width: 100px; }
+
+  .gallery {
+    width: 90%;
+    margin: 0 auto; }
+    .gallery .item-foot {
+      width: 22.7%;
+      float: left;
+      margin: 20px;
+      outline: 3px solid #3A4149; }
+      .gallery .item-foot .item {
+        width: 100%;
+        border-bottom: 3px solid #3A4149; }
+      .gallery .item-foot .opts {
+        width: 100%;
+        max-width: 230px;
+        height: 40px;
+        margin: 0 auto; }
+
+  .item-container {
+    width: 85%;
+    margin: 70px auto; }
+    .item-container .main-photo {
+      float: left;
+      width: 55%; }
+      .item-container .main-photo .main-item {
+        width: 100%; }
+    .item-container .side-images .sub-item {
+      width: 23%;
+      margin: 2% 2% 2% 0; }
+      .item-container .side-images .sub-item:nth-of-type(4) {
+        margin-right: 0; }
+
+  aside {
+    width: 35%;
+    float: right; }
+
+  .donation-info {
+    margin: 50px auto;
+    width: 90%; } }
 
 /*# sourceMappingURL=style.css.map */
