@@ -79,7 +79,7 @@ header {
 	}	
 	.shoes, .accessories {
 		display: inline-block;
-		visibility: visible;
+		// visibility: visible;
 		position: relative;
 		width: 230px;
 		height: 230px;
@@ -110,7 +110,8 @@ header {
 	padding: 60px 0 60px 0;
 	margin: 0;
 	p {
-		visibility: visible;
+		display: block;
+		// visibility: visible;
 		position: relative;
 		text-align: left;
 	}
@@ -120,7 +121,8 @@ header {
 		font-weight: normal;
 	}
 	.partner-logo {
-		visibility: visible;
+		display: block;
+		// visibility: visible;
 		position: relative;
 		width: 80px;
 		display: inline-block;
@@ -135,10 +137,12 @@ header {
 	margin-top: 5px;
 	background: none;
 	position: relative;
-	visibility: visible;
+	display: block;
+	// visibility: visible;
 	padding: 60px 0;
 	p {
-		visibility: visible;
+		display: block;
+		// visibility: visible;
 		position: relative;
 		text-align: left;
 	}
@@ -152,10 +156,10 @@ header {
 		height: 105px;
 	}
 	.donate-icon {
-		visibility: visible;
+		display: block;
+		// visibility: visible;
 		position: relative;
 		width: 100px;
-		display: block;
 		margin: 30px auto 20px auto;
 		&:hover {
 			width: 105px;
@@ -185,43 +189,46 @@ header {
 // ITEM PAGE
 // ===================================
 .item-container {
-	width: 95%;
+	width: 90%;
 	margin: 70px auto;
-	.main-photo {
+
+	.main-item {
 		float: left;
 		width: 50%;
-		.main-item {
+		max-width: 300px;
+		padding-top: 12px;
+		.main-photo {
 			width: 100%;
 		}
-	}
-	.side-images {
-		.sub-item {
-			width: 22.6%;
-			margin: 2% 2% 2% 0;
-			&:nth-of-type(4) {
-				margin-right: 0;
-			}
+		.side-images {
+			width: 100%;
+			max-width: 300px;
+			.sub-item {
+				width: 22.6%;
+				margin: 2% 2% 2% 0;
+				&:nth-of-type(4) {
+					margin-right: 0;
+				}
+			}	
 		}
 	}	
-}
-
-aside {
-	width: 40%;
-	float: right;
-}
-
-.donation-info {
-	margin: 50px auto;
-	width: 90%;
-	.donate-icon4 {
-		width: 80px;
-		display: block;
-		margin: 0 auto 10px auto;
-	}	
-	p {
-		@include font(1);
-		width: 80%;
-		margin: 0 auto;
+	aside {
+		width: 50%;
+		float: right;
+	}
+	.donation-info {
+		margin: 50px auto;
+		width: 90%;
+		.donate-icon4 {
+			width: 80px;
+			display: block;
+			margin: 0 auto 10px auto;
+		}	
+		p {
+			@include font(1);
+			width: 80%;
+			margin: 0 auto;
+		}
 	}
 }
 

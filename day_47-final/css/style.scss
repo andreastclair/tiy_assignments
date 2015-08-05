@@ -56,6 +56,12 @@ h4 {
 	color: $white;
 }
 
+h5 {
+	@include font(1);
+	line-height: 1;
+	color: $black;
+}
+
 p {
 	@include font(1.4);
 	line-height: 1.8;
@@ -71,6 +77,17 @@ p {
 	@include font(1.4);
 	line-height: 1.8;
 	font-style: italic;
+}
+
+.small {
+	@include font(1);
+	line-height: 1.8;
+}
+
+.recalc {
+	@include font(1);
+	line-height: 0;
+	color: $dkgreen;
 }
 
 span {
@@ -184,11 +201,13 @@ header {
 	background-size: cover;
 	background-position: 0 -50px;
 	p {
-		visibility: hidden;
+		display: none;
+		// visibility: hidden;
 		position: absolute;
 	}
 	.donate-icon {
-		visibility: hidden;
+		display: none;
+		// visibility: hidden;
 		position: absolute;
 	}	
 }
@@ -201,18 +220,21 @@ header {
 	border-top: 10px solid $yellow;
 	border-bottom: 10px solid $yellow;
 	p {
-		visibility: hidden;
+		display: none;
+		// visibility: hidden;
 		position: absolute;
 	}
 	.partner-logo {
-		visibility: hidden;
+		display: none;
+		// visibility: hidden;
 		position: absolute;
 	}
 }
 
 .shoes, .accessories {
 	position: absolute;
-	visibility: hidden;
+	// visibility: hidden;
+	display: none;
 }
 
 // ===================================
@@ -220,21 +242,39 @@ header {
 // ===================================
 	
 .dashboard {
-	width: 150px;
-	margin: 0 auto;
-	padding: 20px 0 50px 0;
-	.icon {
-		width: 150px;
-		margin: 20px 0;
-		&:hover {
-			filter: invert(80%);
-			-webkit-filter: invert(80%);
-			-moz-filter: invert(80%);
-			-o-filter: invert(80%);
-			-ms-filter: invert(80%);
-		}	
-		
+	width: 90%;
+	margin: 50px auto;
+	h4 {
+		color: $black;
 	}
+	.icon-container {
+		.dashcon {
+			margin: 20px auto;
+			width: 150px;
+			.icon {
+				display: block;
+				width: 150px;
+				&:hover {
+					filter: invert(80%);
+					-webkit-filter: invert(80%);
+					-moz-filter: invert(80%);
+					-o-filter: invert(80%);
+					-ms-filter: invert(80%);
+				}	
+			}
+			h5 {
+				text-align: center;
+				margin: 8px 0;
+				a {
+					color: $black;
+					&:hover {
+						color: $dkgreen;
+					}
+				}
+			}
+		}
+	}
+
 }	
 
 // ===================================
@@ -281,35 +321,54 @@ header {
 // ===================================
 .item-container {
 	width: 90%;
-	margin: 0 auto;
-	.main-photo {
-		.main-item {
-			width: 100%;
-		}
-	}
-	.side-images {
-		.sub-item {
-			width: 20%;
-			margin: 5.6% 5.6% 5.6% 0;
-			&:nth-of-type(4) {
-				margin-right: 0;
-			}
-		}
-	}
-}	
-
-.donation-info {
+	display: block;
 	margin: 50px auto;
-	width: 90%;
-	.donate-icon4 {
-		width: 100px;
-		display: block;
-		margin: 0 auto 20px auto;
-	}	
-	p {
-		@include font(1);
-		width: 70%;
+	.main-item {
+		width: 100%;
 		margin: 0 auto;
+		.main-photo {
+			width: 100%;
+			max-width: 400px;
+			display: block;
+			margin: 0 auto;
+		}
+		.side-images {
+			margin: 0 auto;
+			max-width: 400px;
+			.sub-item {
+				width: 20%;
+				margin: 5.6% 5.6% 5.6% 0;
+				&:nth-of-type(4) {
+					margin-right: 0;
+				}
+			}
+		}	
+	}
+	a {
+		color: $black;
+		display: inline-block;
+		margin-bottom: 10px;
+		&:hover {
+			color: $dkgreen;
+		}
+	}
+	.btn {
+		margin: 0;
+	}
+
+	.donation-info {
+		margin: 50px auto;
+		width: 90%;
+		.donate-icon4 {
+			width: 100px;
+			display: block;
+			margin: 0 auto 20px auto;
+		}	
+		p {
+			@include font(1);
+			width: 100%;
+			margin: 0 auto;
+		}
 	}
 }
 
@@ -341,6 +400,9 @@ header {
 		.item-desc {
 			width: 40%;
 			float: right;
+			a {
+				color: $dkgreen;
+			}
 		}
 	}	
 }
@@ -361,6 +423,9 @@ header {
 			display: inline-block;
 			width: 100px;
 			margin: 5px 0 5px 10px;
+			a {
+				color: $dkgreen;
+			}
 		}
 		.cost {
 			margin: 5px 0 0 100px;
@@ -370,7 +435,7 @@ header {
 	.donate-icon-cart {
 		width: 50px;
 		display: block;
-		margin: 15px auto 5px auto;
+		margin: 25px auto 5px auto;
 	}	
 	h3 {
 		color: $black;

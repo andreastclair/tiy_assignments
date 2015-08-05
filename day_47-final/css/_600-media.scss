@@ -6,6 +6,34 @@
 }
 
 // ===================================
+// DASHBOARD
+// ===================================
+	
+.dashboard {
+	margin: 70px auto;
+	.icon-container {
+		width: 700px;
+		margin: 0 auto;
+		.dashcon {
+			margin: 20px auto;
+			margin: 3% 4.7%;
+			display: inline-block;
+			.icon {
+				display: block;
+				width: 150px;
+				&:hover {
+					filter: invert(80%);
+					-webkit-filter: invert(80%);
+					-moz-filter: invert(80%);
+					-o-filter: invert(80%);
+					-ms-filter: invert(80%);
+				}	
+			}
+		}
+	}
+}	
+
+// ===================================
 // COSTUME GALLERY
 // ===================================
 
@@ -21,10 +49,9 @@
 // ITEM PAGE
 // ===================================
 .item-container {
-	width: 90%;
-	margin: 0 auto;
-	.main-photo {
-		.main-item {
+	width: 80%;
+	.main-item {
+		.main-phot {
 			width: 100%;
 		}
 	}
@@ -35,6 +62,20 @@
 			&:nth-of-type(4) {
 				margin-right: 0;
 			}
+		}
+	}
+	.donation-info {
+		margin: 50px auto;
+		width: 90%;
+		.donate-icon4 {
+			width: 100px;
+			display: block;
+			margin: 0 auto 20px auto;
+		}	
+		p {
+			@include font(1);
+			width: 90%;
+			margin: 0 auto;
 		}
 	}	
 }
