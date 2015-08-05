@@ -190,12 +190,12 @@ header {
 
 .costumes {
   border-top: 1px solid #EFCB35;
-  background: url("/images/costumesBW.jpg");
+  background: url("../images/costumesBW.jpg");
   background-size: cover;
   background-position: 0 -50px; }
 
 .donate {
-  background: url("/images/donateBW.jpg");
+  background: url("../images/donateBW.jpg");
   background-size: cover;
   background-position: 0 -50px; }
   .donate p {
