@@ -46,7 +46,7 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: "futura-pt",sans-serif;
+  font-family: "brandon-grotesque",sans-serif;
   background-color: #EFEDED;
   color: #3A4149; }
 
@@ -114,7 +114,7 @@ a {
 
 .btn {
   background: #76E2C0;
-  font-family: "futura-pt",sans-serif;
+  font-family: "brandon-grotesque",sans-serif;
   background-image: -webkit-linear-gradient(top, #76E2C0, #6AD2B0);
   background-image: -moz-linear-gradient(top, #76E2C0, #6AD2B0);
   background-image: -ms-linear-gradient(top, #76E2C0, #6AD2B0);
@@ -122,7 +122,7 @@ a {
   background-image: linear-gradient(to bottom, #76E2C0, #6AD2B0);
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0px;
+  border-radius: 10px;
   padding: 5px 10px;
   margin: 0 10px 10px; }
 
@@ -140,7 +140,8 @@ header {
     width: 0; }
   header .name h1 {
     text-align: center;
-    color: #EFEDED; }
+    color: #EFEDED;
+    padding-bottom: 2px; }
   header nav {
     text-align: center; }
     header nav li {
@@ -222,7 +223,7 @@ header {
 .gallery {
   width: 100%;
   overflow: hidden;
-  margin: 0 auto; }
+  margin: 50px auto; }
   .gallery .item-foot {
     width: 100%;
     max-width: 230px;
@@ -235,12 +236,15 @@ header {
     .gallery .item-foot .opts {
       width: 100%;
       max-width: 230px;
-      padding-left: 65%;
+      padding-left: 66%;
+      padding-top: 2px;
+      padding-bottom: 2px;
       margin: 0 auto; }
       .gallery .item-foot .opts .favorite {
-        width: 30px; }
+        width: 25px; }
       .gallery .item-foot .opts .plus {
-        width: 30px; }
+        width: 24px;
+        margin-left: 8px; }
 
 .item-container {
   width: 90%;
@@ -252,6 +256,69 @@ header {
     margin: 5.6% 5.6% 5.6% 0; }
     .item-container .side-images .sub-item:nth-of-type(4) {
       margin-right: 0; }
+
+.donation-info {
+  margin: 50px auto;
+  width: 90%; }
+  .donation-info .donate-icon4 {
+    width: 100px;
+    display: block;
+    margin: 0 auto 20px auto; }
+  .donation-info p {
+    font-size: 16px;
+    font-size: 1em;
+    width: 70%;
+    margin: 0 auto; }
+
+.cart-container {
+  width: 80%;
+  margin: 0 auto; }
+  .cart-container h4 {
+    color: #3A4149;
+    margin-top: 50px; }
+  .cart-container .cart-item {
+    margin: 50px 0;
+    width: 100%; }
+    .cart-container .cart-item .item-image {
+      width: 50%;
+      max-width: 300px;
+      float: left; }
+      .cart-container .cart-item .item-image .cart-img {
+        width: 90%;
+        margin-top: 10px; }
+    .cart-container .cart-item .item-desc {
+      width: 40%;
+      float: right; }
+
+.order-summary {
+  background-color: white;
+  width: 90%;
+  max-width: 300px;
+  outline: 1px solid #8BA19E;
+  padding: 5px;
+  margin: 0 auto 40px auto; }
+  .order-summary .title {
+    text-align: center;
+    margin: 10px 0; }
+  .order-summary .itemized .width {
+    display: inline-block;
+    width: 100px;
+    margin: 5px 0 5px 10px; }
+  .order-summary .itemized .cost {
+    margin: 5px 0 0 100px;
+    display: inline; }
+  .order-summary .donate-icon-cart {
+    width: 50px;
+    display: block;
+    margin: 15px auto 5px auto; }
+  .order-summary h3 {
+    color: #3A4149;
+    text-align: center; }
+  .order-summary .horiz-line {
+    margin: 5px; }
+  .order-summary .btn {
+    display: block;
+    margin: 10px auto; }
 
 footer {
   border-top: 1px solid #EFCB35;
@@ -277,21 +344,10 @@ footer {
     margin: 0 auto; }
 
   .gallery {
-    width: 100%;
-    margin: 0 auto; }
+    width: 90%; }
     .gallery .item-foot {
-      width: 100%;
       float: left;
-      margin: 20px;
-      outline: 3px solid #3A4149; }
-      .gallery .item-foot .item {
-        width: 100%;
-        max-width: 230px;
-        border-bottom: 3px solid #3A4149; }
-      .gallery .item-foot .opts {
-        width: 100%;
-        height: 40px;
-        margin: 0 auto; }
+      margin: 20px; }
 
   .item-container {
     width: 90%;
@@ -310,7 +366,7 @@ footer {
 
   header {
     height: 80px;
-    padding-bottom: 0;
+    padding-bottom: 2px;
     padding-top: 10px; }
     header .name {
       padding: 0 0 0 5%; }
@@ -419,6 +475,9 @@ footer {
       text-shadow: 1px 1px 1px transparent;
       color: #3A4149;
       font-weight: normal; }
+    .donate .cool {
+      display: block;
+      height: 105px; }
     .donate .donate-icon {
       visibility: visible;
       position: relative;
@@ -434,20 +493,10 @@ footer {
 
   .gallery {
     width: 90%;
-    margin: 0 auto; }
+    margin: 70px auto; }
     .gallery .item-foot {
       width: 30%;
-      float: left;
-      margin: 10px;
-      outline: 3px solid #3A4149; }
-      .gallery .item-foot .item {
-        width: 100%;
-        max-width: 230px;
-        border-bottom: 3px solid #3A4149; }
-      .gallery .item-foot .opts {
-        width: 100%;
-        height: 40px;
-        margin: 0 auto; }
+      margin: 10px; }
 
   .item-container {
     width: 95%;
@@ -468,7 +517,22 @@ footer {
     float: right; }
 
   .donation-info {
-    margin: 50px 0; }
+    margin: 50px auto;
+    width: 90%; }
+    .donation-info .donate-icon4 {
+      width: 80px;
+      display: block;
+      margin: 0 auto 10px auto; }
+    .donation-info p {
+      font-size: 16px;
+      font-size: 1em;
+      width: 80%;
+      margin: 0 auto; }
+
+  .cart-container {
+    width: 70%; }
+    .cart-container .cart-item .item-desc {
+      width: 45%; }
 
   footer {
     background-color: #454E56;
@@ -501,21 +565,11 @@ footer {
     width: 100px; }
 
   .gallery {
-    width: 90%;
-    margin: 0 auto; }
+    padding-left: 70px; }
     .gallery .item-foot {
       width: 22.7%;
       float: left;
-      margin: 20px;
-      outline: 3px solid #3A4149; }
-      .gallery .item-foot .item {
-        width: 100%;
-        border-bottom: 3px solid #3A4149; }
-      .gallery .item-foot .opts {
-        width: 100%;
-        max-width: 230px;
-        height: 40px;
-        margin: 0 auto; }
+      margin: 20px; }
 
   .item-container {
     width: 85%;
@@ -537,6 +591,39 @@ footer {
 
   .donation-info {
     margin: 50px auto;
-    width: 90%; } }
+    width: 90%; }
+    .donation-info .donate-icon4 {
+      width: 120px;
+      margin: 0 30px 40px 0;
+      display: inline-block; }
+    .donation-info p {
+      font-size: 16px;
+      font-size: 1em;
+      width: 70%;
+      margin: 0 0 0 20px;
+      display: inline-block; }
+
+  .cart-container {
+    width: 100%; }
+    .cart-container h4 {
+      margin-top: 70px; }
+    .cart-container .cart-left {
+      float: left;
+      width: 55%; }
+      .cart-container .cart-left .cart-item {
+        margin: 10px 0; }
+        .cart-container .cart-left .cart-item .item-image {
+          width: 30%; }
+        .cart-container .cart-left .cart-item .item-desc {
+          width: 30%;
+          float: left; }
+
+  .order-summary {
+    background-color: white;
+    float: right;
+    margin: 140px 30px 40px 0; }
+    .order-summary .btn {
+      display: block;
+      margin: 10px auto; } }
 
 /*# sourceMappingURL=style.css.map */

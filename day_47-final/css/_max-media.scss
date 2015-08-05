@@ -40,27 +40,12 @@
 // ===================================
 
 .gallery {
-	width: 90%;
-	margin: 0 auto;
-	// padding-top: 70px;
+	padding-left: 70px;
 	.item-foot {
 		width: 22.7%;
 		float: left;
 		// margin-right: 2%;
 		margin: 20px;
-		outline: 3px solid $black;
-		.item {
-			width: 100%;
-			border-bottom: 3px solid $black;
-		}
-		.opts {
-			width: 100%;
-			max-width: 230px;
-			height: 40px;
-			// background-color: $dkgreen;
-			margin: 0 auto;
-			
-		}
 	}
 }
 
@@ -96,6 +81,69 @@ aside {
 .donation-info {
 	margin: 50px auto;
 	width: 90%;
+	.donate-icon4 {
+		width: 120px;
+		margin: 0 30px 40px 0;
+		display: inline-block;
+	}	
+	p {
+		@include font(1);
+		width: 70%;
+		margin: 0 0 0 20px;
+		display: inline-block;
+
+	}
+}
+
+// ===================================
+// CART
+// ===================================
+
+.cart-container {
+	width: 100%;
+	h4 {
+		margin-top: 70px;
+	}
+	.cart-left {
+		float: left;
+		width: 55%;
+		.cart-item {
+			margin: 10px 0;
+			.item-image {
+				width: 30%;
+				.cart-img {
+				}
+			}
+			.item-desc {
+				width: 30%;
+				float: left;
+			}			
+		}
+	}	
+}
+
+.order-summary {
+	background-color: white;
+	float: right;
+	margin: 140px 30px 40px 0;
+	.title {
+	}
+	.itemized {
+		.width {
+		}
+		.cost {
+		}
+	}
+	.donate-icon-cart {
+	}	
+	h3 {
+	}
+	.horiz-line {
+	}
+	.btn {
+		display: block;
+		margin: 10px auto;
+		}
 }
 
 
