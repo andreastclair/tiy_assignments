@@ -135,7 +135,8 @@ header {
 	width: 100%;
 	margin: 0 auto 20px auto;
 	background-color: $ltblack;
-	padding: 10px 20px;	
+	box-sizing: border-box;
+	padding: 10px auto;	
 	.name {
 		.logo {
 			visibility: hidden;
@@ -520,10 +521,10 @@ header {
 // ===================================
 
 footer {
+	width: 100%;
 	border-top: 1px solid $yellow;
 	background-color: $ltblack;
 	padding: 30px 0;
-	// margin-top: 50px;
 	.social {
 		display: block;
 		margin: 0 auto;
