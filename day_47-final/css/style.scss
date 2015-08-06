@@ -8,6 +8,17 @@
     font-size: ($em) + em;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+ }
+
 body {
   	font-family: "brandon-grotesque",sans-serif;
   	// font-family: "futura-pt",sans-serif;
@@ -135,7 +146,6 @@ header {
 	width: 100%;
 	margin: 0 auto 20px auto;
 	background-color: $ltblack;
-	box-sizing: border-box;
 	padding: 10px auto;	
 	.name {
 		.logo {
@@ -521,6 +531,7 @@ header {
 // ===================================
 
 footer {
+	// box-sizing: border-box;
 	width: 100%;
 	border-top: 1px solid $yellow;
 	background-color: $ltblack;

@@ -14,11 +14,10 @@
 
 
 header {
-	height: 80px;
-	padding-bottom: 2px;
-	padding-top: 10px;
+	height: 95px;
+	padding: 10px 0;
 	.name {
-		padding: 0 0 0 5%;
+		padding: 0 0 2px 5%;
 		.logo {
 			visibility: visible;
 			width: 100px;
@@ -289,9 +288,8 @@ header {
 // ===================================
 
 footer {
-	background-color: $ltblack;
 	padding: 30px 5%;
-	height: 100px;
+	height: 150px;
 	.social {
 		display: none;
 		position: absolute;

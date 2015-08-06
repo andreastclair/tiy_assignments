@@ -58,7 +58,7 @@
 	.main-item {
 		float: left;
 		width: 55%;
-		padding-left: 14%;
+		margin-left: 14%;
 		.main-photo {
 			width: 100%;
 		}
@@ -73,7 +73,7 @@
 		}
 	}
 	aside {
-		width: 35%;
+		width: 45%;
 		float: right;
 		padding-right: 14%;
 		.btn {
@@ -214,24 +214,32 @@
 }
 
 .one {
-	width: 130px;
-   	height: 90px;
+	width: 160px;
+   	height: 130px;
    	top: 220px;
-	right: 12%;
+	right: 16%;
 }
 
 .two {
-	width: 100px;
-   	height: 170px;
+	width: 140px;
+   	height: 190px;
    	top: 480px;
-	left: 6%;
+	left: 9%;
 }
 
 .three {
-	width: 130px;
-   	height: 170px;
+	width: 190px;
+   	height: 190px;
    	top: 480px;
-	right: 7%;
+	right: 13%;
+}
+
+.four {
+	width: 190px;
+   	height: 90px;
+   	top: 710px;
+	right: 29%;
+	text-align: left;
 }
 
 }

@@ -45,6 +45,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
 body {
   font-family: "brandon-grotesque",sans-serif;
   background-color: #EFEDED;
@@ -151,7 +161,6 @@ header {
   width: 100%;
   margin: 0 auto 20px auto;
   background-color: #454E56;
-  box-sizing: border-box;
   padding: 10px auto; }
   header .name .logo {
     visibility: hidden;
@@ -494,11 +503,10 @@ footer {
     margin: 0 auto; }
 
   header {
-    height: 80px;
-    padding-bottom: 2px;
-    padding-top: 10px; }
+    height: 95px;
+    padding: 10px 0; }
     header .name {
-      padding: 0 0 0 5%; }
+      padding: 0 0 2px 5%; }
       header .name .logo {
         visibility: visible;
         width: 100px;
@@ -684,9 +692,8 @@ footer {
       margin: 0 2%; }
 
   footer {
-    background-color: #454E56;
     padding: 30px 5%;
-    height: 100px; }
+    height: 150px; }
     footer .social {
       display: none;
       position: absolute; }
@@ -726,7 +733,7 @@ footer {
     .item-container .main-item {
       float: left;
       width: 55%;
-      padding-left: 14%; }
+      margin-left: 14%; }
       .item-container .main-item .main-photo {
         width: 100%; }
     .item-container .side-images .sub-item {
@@ -735,7 +742,7 @@ footer {
       .item-container .side-images .sub-item:nth-of-type(4) {
         margin-right: 0; }
     .item-container aside {
-      width: 35%;
+      width: 45%;
       float: right;
       padding-right: 14%; }
       .item-container aside .btn {
@@ -829,21 +836,28 @@ footer {
     border-bottom: 13px solid transparent; }
 
   .one {
-    width: 130px;
-    height: 90px;
+    width: 160px;
+    height: 130px;
     top: 220px;
-    right: 12%; }
+    right: 16%; }
 
   .two {
-    width: 100px;
-    height: 170px;
+    width: 140px;
+    height: 190px;
     top: 480px;
-    left: 6%; }
+    left: 9%; }
 
   .three {
-    width: 130px;
-    height: 170px;
+    width: 190px;
+    height: 190px;
     top: 480px;
-    right: 7%; } }
+    right: 13%; }
+
+  .four {
+    width: 190px;
+    height: 90px;
+    top: 710px;
+    right: 29%;
+    text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */
