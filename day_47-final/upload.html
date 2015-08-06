@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<title>Second Position</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/responsive-nav.min.js"></script>
 		<script src="//use.typekit.net/vdg6dwu.js"></script>
@@ -45,6 +45,10 @@
 					<textarea name="comment">Item Description</textarea>
 				</div>
 
+				<div class="tip one">
+					<h5>Describe any details of the costume here. (for example: condition, tears, fit, accessories, etc.)</h5>
+				</div>
+
 				<div class="row">
 					<div class="upload-box">
 						<h5>Gender</h5>
@@ -74,29 +78,42 @@
 				<div class="row">						
 					<div class="upload-box">
 						<h5>Price</h5>
-						<input type="text" name="price">
+						<input type="number" name="cost">
 					</div>
+					
+					<div class="tiptwo two">
+						<h5>This should be the grand total of your item. Your payment will have your donation subtracted from this amount.</h5>
+					</div>
+
 					<div class="upload-box">
 						<h5>Donation Amount*</h5>
-						<input type="text" name="donation">
+						<input type="number" name="cost">
 					</div>	
+
 					<div class="upload-box">
 						<h5>YOUR IMAGE</h5>
 						<input type="text" name="image">
 					</div>	
+					<div class="tip three">
+						<h5>Your image file name will populate here after you have selected it from your computer using the "Browse" button. Click "Upload" when you are ready to submit your item.</h5>
+					</div>
 				</div>	
 
-				<a href="#">
-					<button class="btn">
-  						<p>BROWSE IMAGES</p>
-					</button>
-				</a>
+				<div class="buttons">
+					<a href="#">
+						<button class="btn">
+	  						<p>BROWSE IMAGES</p>
+						</button>
+					</a>
 
-				<a href="#">
-					<button class="btn">
-  						<p>UPLOAD</p>
-					</button>
-				</a>	
+					<a href="#">
+						<button class="btn">
+	  						<p>UPLOAD</p>
+						</button>
+					</a>
+				</div>	
+
+				<div class="clear-fix"></div>	
 
 			</form>
 
