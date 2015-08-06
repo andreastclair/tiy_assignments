@@ -190,12 +190,12 @@ header {
 
 .costumes {
   border-top: 1px solid #EFCB35;
-  background: url("/../images/costumesBW.jpg");
+  background: url("/images/costumesBW.jpg");
   background-size: cover;
   background-position: 0 -50px; }
 
 .donate {
-  background: url("/../images/donateBW.jpg");
+  background: url("/images/donateBW.jpg");
   background-size: cover;
   background-position: 0 -50px; }
   .donate p {
@@ -482,7 +482,7 @@ footer {
       font-size: 2.2em; }
     .centered .costumes {
       border-top: none;
-      background: url("/images/costumes.jpg");
+      background: url("../images/costumes.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 0;
@@ -509,10 +509,10 @@ footer {
           color: #EFCB35; }
     .centered .shoes {
       margin: 0 5%;
-      background: url("/images/shoes.jpg");
+      background: url("../images/shoes.jpg");
       background-size: cover; }
     .centered .accessories {
-      background: url("/images/tiara.jpg");
+      background: url("../images/tiara.jpg");
       background-size: cover; }
 
   .partners {

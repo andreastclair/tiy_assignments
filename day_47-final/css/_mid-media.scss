@@ -60,7 +60,7 @@ header {
 	}
 	.costumes {
 		border-top: none;
-		background: url("/images/costumes.jpg");
+		background: url("../images/costumes.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 0;
@@ -94,11 +94,11 @@ header {
 	}
 	.shoes {
 		margin: 0 5%;
-		background: url("/images/shoes.jpg");
+		background: url("../images/shoes.jpg");
 		background-size: cover;
 	}	
 	.accessories {
-		background: url("/images/tiara.jpg");
+		background: url("../images/tiara.jpg");
 		background-size: cover;
 	}	
 }
