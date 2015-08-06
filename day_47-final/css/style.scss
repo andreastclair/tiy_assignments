@@ -451,6 +451,61 @@ header {
 }
 
 // ===================================
+// UPLOAD
+// ===================================
+
+.upload {
+	padding: 20px;
+	width: 80%;
+	margin: 50px auto 20px auto;
+	background-color: white;
+	border-top: 1px solid $grey;
+	border-right: 1px solid $grey;
+	border-left: 1px solid $grey;
+	border-bottom: 1px solid $grey;
+	border-radius: 15px;
+	h4 {
+		color: $black;
+		text-align: center;
+		font-weight: bold;
+		@include font(1.2);
+		margin-bottom: 20px
+	}
+	textarea {
+		margin-top: 8px;
+		width: 95%;
+		height: 60px;
+	}
+	.row {	
+		.upload-box {
+			margin-top: 30px;
+			h5 {
+				margin-bottom: 8px;
+				text-transform: uppercase;
+			}
+			 
+		}	
+	}
+	.btn {
+		width: 100%;
+		margin: 20px auto 0 auto;
+	}
+}
+
+.upload-info {
+	width: 80%;
+	margin: 0 auto 50px auto;
+	.upload-info-icon {
+		text-align: center;
+		.upload-icon {
+			display: inline-block;
+			width: 80px;
+			margin: 10px 10px 20px 0;
+		}
+	}
+}
+
+// ===================================
 // FOOTER
 // ===================================
 

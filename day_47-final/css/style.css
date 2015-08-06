@@ -369,6 +369,46 @@ header {
     display: block;
     margin: 10px auto; }
 
+.upload {
+  padding: 20px;
+  width: 80%;
+  margin: 50px auto 20px auto;
+  background-color: white;
+  border-top: 1px solid #8BA19E;
+  border-right: 1px solid #8BA19E;
+  border-left: 1px solid #8BA19E;
+  border-bottom: 1px solid #8BA19E;
+  border-radius: 15px; }
+  .upload h4 {
+    color: #3A4149;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19.2px;
+    font-size: 1.2em;
+    margin-bottom: 20px; }
+  .upload textarea {
+    margin-top: 8px;
+    width: 95%;
+    height: 60px; }
+  .upload .row .upload-box {
+    margin-top: 30px; }
+    .upload .row .upload-box h5 {
+      margin-bottom: 8px;
+      text-transform: uppercase; }
+  .upload .btn {
+    width: 100%;
+    margin: 20px auto 0 auto; }
+
+.upload-info {
+  width: 80%;
+  margin: 0 auto 50px auto; }
+  .upload-info .upload-info-icon {
+    text-align: center; }
+    .upload-info .upload-info-icon .upload-icon {
+      display: inline-block;
+      width: 80px;
+      margin: 10px 10px 20px 0; }
+
 footer {
   border-top: 1px solid #EFCB35;
   background-color: #454E56;
@@ -614,6 +654,25 @@ footer {
     .cart-container .cart-item .item-desc {
       width: 45%; }
 
+  .upload {
+    margin: 70px auto 20px auto; }
+    .upload textarea {
+      width: 99%; }
+    .upload .row {
+      width: 100%;
+      margin: 20px auto; }
+      .upload .row .upload-box {
+        outline: 1px solid #8BA19E;
+        padding: 5px;
+        display: inline-block;
+        width: 30%;
+        margin: 20px .59%;
+        .nth-of-type: 3n;
+          .nth-of-type-margin-right: 0; }
+    .upload .btn {
+      width: 45%;
+      margin: 0 2%; }
+
   footer {
     background-color: #454E56;
     padding: 30px 5%;
@@ -706,6 +765,17 @@ footer {
     margin: 140px 30px 40px 0; }
     .order-summary .btn {
       display: block;
-      margin: 10px auto; } }
+      margin: 10px auto; }
+
+  .upload textarea {
+    width: 64.5%;
+    margin-left: 2%; }
+  .upload .row .upload-box {
+    padding: 10px;
+    width: 25%;
+    margin: 20px 2%; }
+
+  .upload-info {
+    width: 55%; } }
 
 /*# sourceMappingURL=style.css.map */

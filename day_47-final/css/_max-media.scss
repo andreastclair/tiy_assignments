@@ -148,6 +148,28 @@
 		}
 }
 
+// ===================================
+// UPLOAD
+// ===================================
+
+.upload {
+	textarea {
+		width: 64.5%;
+		margin-left: 2%;
+	} 
+	.row {
+		.upload-box {
+			padding: 10px;
+			width: 25%;
+			margin: 20px 2%;
+		}
+	}
+}
+
+.upload-info {
+	width: 55%;
+}
+
 
 
 }
