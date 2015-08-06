@@ -200,12 +200,12 @@ header {
 
 .costumes {
   border-top: 1px solid #EFCB35;
-  background: url("images/costumesBW.jpg");
+  background: url("../images/costumesBW.jpg");
   background-size: cover;
   background-position: 0 -50px; }
 
 .donate {
-  background: url("images/donateBW.jpg");
+  background: url("../images/donateBW.jpg");
   background-size: cover;
   background-position: 0 -50px; }
   .donate p {
@@ -216,7 +216,7 @@ header {
     position: absolute; }
 
 .partners {
-  background: url("images/partnersBW.jpg");
+  background: url("../images/partnersBW.jpg");
   background-size: cover;
   background-position: 0 -30px;
   text-align: center;
@@ -427,6 +427,42 @@ header {
   display: none;
   position: absolute; }
 
+.success-container {
+  margin: 70px auto; }
+  .success-container .success-box {
+    width: 90%;
+    max-width: 500px;
+    height: 470px;
+    border-radius: 15px;
+    border-top: 1px solid #8BA19E;
+    border-bottom: 1px solid #8BA19E;
+    border-right: 1px solid #8BA19E;
+    border-left: 1px solid #8BA19E;
+    margin: 0 auto;
+    text-align: center; }
+    .success-container .success-box p {
+      margin: 0 20px; }
+    .success-container .success-box h3 {
+      margin: 20px 20px 20px 20px;
+      color: #6AD2B0; }
+    .success-container .success-box a {
+      height: 65px;
+      width: 65px;
+      color: #6AD2B0; }
+      .success-container .success-box a:hover {
+        color: #EFCB35; }
+    .success-container .success-box h4 {
+      color: #3A4149;
+      margin-top: 30px;
+      font-weight: bold; }
+    .success-container .success-box .social-div {
+      background-color: #EFCB35; }
+      .success-container .success-box .social-div .social-success {
+        width: 60px;
+        margin: 20px 10px; }
+    .success-container .success-box .btn {
+      margin: 30px 30px 0 30px; }
+
 footer {
   width: 100%;
   border-top: 1px solid #EFCB35;
@@ -496,7 +532,12 @@ footer {
         font-size: 16px;
         font-size: 1em;
         width: 90%;
-        margin: 0 auto; } }
+        margin: 0 auto; }
+
+  .success-container .success-box {
+    width: 90%;
+    max-width: 500px;
+    height: 440px; } }
 @media screen and (min-width: 800px) {
   .container {
     width: 90%;

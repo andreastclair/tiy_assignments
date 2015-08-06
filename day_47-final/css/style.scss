@@ -203,13 +203,13 @@ header {
 
 .costumes {
 	border-top: 1px solid $yellow;
-	background: url("images/costumesBW.jpg");
+	background: url("../images/costumesBW.jpg");
 	background-size: cover;
 	background-position: 0 -50px;
 }
 
 .donate {
-	background: url("images/donateBW.jpg");
+	background: url("../images/donateBW.jpg");
 	background-size: cover;
 	background-position: 0 -50px;
 	p {
@@ -225,7 +225,7 @@ header {
 }
 
 .partners {
-	background: url("images/partnersBW.jpg");
+	background: url("../images/partnersBW.jpg");
 	background-size: cover;
 	background-position: 0 -30px;
 	text-align: center;
@@ -524,6 +524,57 @@ header {
 .tiptwo {
 	display: none;
 	position: absolute;
+}
+
+// ===================================
+// SUCCESS
+// ===================================
+
+.success-container {
+	margin: 70px auto;
+	.success-box {
+		width: 90%;
+		max-width: 500px;
+		height: 470px;
+		// padding: 20px;
+		border-radius: 15px;
+		border-top: 1px solid $grey;
+		border-bottom: 1px solid $grey;
+		border-right: 1px solid $grey;
+		border-left: 1px solid $grey;
+		margin: 0 auto;
+		text-align: center;
+		p {
+			margin: 0 20px;
+		}
+		h3 {
+			margin: 20px 20px 20px 20px;
+			color: $dkgreen;
+		}
+		a {
+			height: 65px;
+			width: 65px;
+			color: $dkgreen;
+			&:hover {
+				color: $yellow;
+			}
+		}
+		h4 {
+			color: $black;
+			margin-top: 30px;
+			font-weight: bold;
+		}
+		.social-div{
+			background-color: $yellow;
+			.social-success {
+				width: 60px;
+				margin: 20px 10px;
+			}
+		}
+		.btn {
+			margin: 30px 30px 0 30px;
+		}	
+	}
 }
 
 // ===================================
