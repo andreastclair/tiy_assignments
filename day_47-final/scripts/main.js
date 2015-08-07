@@ -12,3 +12,12 @@ $(document).ready(function(){
 		}
 	})
 });
+
+
+
+// $(document).ready(function(){
+// 		$('.slider').slick({
+// 			$('.single-item').slick();
+// 		// setting-name: setting-value
+// 		 });
+// });

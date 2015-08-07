@@ -159,11 +159,12 @@
 		margin-left: 2%;
 	} 
 	.row {
+		// background-color: red;
 		margin: 30px auto;
 		.upload-box {
 			padding: 10px;
 			width: 25%;
-			margin: 20px 2%;
+			margin: 20px 4%;
 		}
 	}
 	.buttons {
@@ -182,7 +183,7 @@
 
 .tip, .tiptwo {
 	display: block;
-   	background: $dkgreen;
+   	background: $yellow;
    	position: absolute;
    	// float: right;
 	padding: 15px;
@@ -198,7 +199,7 @@
    	width: 0;
    	height: 0;
    	border-top: 13px solid transparent;
-   	border-right: 26px solid $dkgreen;
+   	border-right: 26px solid $yellow;
    	border-bottom: 13px solid transparent;
 }
 .tiptwo:before {
@@ -209,7 +210,7 @@
    	width: 0;
    	height: 0;
    	border-top: 13px solid transparent;
-   	border-left: 26px solid $dkgreen;
+   	border-left: 26px solid $yellow;
    	border-bottom: 13px solid transparent;
 }
 
@@ -218,20 +219,23 @@
    	height: 130px;
    	top: 220px;
 	right: 16%;
+	// h5 {
+	// 	color: $white;
+	// }
 }
 
 .two {
 	width: 140px;
    	height: 190px;
    	top: 480px;
-	left: 9%;
+	left: 10%;
 }
 
 .three {
 	width: 190px;
    	height: 190px;
    	top: 480px;
-	right: 13%;
+	right: 6.6%;
 }
 
 .four {

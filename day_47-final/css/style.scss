@@ -37,7 +37,7 @@ body {
 
 .horiz-line {
 	border-bottom: 1px solid $black;
-	margin: 40px 0;
+	margin: 30px 0;
 }
 
 // ===================================
@@ -144,16 +144,17 @@ a {
 
 header {
 	width: 100%;
-	margin: 0 auto 20px auto;
+	margin: 0 auto;
 	background-color: $ltblack;
 	padding: 10px auto;	
+	height: 115px;
 	.name {
 		.logo {
 			visibility: hidden;
 			width: 0;
 		}
 		h1 {
-			// @include font(1);
+			@include font(2.2);
 			text-align: center;
 			color: $white;
 			padding-bottom: 2px;
@@ -178,7 +179,7 @@ header {
 }
 
 .intro {
-	padding: 50px 0;
+	padding: 30px 0;
 	width: 90%;
 	margin: 10px auto 30px auto;
 	h2 {
@@ -204,14 +205,18 @@ header {
 .costumes {
 	border-top: 1px solid $yellow;
 	background: url("../images/costumesBW.jpg");
+	height: 200px;
+	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0 -50px;
+	background-position: 0 -30px;
 }
 
 .donate {
 	background: url("../images/donateBW.jpg");
+	height: 200px;
+	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0 -50px;
+	background-position: 0;
 	p {
 		display: none;
 		// visibility: hidden;
@@ -226,8 +231,10 @@ header {
 
 .partners {
 	background: url("../images/partnersBW.jpg");
+	height: 220px;
+	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0 -30px;
+	background-position: 0 -10px;
 	text-align: center;
 	border-top: 10px solid $yellow;
 	border-bottom: 10px solid $yellow;
@@ -255,7 +262,7 @@ header {
 	
 .dashboard {
 	width: 90%;
-	margin: 50px auto;
+	margin: 30px auto;
 	h4 {
 		color: $black;
 	}
@@ -296,7 +303,7 @@ header {
 .gallery {
 	width: 100%;
 	overflow: hidden;
-	margin: 50px auto;
+	margin: 30px auto;
 	// background-color: red;
 	.item-foot {
 		width: 100%;
@@ -349,13 +356,13 @@ header {
 			max-width: 400px;
 			.sub-item {
 				width: 20%;
-				margin: 5.6% 5.6% 5.6% 0;
+				margin: 5% 5% 5% 0;
 				&:nth-of-type(4) {
 					margin-right: 0;
 				}
 			}
-		}	
-	}
+		}
+	}		
 	a {
 		color: $black;
 		display: inline-block;
@@ -386,6 +393,7 @@ header {
 
 
 
+
 // ===================================
 // CART
 // ===================================
@@ -395,7 +403,7 @@ header {
 	margin: 0 auto;
 	h4 {
 		color: $black;
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 	.cart-item {
 		margin: 50px 0;
@@ -421,7 +429,7 @@ header {
 
 .order-summary {
 	background-color: white;
-	width: 90%;
+	width: 95%;
 	max-width: 300px;
 	outline: 1px solid $grey;
 	padding: 5px;
@@ -440,7 +448,7 @@ header {
 			}
 		}
 		.cost {
-			margin: 5px 0 0 100px;
+			margin: 5px 0 0 50px;
 			display: inline;
 		}
 	}
@@ -468,8 +476,8 @@ header {
 
 .upload {
 	padding: 20px;
-	width: 80%;
-	margin: 50px auto 20px auto;
+	width: 90%;
+	margin: 30px auto 20px auto;
 	background-color: white;
 	border-top: 1px solid $grey;
 	border-right: 1px solid $grey;
