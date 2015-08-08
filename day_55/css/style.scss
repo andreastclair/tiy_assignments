@@ -1,0 +1,279 @@
+@import 'custom';
+@import 'reset';
+
+@mixin font($em){
+    font-size: ($em*16) + px;
+    font-size: ($em) + em;
+}
+
+// ===============================
+// SECOND POSITION STYLE GUIDE
+// ===============================
+
+body {
+	font-family: "brandon-grotesque",sans-serif;
+	background-color: $white;
+	color: $black; 
+}	 
+
+.section {
+	padding-top: 50px;
+}
+
+.post-container {
+	width: 75%;
+	margin: 0 auto;
+	padding: 50px 0;
+	.content {
+		width: 55%;
+		margin: 0 auto;
+	}
+}
+
+.horiz-line {
+	width: 100%;
+	border-top: 1px solid $grey;
+	margin: 30px 0;
+}
+
+// ===============================
+// TYPOGRAPHY
+// ===============================
+
+h1 {
+	font-weight: light;
+	@include font(3);
+	text-align: center;
+	color: $black;
+}
+
+h3 {
+	margin-top: 25px;
+	color: $black;
+	height: 35px;
+	text-align: left;
+	text-transform: uppercase;
+	@include font(1.8);
+}
+
+h4 {
+	text-align: left;
+	margin: 30px 0 20px 0;
+	font-weight: bold;
+	@include font(1.875);
+}
+
+h6 {
+	line-height: 1.6;
+	@include font(1);
+ }
+
+ .bold {
+		font-weight: bold;
+		line-height: 1.6;
+		color: $ltblack;
+		@include font(1);
+}
+
+ // span {
+	// font-family: "futura-pt",sans-serif;
+ // }
+
+ .header {
+		@include font(2);
+	}
+
+.logo {
+	font-weight: bold;
+	color: $black;
+	@include font(2);
+	margin-top: 0;
+	line-height: 1;
+}
+.logo2 {
+	@include font(2);
+	color: $black;
+	margin-top: 0;
+	line-height: 1;
+}
+
+.bold-link {
+	color: $dkgreen;
+	font-weight: bold;
+	@include font(1.2);
+	margin-top: 5px;
+}
+span.reg-link {
+	color: $dkgreen;
+	@include font(1);
+}
+
+.active {
+	color: $black;
+	@include font(1);
+}
+
+// .style-guide {
+	h2 {
+		color: $ltgreen;
+		@include font(3);
+		font-weight: bold;
+		text-align: center;
+	}
+	nav {
+		margin: 25px 0;
+		background-color: $dkgreen;
+		padding: 8px;
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+		color: $white;
+		&:hover {
+		color: $yellow;
+		}
+	}
+	li {
+		display: inline;
+		margin: 0 8px;
+		line-height: 1.8;
+		font-weight: normal;
+		@include font(0.875);
+	}
+	p {
+		color: $black;
+		font-family: "Arial";
+		line-height: 1.8;
+	}
+	
+	
+	
+// ===============================
+// COLORS
+// ===============================
+	.box { 
+		width: 100px;
+		height: 100px;
+		padding: 10px;
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.one {
+		background-color: $black;
+	}
+	.two {
+		background-color: $black;
+	}
+	.three {
+		background-color: $black;
+	}
+	.four {
+		background-color: $black;
+	}
+	.five {
+		background-color: $black;
+	}
+
+// ===============================
+// ICONS
+// ===============================
+
+	.icons {
+		margin: 5px 0 20px 0;
+		max-width: 500px;
+	}
+	.icons-full {
+		margin: 5px 0 20px 0;
+	}
+	.icons-small {
+		margin: 5px 0 20px 0;
+		max-width: 100px;
+	}
+	.ribbon {
+		margin: 5px 0 0 0;
+		max-width: 60px;
+	}
+
+// ===============================
+// GRID
+// ===============================
+	.col {
+		background-color: $grey;
+		display: inline-block;
+		padding: 5px;
+		text-align: center;
+		margin: 5px 0 20px 0;
+	}
+	.full {
+		width: 91%;
+	}
+	.left {
+		width: 30%;
+	}
+	.right {
+		width: 60%;
+	}
+	.left-3 {
+		width: 20%;
+	}
+	.right-9 {
+		width: 70%;
+	}
+	
+
+// ===============================
+// BUTTONS
+// ===============================
+	.buttons {
+		height: 30px;
+		width: 70px;
+		margin-top: 5px;
+	}
+
+// ===============================
+// COSTUME IMAGES
+// ===============================
+	.avatar {
+		background-color: $grey;
+		padding: 10px;
+		margin: 5px 10px 30px 0;
+		text-align: left;
+		font-family: "Arial";
+		@include font(0.8);
+		border-radius: 15%;
+	}
+	.user-mobile-home {
+		height: 45px;
+		width: 45px;
+	}
+	.user-desktop-home {
+		height: 48px;
+		width: 48px;
+	}
+	.user-mobile-profile {
+		height: 52px;
+		width: 52px;
+	}
+	.user-desktop-profile {
+		height: 88px;
+		width: 88px;
+	}
+	.friends {
+		height: 31px;
+		width: 31px;
+	}
+	
+
+
+
+
+// @import 'mid-media';
+// @import 'mid2-media';
+// @import 'mid3-media';
+// @import 'max-media';
+
+
+
+
+
+

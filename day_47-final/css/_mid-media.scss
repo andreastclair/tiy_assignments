@@ -71,6 +71,9 @@ header {
 		padding: 0;
 		width: 230px;
 		height: 230px;
+		&:hover {
+			color: $yellow;
+		}
 		a {
 			color: $black;
 			font-weight: normal;

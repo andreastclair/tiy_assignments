@@ -600,6 +600,8 @@ footer {
       padding: 0;
       width: 230px;
       height: 230px; }
+      .centered .costumes:hover {
+        color: #EFCB35; }
       .centered .costumes a {
         color: #3A4149;
         font-weight: normal;
