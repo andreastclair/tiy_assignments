@@ -6,24 +6,36 @@
     font-size: ($em) + em;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+ }
+
 // ===============================
 // SECOND POSITION STYLE GUIDE
 // ===============================
 
 body {
-	font-family: "brandon-grotesque",sans-serif;
-	background-color: $white;
+	font-family: Arial;
+	background-color: $ltblack;
 	color: $black; 
 }	 
 
 .section {
-	padding-top: 50px;
+	// padding-top: 50px;
 }
 
 .post-container {
 	width: 75%;
 	margin: 0 auto;
 	padding: 50px 0;
+	background-color: $white;
 	.content {
 		width: 55%;
 		margin: 0 auto;
@@ -33,7 +45,14 @@ body {
 .horiz-line {
 	width: 100%;
 	border-top: 1px solid $grey;
-	margin: 30px 0;
+	margin: 50px 0;
+}
+
+.arrow {
+	width: 20px;
+	position: fixed;
+	top: 30px;
+	right: 5%;
 }
 
 // ===============================
@@ -41,110 +60,82 @@ body {
 // ===============================
 
 h1 {
-	font-weight: light;
-	@include font(3);
+	@include font(3.5);
+	line-height: 1.3;
+	font-family: "brandon-grotesque",sans-serif;
 	text-align: center;
-	color: $black;
+	padding-top: 30px;
+}
+
+h2 {
+	@include font(2.5);
+	line-height: 1.5;
 }
 
 h3 {
-	margin-top: 25px;
-	color: $black;
-	height: 35px;
-	text-align: left;
-	text-transform: uppercase;
-	@include font(1.8);
+	@include font(1.875);
+	line-height: 1.5;
+	font-weight: bold;
 }
 
 h4 {
-	text-align: left;
-	margin: 30px 0 20px 0;
+	@include font(1);
+	line-height: 2;
+	// margin: 30px 0 20px 0;
 	font-weight: bold;
-	@include font(1.875);
+}
+
+h5 {
+	@include font(1);
+	line-height: 1.2;
 }
 
 h6 {
+	@include font(0.875);
 	line-height: 1.6;
-	@include font(1);
  }
 
+ p, li {
+	@include font(1.4);
+	line-height: 1.8;
+}
+
+
  .bold {
-		font-weight: bold;
-		line-height: 1.6;
-		color: $ltblack;
-		@include font(1);
-}
-
- // span {
-	// font-family: "futura-pt",sans-serif;
- // }
-
- .header {
-		@include font(2);
-	}
-
-.logo {
+ 	@include font(1.4);
+	line-height: 1.8;
 	font-weight: bold;
-	color: $black;
-	@include font(2);
-	margin-top: 0;
-	line-height: 1;
-}
-.logo2 {
-	@include font(2);
-	color: $black;
-	margin-top: 0;
-	line-height: 1;
+	// color: $ltblack;
 }
 
-.bold-link {
-	color: $dkgreen;
-	font-weight: bold;
-	@include font(1.2);
-	margin-top: 5px;
-}
-span.reg-link {
-	color: $dkgreen;
-	@include font(1);
-}
+// ===============================
+// HEADER
+// ===============================
 
-.active {
+nav {
+	margin: 25px 0;
+	background-color: $ltblack;
+	padding: 8px;
+	text-align: center;
+	color: $white;
+}
+a {
+	text-decoration: none;
+	color: $white;
+	&:hover {
+	color: $yellow;
+	}
+}
+li {
+	display: inline;
+	margin: 0 15px;
+	font-weight: normal;
+}
+p {
 	color: $black;
-	@include font(1);
+	font-family: "Arial";
+	line-height: 1.8;
 }
-
-// .style-guide {
-	h2 {
-		color: $ltgreen;
-		@include font(3);
-		font-weight: bold;
-		text-align: center;
-	}
-	nav {
-		margin: 25px 0;
-		background-color: $dkgreen;
-		padding: 8px;
-		text-align: center;
-	}
-	a {
-		text-decoration: none;
-		color: $white;
-		&:hover {
-		color: $yellow;
-		}
-	}
-	li {
-		display: inline;
-		margin: 0 8px;
-		line-height: 1.8;
-		font-weight: normal;
-		@include font(0.875);
-	}
-	p {
-		color: $black;
-		font-family: "Arial";
-		line-height: 1.8;
-	}
 	
 	
 	
@@ -152,27 +143,43 @@ span.reg-link {
 // COLORS
 // ===============================
 	.box { 
-		width: 100px;
-		height: 100px;
+		width: 80px;
+		height: 80px;
 		padding: 10px;
 		display: inline-block;
 		margin-top: 10px;
 	}
 	.one {
 		background-color: $black;
+		color: $white;
 	}
 	.two {
-		background-color: $black;
+		background-color: $ltblack;
+		color: $white;
 	}
 	.three {
-		background-color: $black;
+		background-color: $white;
 	}
 	.four {
-		background-color: $black;
+		background-color: $yellow;
 	}
 	.five {
-		background-color: $black;
+		background-color: $grey;
 	}
+	.six {
+		background-color: $dkgreen;
+	}
+	.seven {
+		background-color: $ltgreen;
+	}
+
+// ===============================
+// PROCESS
+// ===============================
+.process {
+	width: 100%;
+	margin: 10px;
+}
 
 // ===============================
 // ICONS
