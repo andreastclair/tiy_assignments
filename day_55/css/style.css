@@ -184,19 +184,8 @@ p {
   margin: 10px; }
 
 .icons {
-  margin: 5px 0 20px 0;
-  max-width: 500px; }
-
-.icons-full {
-  margin: 5px 0 20px 0; }
-
-.icons-small {
-  margin: 5px 0 20px 0;
-  max-width: 100px; }
-
-.ribbon {
-  margin: 5px 0 0 0;
-  max-width: 60px; }
+  margin: 20px 10px;
+  width: 100px; }
 
 .col {
   background-color: #8BA19E;
@@ -221,38 +210,17 @@ p {
   width: 70%; }
 
 .buttons {
-  height: 30px;
-  width: 70px;
-  margin-top: 5px; }
+  width: 30%;
+  margin: 20px 0 0 0; }
 
-.avatar {
+.costumes {
+  width: 230px;
+  height: 230px;
   background-color: #8BA19E;
-  padding: 10px;
-  margin: 5px 10px 30px 0;
-  text-align: left;
-  font-family: "Arial";
-  font-size: 12.8px;
-  font-size: 0.8em;
-  border-radius: 15%; }
+  padding: 10px; }
 
-.user-mobile-home {
-  height: 45px;
-  width: 45px; }
-
-.user-desktop-home {
-  height: 48px;
-  width: 48px; }
-
-.user-mobile-profile {
-  height: 52px;
-  width: 52px; }
-
-.user-desktop-profile {
-  height: 88px;
-  width: 88px; }
-
-.friends {
-  height: 31px;
-  width: 31px; }
+.logo {
+  width: 200px;
+  margin: 20px 0; }
 
 /*# sourceMappingURL=style.css.map */
